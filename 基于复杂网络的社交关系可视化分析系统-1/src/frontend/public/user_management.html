@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management</title>
+    <style>
+        body{font-family:'Segoe UI',sans-serif;background:#f5f5f5;color:#333;}
+        .card{max-width:400px;margin:5rem auto;padding:2rem;background:#fff;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+        h2{text-align:center;color:#667eea;margin-bottom:1rem;}
+        label{display:block;margin:0.5rem 0;}
+        input{width:100%;padding:0.5rem;border:1px solid #ccc;border-radius:4px;}
+        button{width:100%;padding:0.6rem;background:#667eea;color:#fff;border:none;border-radius:4px;cursor:pointer;margin-top:0.5rem;}
+        button:hover{background:#5a6fd8;}
+        .message{margin-top:0.5rem;font-size:0.9rem;color:#e74c3c;}
+        a.back{display:block;text-align:center;margin-top:1rem;color:#667eea;text-decoration:none;}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>User Management</h2>
+        <div id="user-info">
+            <p><strong id="info-name"></strong></p>
+            <p id="info-email"></p>
+        </div>
+        <hr />
+        <h3>修改密码</h3>
+        <label>旧密码<input type="password" id="old-pass" /></label>
+        <label>新密码<input type="password" id="new-pass" /></label>
+        <button id="submit-pass">提交</button>
+        <div id="pass-msg" class="message"></div>
+        <a href="index.html" class="back">返回主页</a>
+    </div>
+
+    <script>
+        // fetch current profile from backend
+        fetch('/api/user/profile')
+            .then(resp => resp.json())
+            .then(data => {
+                document.getElementById('info-name').textContent = data.name || '未登录';
+                document.getElementById('info-email').textContent = data.email || '';
+            }).catch(err => {
+                document.getElementById('info-name').textContent = '获取失败';
+                console.error(err);
+            });
+
+        document.getElementById('submit-pass').addEventListener('click', () => {
+            const oldp = document.getElementById('old-pass').value;
+            const newp = document.getElementById('new-pass').value;
+            const msg = document.getElementById('pass-msg');
+            if (!oldp || !newp) {
+                msg.textContent = '请填写旧密码和新密码';
+                return;
+            }
+            fetch('/api/user/change-password', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({old_password: oldp, new_password: newp})
+            })
+            .then(r=>r.json())
+            .then(res=>{
+                if(res.error){
+                    msg.style.color = '#e74c3c';
+                    msg.textContent = res.error;
+                } else {
+                    msg.style.color = '#27ae60';
+                    msg.textContent = '密码更新成功';
+                }
+            }).catch(err=>{
+                msg.textContent='请求失败';
+                console.error(err);
+            });
+        });
+    </script>
+</body>
+</html>

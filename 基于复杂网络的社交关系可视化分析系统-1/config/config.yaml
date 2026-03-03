@@ -1,0 +1,23 @@
+database:
+  host: localhost
+  port: 5432
+  username: user
+  password: password
+  dbname: social_network
+
+api:
+  version: v1
+  base_url: /api
+
+logging:
+  level: INFO
+  file: logs/app.log
+
+visualization:
+  layout: force
+  node_color: #1f77b4
+  edge_color: #ff7f0e
+
+data:
+  raw_data_path: data/raw/
+  processed_data_path: data/processed/

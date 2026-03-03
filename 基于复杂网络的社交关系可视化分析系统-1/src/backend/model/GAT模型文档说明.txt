@@ -1,0 +1,63 @@
+ 1. 模型配置文件 src/backend/model/config.py
+   - 功能：定义模型超参数
+ 2. GAT层定义 src/backend/model/gat_layers.py
+   - 功能：定义GAT层的实现 
+   - 模块：
+     - GATConv：GAT层实现
+     - GATConv2：GAT层实现（用于处理二部图）
+     - GATConv3：GAT层实现（用于处理三度图）
+     - GATConv4：GAT层实现（用于处理四度图）
+     - GATConv5：GAT层实现（用于处理五度图）
+     - GATConv6：GAT层实现（用于处理六度图）
+     - GATConv7：GAT层实现（用于处理七度图）
+     - GATConv8：GAT层实现（用于处理八度图）
+     - GATConv9：GAT层实现（用于处理九度图）
+ 3. GAT模型定义 src/backend/model/gat_model.py
+   - 功能：定义GAT模型实现
+   - 模块：
+     - GAT：GAT模型实现
+     - GAT_Dense：GAT模型实现（用于处理Dense图）
+     - GAT_Sparse：GAT模型实现（用于处理Sparse图）
+     - GAT_Triple：GAT模型实现（用于处理三度图）
+ 4. 数据加载器 src/backend/model/dataloader.py
+   - 功能：定义数据加载器实现
+   - 模块：
+     - DataLoader：数据加载器实现
+     - DataLoader_Dense：数据加载器实现（用于处理Dense图）
+     - DataLoader_Sparse：数据加载器实现（用于处理Sparse图）
+     - DataLoader_Triple：数据加载器实现（用于处理三度图）
+     - DataLoader_Quad：数据加载器实现（用于处理四度图）
+     - DataLoader_Penta：数据加载器实现（用于处理五度图）
+     - DataLoader_Hexa：数据加载器实现（用于处理六度图）
+     - DataLoader_Seven：数据加载器实现（用于处理七度图）
+     - DataLoader_Eight：数据加载器实现（用于处理八度图）
+ 5. 评估指标 src/backend/model/metrics.py
+   - 功能：定义评估指标实现
+   - 模块：
+     - Accuracy：准确率指标
+     - F1_Score：F1分数指标
+     - Precision：精确率指标
+     - Recall：召回率指标
+     - AUC：ROC曲线下面积指标
+ 6. 训练器 src/backend/model/trainer.py
+   - 功能：定义训练器实现
+   - 模块：
+     - Trainer：训练器实现
+     - Trainer_Dense：训练器实现（用于处理Dense图）
+     - Trainer_Sparse：训练器实现（用于处理Sparse图）
+     - Trainer_Triple：训练器实现（用于处理三度图）
+     - Trainer_Quad：训练器实现（用于处理四度图）
+     - Trainer_Penta：训练器实现（用于处理五度图）
+     - Trainer_Hexa：训练器实现（用于处理六度图）
+     - Trainer_Seven：训练器实现（用于处理七度图）
+     - Trainer_Eight：训练器实现（用于处理八度图）
+ 6. 训练器 src/backend/model/trainer.py
+   - 功能：定义训练器实现
+ 7. 工具函数 src/backend/model/utils.py
+   - 功能：定义工具函数实现
+ 8. 主训练脚本 scripts/train_model.py
+   - 功能：定义主训练脚本实现
+ 9. 配置文件 config/config.yaml
+ 10. 初始化文件 src/backend/model/__init__.py
+ 总控：C:\Users\邢启德\Desktop\基于复杂网络的社交关系可视化分析系统\基于复杂网络的社交关系可视化分析系统-1\scripts\train_model.py
+  

@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于复杂网络的社交关系可视化分析系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            background-image: url('https://via.placeholder.com/1600x900?text=Network+Background');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            background: #ffffff; /* white base so blocks show clearly */
+            color: #333;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+        /* colored stripe on left of header */
+        header .header-color {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            background: linear-gradient(180deg, #ff6a00, #ff9a76);
+        }
+        header h1 {
+            font-size: 1.6rem;
+            margin: 0;
+            margin-left: 100px; /* avoid the colored block */
+            flex: 1;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 1.6rem;
+            margin: 0;
+        }
+        /* subtle wave animation behind header text */
+        header::before {
+            content:'';
+            position:absolute;
+            left:0;right:0;bottom:0;top:0;
+            background: url('https://via.placeholder.com/1600x100?text=Wave') repeat-x;
+            opacity:0.1;
+            animation: waves 6s linear infinite;
+            z-index:-1;
+        }
+        @keyframes waves { from {background-position-x:0;} to {background-position-x:1000px;} }
+
+
+        nav {
+            background-color: #fff;
+            padding: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* sidebar layout */
+        nav.sidebar {
+            width: 200px;
+            height: calc(100vh - 60px);
+            position: fixed;
+            top: 60px; /* below header */
+            left: 0;
+            background-color: rgba(26,32,44,0.85);
+            color: #f7fafc;
+            box-shadow: 3px 0 15px rgba(0,0,0,0.5);
+            padding-top: 1rem;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            z-index:6;
+        }
+        nav.sidebar ul{width:100%;}
+        nav.sidebar li{width:100%;}
+        nav.sidebar button{width:100%;text-align:left;padding-left:2rem;}
+        nav.sidebar button { color: white; }
+        nav.sidebar button:hover { background-color: rgba(255,255,255,0.1); transform: translateX(5px); transition: transform 0.2s; }
+        nav.sidebar button.active { background-color: #e74c3c; }
+
+
+
+        nav.sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav.sidebar li {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        nav.sidebar button {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 1rem;
+            position: relative;
+        }
+        nav.sidebar button::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        /* icons for each menu item */
+        #network-tab::before {background-image:url('https://via.placeholder.com/16?text=N');}
+        #analysis-tab::before {background-image:url('https://via.placeholder.com/16?text=A');}
+        #report-tab::before {background-image:url('https://via.placeholder.com/16?text=R');}
+        #data-tab::before {background-image:url('https://via.placeholder.com/16?text=D');}
+        #profile-tab::before {background-image:url('https://via.placeholder.com/16?text=P');}
+
+
+        nav.sidebar button.active {
+            background-color: #667eea;
+            color: white;
+        }
+
+        .main-layout {
+            display: flex;
+            flex-direction: row;
+            margin-top: 60px; /* header height */
+        }
+        .content {
+            flex: 1;
+            padding: 2rem;
+        }
+        .tab-content {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        #report-content table {
+            width: 100%;
+            max-width: 800px;
+            margin: 1rem auto;
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #f0f0f0;
+        }
+
+        nav button.active {
+            background-color: #667eea;
+            color: white;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 80px auto 4rem; /* leave space for header */
+            margin-left: 220px; /* start right of sidebar */
+            padding: 2rem;
+            background:#f9fafb; /* light off-white */
+            border-radius:12px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.2);
+            animation: fadeIn 1s ease;
+        }
+
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);} 
+            to {opacity: 1; transform: translateY(0);} 
+        }
+
+        .tab-content {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            min-height: 500px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .controls input[type="text"] {
+            padding: 0.4rem 0.6rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 120px;
+        }
+
+        .controls button {
+            padding: 0.6rem 1.2rem;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        .controls button:hover { background-color: #c0392b; transform: scale(1.05);}
+
+        .controls button:hover {
+            background-color: #5a6fd8;
+        }
+
+        #graph-container {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+
+        .error {
+            color: #e74c3c;
+            padding: 1rem;
+            background-color: #fdf2f2;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            margin-top: 2rem;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        /* info box */
+        .info-box {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255,255,255,0.9);
+            padding: 0.75rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            max-width: 220px;
+            pointer-events: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-color"></div>
+        <h1>基于复杂网络的社交关系可视化分析系统</h1>
+        <!-- 右上角头像登录链接 -->
+        <div id="user-avatar" style="position:absolute;top:50%;right:1rem;transform:translateY(-50%);cursor:pointer;">
+            <a href="user_management.html"><img src="https://via.placeholder.com/40" alt="头像" id="avatar-img" style="border-radius:50%;width:40px;height:40px;" /></a>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <nav class="sidebar">
+        <ul>
+            <li><button id="network-tab" class="tab-button active" onclick="switchTab('network')">网络结构</button></li>
+            <li><button id="analysis-tab" class="tab-button" onclick="switchTab('analysis')">分析结果</button></li>            <li><button id="report-tab" class="tab-button" onclick="switchTab('report')">综合报告</button></li>
+            <li><button id="data-tab" class="tab-button" onclick="switchTab('data')">数据管理</button></li>
+            <li><button id="profile-tab" class="tab-button" onclick="switchTab('profile')">个体人物信息</button></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div id="network" class="tab-content">
+            <h2>社交网络结构图</h2>
+            <div class="controls">
+                <button onclick="zoomIn()">放大</button>
+                <button onclick="zoomOut()">缩小</button>
+                <button onclick="resetView()">重置视图</button>
+                <button onclick="loadNetworkData()">刷新数据</button>
+                <!-- 节点/路径查找 -->
+                <input type="text" id="control-path-start" placeholder="起点" />
+                <input type="text" id="control-path-end" placeholder="终点" />
+                <button onclick="searchPath()">查找路径</button>
+            </div>
+            <div id="path-result" class="mt-2"></div>
+            <div id="graph-container">
+                <div class="loading">正在加载网络数据...</div>
+            </div>
+            <div id="graph-info" class="info-box" style="display:none;"></div>
+
+        </div>
+
+        <div id="analysis" class="tab-content" style="display: none;">
+            <h2>关键人物分析</h2>
+            <div id="analysis-content">
+                <div class="loading">正在加载分析数据...</div>
+            </div>
+        </div>
+
+        <div id="report" class="tab-content" style="display: none;">
+            <h2>综合分析报告</h2>
+            <div id="report-content">
+                <div class="loading">正在加载报告数据...</div>
+            </div>
+        </div>
+
+        <div id="data" class="tab-content" style="display: none;">
+            <h2>数据管理</h2>
+            <div id="data-content">
+                <p>上传新数据：</p>
+                <input type="file" id="data-file" />
+                <button onclick="uploadData()">上传</button>
+                <div id="data-message"></div>
+                <hr />
+                <p>现有数据集列表（示例）：</p>
+                <ul id="data-list">
+                    <!-- 由脚本填充 -->
+                </ul>
+            </div>
+        </div>
+
+        <div id="profile" class="tab-content" style="display: none;">
+            <h2>个人信息</h2>
+            <div id="profile-content">
+                <form id="profile-form">
+                    <label>姓名: <input type="text" id="profile-name" /></label><br /><br />
+                    <label>邮箱: <input type="text" id="profile-email" /></label><br /><br />
+                    <label>职位: <input type="text" id="profile-position" /></label><br /><br />
+                    <button type="button" onclick="saveProfile()">保存</button>
+                </form>
+                <div id="profile-message" class="mt-2"></div>
+                <hr />
+                <h3>个人关系图</h3>
+                <div id="personal-graph" style="width:100%; height:300px; border:1px solid #ddd; border-radius:4px;"></div>
+            </div>
+        </div>
+    </main>
+    </div> <!-- end main-layout -->
+
+    <footer>
+        <p>基于复杂网络的社交关系可视化分析系统 &copy; 2025</p>
+    </footer>
+
+    <!-- 引入D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        // 全局变量
+        let currentTab = 'network';
+        let networkData = null;
+        let simulation = null;
+        let svg = null;
+        let zoom = null;
+
+        // 切换标签页
+        function switchTab(tabName) {
+            // 更新标签页按钮状态
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.getElementById(tabName + '-tab').classList.add('active');
+
+            // 显示对应的内容
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.style.display = 'none';
+            });
+            document.getElementById(tabName).style.display = 'block';
+
+            // 设置当前标签页
+            currentTab = tabName;
+
+            // 根据标签页加载对应数据
+            switch(tabName) {
+                case 'network':
+                    if (!networkData) {
+                        loadNetworkData();
+                    }
+                    break;
+                case 'analysis':
+                    loadAnalysisData();
+                    break;
+                case 'report':
+                    loadReportData();
+                    break;
+                case 'data':
+                    // 将来可从后端获取数据列表
+                    loadDataList();
+                    break;
+                case 'profile':
+                    loadProfile();
+                    break;
+            }
+        }
+
+        // 加载网络数据
+        async function loadNetworkData() {
+            try {
+                const response = await fetch('/api/network/data');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                networkData = await response.json();
+                renderNetwork();
+            } catch (error) {
+                document.getElementById('graph-container').innerHTML = 
+                    `<div class="error">加载网络数据失败: ${error.message}</div>`;
+                console.error('加载网络数据失败:', error);
+            }
+        }
+
+        // 渲染网络图
+        function renderNetwork() {
+            const container = document.getElementById('graph-container');
+            container.innerHTML = '';
+
+            if (!networkData || !networkData.nodes || !networkData.links) {
+                container.innerHTML = '<div class="error">网络数据格式不正确</div>';
+                return;
+            }
+
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+
+            // 创建SVG
+            svg = d3.select('#graph-container')
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+
+            // 创建缩放行为
+            zoom = d3.zoom()
+                .scaleExtent([0.1, 8])
+                .on('zoom', (event) => {
+                    g.attr('transform', event.transform);
+                });
+
+            svg.call(zoom);
+
+            // 创建包含图形元素的组
+            const g = svg.append('g');
+
+            // 创建力模拟
+            simulation = d3.forceSimulation(networkData.nodes)
+                .force('link', d3.forceLink(networkData.links).id(d => d.id).distance(100))
+                .force('charge', d3.forceManyBody().strength(-300))
+                .force('center', d3.forceCenter(width / 2, height / 2))
+                .force('collision', d3.forceCollide().radius(30));
+
+            // 绘制连线
+            const link = g.append('g')
+                .selectAll('line')
+                .data(networkData.links)
+                .enter()
+                .append('line')
+                .attr('stroke', '#999')
+                .attr('stroke-width', 1.5);
+            // 计算top10
+            const node = g.append('g')
+                .selectAll('circle')
+                .data(networkData.nodes)
+                .enter()
+                .append('circle')
+                .attr('r', d => Math.sqrt(d.influence * 200) + 5)
+                .attr('fill', d => d.position !== '无' ? '#ff7f0e' : '#1f77b4')
+                .call(d3.drag()
+                    .on('start', dragstarted)
+                    .on('drag', dragged)
+                    .on('end', dragended));
+
+            // 添加节点标签
+            const label = g.append('g')
+                .selectAll('text')
+                .data(networkData.nodes)
+                .enter()
+                .append('text')
+                .text(d => d.name)
+                .attr('font-size', '10px')
+                .attr('dx', 12)
+                .attr('dy', '.35em')
+                .attr('fill', '#000')
+                .attr('font-weight', '600');
+
+            // 准备rank
+            // 更新位置
+            simulation.on('tick', () => {
+                link
+                    .attr('x1', d => d.source.x)
+                    .attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x)
+                    .attr('y2', d => d.target.y);
+
+                node
+                    .attr('cx', d => d.x)
+                    .attr('cy', d => d.y);
+
+                label
+                    .attr('x', d => d.x)
+                    .attr('y', d => d.y);
+            });
+
+
+            // 拖拽事件处理
+            function dragstarted(event, d) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+            }
+
+            function dragged(event, d) {
+                d.fx = event.x;
+                d.fy = event.y;
+            }
+
+            function dragended(event, d) {
+                if (!event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+            }
+        }
+
+        // 缩放控制
+        function zoomIn() {
+            if (svg) {
+                svg.transition().call(zoom.scaleBy, 1.2);
+            }
+        }
+
+        function zoomOut() {
+            if (svg) {
+                svg.transition().call(zoom.scaleBy, 0.8);
+            }
+        }
+
+        function resetView() {
+            if (svg) {
+                svg.transition().call(zoom.transform, d3.zoomIdentity);
+            }
+        }
+
+        // 日志辅助
+        function addLog(message) {
+            const containers = document.querySelectorAll('#log-container');
+            containers.forEach(c => {
+                const p = document.createElement('p');
+                p.textContent = `${new Date().toLocaleTimeString()} - ${message}`;
+                c.appendChild(p);
+                c.scrollTop = c.scrollHeight;
+            });
+        }
+
+        // 路径查询与高亮
+        async function searchPath() {
+            const startEl = document.getElementById('control-path-start') || document.getElementById('path-start');
+            const endEl = document.getElementById('control-path-end') || document.getElementById('path-end');
+            const start = startEl ? startEl.value.trim() : '';
+            const end = endEl ? endEl.value.trim() : '';
+            if (!start || !end) { addLog('起点或终点为空'); return; }
+            addLog(`查询路径：${start} -> ${end}`);
+            try {
+                const resp = await fetch(`/api/path?start=${encodeURIComponent(start)}&end=${encodeURIComponent(end)}`);
+                if (!resp.ok) throw new Error(resp.statusText);
+                const data = await resp.json();
+                showPathResult(data);
+                highlightPath(data);
+                addLog('路径查询成功');
+            } catch (err) {
+                const resultEl = document.getElementById('path-result');
+                if (resultEl) resultEl.innerHTML = `<div class="error">查询失败：${err.message}</div>`;
+                addLog(`路径查询失败：${err.message}`);
+            }
+        }
+
+        function showPathResult(result) {
+            const container = document.getElementById('path-result');
+            if (container) {
+                if (!result || !result.path) {
+                    container.innerHTML = '<p>未找到路径</p>';
+                } else {
+                    container.innerHTML = `<p>路径：${result.path.join(' → ')}</p>`;
+                }
+            }
+        }
+
+        function highlightPath(result) {
+            if (!result || !result.path || !svg) return;
+            svg.selectAll('circle').attr('stroke', null).attr('stroke-width', null);
+            svg.selectAll('line').attr('stroke', '#999').attr('stroke-width', 1.5);
+            const pathSet = new Set(result.path);
+            svg.selectAll('circle').filter(d => pathSet.has(d.name)).attr('stroke', '#e74c3c').attr('stroke-width', 3);
+            if (networkData && networkData.links) {
+                const pairs = new Set();
+                for (let i = 0; i < result.path.length - 1; i++) {
+                    const a = result.path[i];
+                    const b = result.path[i+1];
+                    pairs.add(`${a}|${b}`);
+                    pairs.add(`${b}|${a}`);
+                }
+                svg.selectAll('line').filter(d => pairs.has(d.source.name + '|' + d.target.name))
+                    .attr('stroke', '#e74c3c').attr('stroke-width', 3);
+            }
+        }
+
+        // 加载分析数据
+        async function loadAnalysisData() {
+            try {
+                const response = await fetch('/api/analysis/top-influencers');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const influencers = await response.json();
+                renderAnalysis(influencers);
+            } catch (error) {
+                document.getElementById('analysis-content').innerHTML = 
+                    `<div class="error">加载分析数据失败: ${error.message}</div>`;
+                console.error('加载分析数据失败:', error);
+            }
+        }
+
+        // 渲染分析结果
+        function renderAnalysis(influencers) {
+            const container = document.getElementById('analysis-content');
+            
+            let html = `
+                <p>根据综合影响力得分识别出的关键人物如下：</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>排名</th>
+                            <th>姓名</th>
+                            <th>职位</th>
+                            <th>影响力得分</th>
+                            <th>好友数</th>
+                            <th>总分</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+            
+            influencers.forEach((person, index) => {
+                html += `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${person.name}</td>
+                        <td>${person.position}</td>
+                        <td>${person.influence_score.toFixed(3)}</td>
+                        <td>${person.friend_count}</td>
+                        <td>${person.total_score.toFixed(1)}</td>
+                    </tr>
+                `;
+            });
+            
+            html += `
+                    </tbody>
+                </table>
+            `;
+            
+            container.innerHTML = html;
+        }
+
+        // 加载报告数据
+        async function loadReportData() {
+            try {
+                const response = await fetch('/api/report');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const report = await response.json();
+                renderReport(report);
+            } catch (error) {
+                document.getElementById('report-content').innerHTML = 
+                    `<div class="error">加载报告数据失败: ${error.message}</div>`;
+                console.error('加载报告数据失败:', error);
+            }
+        }
+
+        // 渲染报告
+        function renderReport(report) {
+            const container = document.getElementById('report-content');
+            
+            // 获取网络指标
+            fetch('/api/network/metrics')
+                .then(response => response.json())
+                .then(metrics => {
+                    let html = `
+                        <h3>网络整体指标</h3>
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-label">节点数</div>
+                                <div class="metric-value">${metrics.node_count}</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-label">连接数</div>
+                                <div class="metric-value">${metrics.edge_count}</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-label">网络密度</div>
+                                <div class="metric-value">${metrics.density.toFixed(3)}</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-label">平均聚类系数</div>
+                                <div class="metric-value">${metrics.avg_clustering.toFixed(3)}</div>
+                            </div>
+                        </div>
+                        
+                        <h3>基本统计信息</h3>
+                        <table>
+                            <tr>
+                                <td>学生总数</td>
+                                <td>${report['学生总数']}</td>
+                            </tr>
+                            <tr>
+                                <td>好友关系总数</td>
+                                <td>${report['好友关系总数']}</td>
+                            </tr>
+                            <tr>
+                                <td>性别分布</td>
+                                <td>男: ${report['性别分布']['男']}  女: ${report['性别分布']['女']}</td>
+                            </tr>
+                            <tr>
+                                <td>平均好友数</td>
+                                <td>${report['平均好友数'].toFixed(1)}</td>
+                            </tr>
+                            <tr>
+                                <td>最多好友数</td>
+                                <td>${report['最多好友']}</td>
+                            </tr>
+                            <tr>
+                                <td>平均成绩</td>
+                                <td>${report['平均成绩'].toFixed(1)}</td>
+                            </tr>
+                            <tr>
+                                <td>最高成绩</td>
+                                <td>${report['最高成绩']}</td>
+                            </tr>
+                            <tr>
+                                <td>平均社交频率</td>
+                                <td>${report['平均社交频率'].toFixed(1)}</td>
+                            </tr>
+                            <tr>
+                                <td>平均影响力得分</td>
+                                <td>${report['平均影响力得分'].toFixed(3)}</td>
+                            </tr>
+                        </table>
+                        
+                        <h3>宿舍分布</h3>
+                        <p>共有 ${report['宿舍数']} 个宿舍</p>
+                    `;
+                    
+                    container.innerHTML = html;
+                })
+                .catch(error => {
+                    container.innerHTML = `<div class="error">加载网络指标失败: ${error.message}</div>`;
+                });
+        }
+
+        // 模拟数据管理功能
+        function loadDataList() {
+            const list = document.getElementById('data-list');
+            if (!list) return;
+            // 示例静态内容，可替换为fetch调用
+            const sample = ['students.csv', 'relationships.json', 'scores.xlsx'];
+            list.innerHTML = sample.map(name => `<li>${name}</li>`).join('');
+        }
+
+        function uploadData() {
+            const fileEl = document.getElementById('data-file');
+            const msgEl = document.getElementById('data-message');
+            if (!fileEl || !fileEl.files.length) {
+                msgEl.textContent = '请选择一个文件';
+                return;
+            }
+            const file = fileEl.files[0];
+            msgEl.textContent = `正在上传 ${file.name} ...`;
+            addLog(`上传数据文件：${file.name}`);
+            // 这里可以使用fetch将文件发送到后端
+            setTimeout(() => {
+                msgEl.textContent = `文件 ${file.name} 上传成功（模拟）`;
+                loadDataList();
+            }, 1000);
+        }
+
+        // 个人信息管理
+        function loadProfile() {
+            const name = localStorage.getItem('profile_name') || '';
+            const email = localStorage.getItem('profile_email') || '';
+            const position = localStorage.getItem('profile_position') || '';
+            document.getElementById('profile-name').value = name;
+            document.getElementById('profile-email').value = email;
+            document.getElementById('profile-position').value = position;
+        }
+
+        function saveProfile() {
+            const name = document.getElementById('profile-name').value.trim();
+            const email = document.getElementById('profile-email').value.trim();
+            const position = document.getElementById('profile-position').value.trim();
+            localStorage.setItem('profile_name', name);
+            localStorage.setItem('profile_email', email);
+            localStorage.setItem('profile_position', position);
+            document.getElementById('profile-message').textContent = '个人信息已保存';
+            addLog('个人信息已更新');
+            renderPersonalGraph(name);
+        }
+
+        // 绘制以某人及其直接联系为中心的小网络图（仅一度邻居）
+        function renderPersonalGraph(personName) {
+            const container = document.getElementById('personal-graph');
+            if (!container) return;
+            function draw() {
+                const nodes = [];
+                const links = [];
+                // 查找本人节点
+                const center = networkData.nodes.find(n => n.name === personName);
+                if (!center) {
+                    container.innerHTML = '<div class="loading">未找到该用户的关系数据</div>';
+                    return;
+                }
+                nodes.push(center);
+                // 收集所有与本人直接相连的边及对端节点
+                networkData.links.forEach(l => {
+                    if (l.source.name === personName) {
+                        links.push(l);
+                        const other = networkData.nodes.find(n => n.id === l.target.id);
+                        if (other) nodes.push(other);
+                    } else if (l.target.name === personName) {
+                        links.push(l);
+                        const other = networkData.nodes.find(n => n.id === l.source.id);
+                        if (other) nodes.push(other);
+                    }
+                });
+                container.innerHTML = '';
+                const width = container.clientWidth;
+                const height = container.clientHeight;
+                const svg2 = d3.select(container)
+                    .append('svg')
+                    .attr('width', width)
+                    .attr('height', height);
+                const sim = d3.forceSimulation(nodes)
+                    .force('link', d3.forceLink(links).id(d => d.id).distance(80))
+                    .force('charge', d3.forceManyBody().strength(-200))
+                    .force('center', d3.forceCenter(width/2, height/2));
+                const linkg = svg2.append('g').selectAll('line')
+                    .data(links)
+                    .enter().append('line')
+                    .attr('stroke','#999').attr('stroke-width',1.5);
+                const nodeg = svg2.append('g').selectAll('circle')
+                    .data(nodes)
+                    .enter().append('circle')
+                    .attr('r',d=>Math.sqrt(d.influence*200)+5)
+                    .attr('fill', d=>d.position!=='无'?'#ff7f0e':'#1f77b4');
+                const labelg = svg2.append('g').selectAll('text')
+                    .data(nodes)
+                    .enter().append('text')
+                    .text(d=>d.name)
+                    .attr('font-size','9px')
+                    .attr('dx',10).attr('dy','.35em');
+                sim.on('tick',()=>{
+                    linkg
+                        .attr('x1',d=>d.source.x)
+                        .attr('y1',d=>d.source.y)
+                        .attr('x2',d=>d.target.x)
+                        .attr('y2',d=>d.target.y);
+                    nodeg
+                        .attr('cx',d=>d.x)
+                        .attr('cy',d=>d.y);
+                    labelg
+                        .attr('x',d=>d.x)
+                        .attr('y',d=>d.y);
+                });
+            }
+            if (networkData) {
+                draw();
+            } else {
+                loadNetworkData().then(() => draw()).catch(()=>{});
+            }
+        }
+
+
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 默认加载网络数据
+            loadNetworkData();
+        });
+    </script>
+</body>
+</html>

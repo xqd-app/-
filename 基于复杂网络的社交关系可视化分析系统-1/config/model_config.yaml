@@ -1,0 +1,163 @@
+# 模型专用配置 - config/model_config.yaml
+
+# GAT模型架构配置
+gat_architecture:
+  # 核心参数
+  input_dim: 9  # 输入特征维度
+  output_dim: 128  # 输出嵌入维度
+  hidden_dims: [512, 256, 128]  # 隐藏层维度
+  heads: [8, 8, 1]  # 注意力头数
+  
+  # 正则化参数
+  dropout: 0.6  # Dropout率
+  weight_decay: 5e-4  # L2正则化
+  
+  # 改进特性
+  use_clustering_coef: true  # 局部聚类系数权重因子
+  clustering_weight_init: xavier  # 权重初始化
+  attention_adjust: true  # 动态调整注意力权重
+  
+  # 激活函数
+  activation: leaky_relu  # leaky_relu, relu, elu
+  activation_alpha: 0.2  # LeakyReLU负斜率
+
+# 训练参数配置
+training_params:
+  # 优化器
+  optimizer: adam
+  learning_rate: 0.001
+  beta1: 0.9
+  beta2: 0.999
+  epsilon: 1e-8
+  
+  # 调度器
+  scheduler: reduce_lr_on_plateau
+  scheduler_factor: 0.5
+  scheduler_patience: 5
+  scheduler_cooldown: 0
+  
+  # 训练设置
+  epochs: 500
+  batch_size: 32
+  gradient_clip: 1.0
+  
+  # 早停设置
+  early_stopping: true
+  early_stopping_patience: 20
+  early_stopping_delta: 0.001
+
+# 数据配置
+data_config:
+  # 预处理
+  normalize_features: true
+  normalization_method: standard  # standard, minmax, robust
+  
+  # 分割策略
+  train_val_split: 0.8
+  split_strategy: random  # random, stratified, temporal
+  random_seed: 42
+  
+  # 特征配置
+  use_structural_features: true  # 网络结构特征
+  use_attribute_features: true  # 节点属性特征
+  feature_scaling: true
+  
+  # 聚类系数
+  compute_clustering_coef: true
+  clustering_method: local  # local, global, weighted
+
+# 评估配置
+evaluation_config:
+  # 损失函数
+  loss_function: mse  # mse, mae, smooth_l1
+  reconstruction_weight: 1.0
+  regularization_weight: 0.001
+  
+  # 评估指标
+  metrics:
+    train:
+      - reconstruction_mae
+      - reconstruction_mse
+    validation:
+      - reconstruction_mae
+      - reconstruction_mse
+      - silhouette_score
+    test:
+      - all
+  
+  # 相似度计算
+  similarity_metric: cosine  # cosine, euclidean, manhattan
+  top_k_similarity: 10
+  
+  # 聚类评估
+  clustering_evaluation: true
+  n_clusters_range: [2, 10]
+  clustering_method: kmeans  # kmeans, dbscan, spectral
+
+# 输出配置
+output_config:
+  # 保存选项
+  save_model: true
+  save_embeddings: true
+  save_training_history: true
+  save_predictions: false
+  
+  # 格式选项
+  model_format: pytorch  # pytorch, onnx, torchscript
+  embedding_format: numpy  # numpy, json, csv
+  
+  # 路径配置
+  model_dir: models/
+  embedding_dir: data/processed/embeddings/
+  log_dir: logs/training/
+  visualization_dir: data/processed/viz/
+  
+  # 检查点
+  save_checkpoints: true
+  checkpoint_frequency: 10
+  keep_best_checkpoints: 3
+
+# 实验配置
+experiment_config:
+  # 实验跟踪
+  tracking: false
+  tracking_backend: tensorboard  # tensorboard, wandb, mlflow
+  
+  # 超参数搜索
+  hyperparameter_search: false
+  search_method: grid  # grid, random, bayesian
+  search_space:
+    learning_rate: [0.001, 0.0005, 0.0001]
+    hidden_dims: [[256, 128], [512, 256], [128, 64]]
+    dropout: [0.5, 0.6, 0.7]
+  
+  # 交叉验证
+  cross_validation: false
+  cv_folds: 5
+  cv_strategy: kfold
+
+# 系统配置
+system_config:
+  # 硬件设置
+  device: auto  # auto, cuda, cpu
+  gpu_ids: [0]  # 多GPU支持
+  num_workers: 4  # 数据加载线程数
+  pin_memory: true
+  
+  # 内存管理
+  max_memory_usage: 0.8
+  use_gradient_checkpointing: false
+  
+  # 性能优化
+  use_amp: false  # 自动混合精度
+  use_cudnn_benchmark: true
+  
+  # 日志配置
+  log_level: INFO
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  console_log: true
+  file_log: true
+  
+  # 进度显示
+  show_progress_bar: true
+  progress_refresh_rate: 1  # 秒

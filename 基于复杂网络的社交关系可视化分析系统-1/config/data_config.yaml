@@ -1,0 +1,54 @@
+# 数据字段映射配置
+data_fields:
+  columns:
+    - id
+    - name
+    - gender
+    - class
+    - social_frequency  # 社交互动频率
+    - interaction_types  # 常与哪些类型同学互动
+    - learning_impact  # 社交对学习影响
+    - acceptance  # 被接纳感
+    - classroom_interaction  # 课堂交流方式
+    - activity_participation  # 活动参与
+    - role_in_activities  # 活动中扮演角色
+    - communication_ability  # 沟通合作能力
+    - team_contribution  # 团队贡献
+    - positions  # 担任职务
+    - group_leader  # 小组长情况
+    - personality  # 性格类型
+    - influence_factors  # 影响力因素
+    - friends_list  # 好友名单
+    - dorm  # 宿舍号
+    - total_score  # 总分
+
+# 数值编码解释
+encoding:
+  social_frequency:
+    1: "非常低"
+    2: "较低" 
+    3: "一般"
+    4: "较高"
+    5: "非常高"
+  
+  interaction_types:
+    0.65: "多类型混合"  # 需要进一步解码
+    
+  acceptance:
+    1: "总是"
+    2: "经常"
+    3: "有时"
+    4: "很少"
+    5: "从不"
+    
+  activity_participation:
+    1: "经常"
+    2: "偶尔"
+    3: "很少"
+    4: "从不"
+    
+  group_leader:
+    1: "经常担任"
+    2: "偶尔担任"
+    3: "很少担任"
+    4: "从未担任"
