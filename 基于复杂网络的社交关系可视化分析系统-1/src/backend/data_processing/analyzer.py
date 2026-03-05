@@ -55,8 +55,8 @@ class DataAnalyzer:
         dorms = [node['dorm'] for node in nodes]
         unique_dorms = set(dorms)
         
-        # Top 10影响力学生
-        sorted_nodes = sorted(nodes, key=lambda x: x['influence_score'], reverse=True)[:10]
+        # 根据影响力排序的学生列表（原先只取前10，现在取全部）
+        sorted_nodes = sorted(nodes, key=lambda x: x['influence_score'], reverse=True)
         
         # 打印报告
         print(f"👥 学生总数: {total_students}")
@@ -95,7 +95,8 @@ class DataAnalyzer:
             '网络密度': density,
             '平均度': avg_degree,
             '宿舍数': len(unique_dorms),
-            '影响力Top10': [
+            # 全部排名，键名根据实际列表长度自动标注
+            f'影响力Top{len(sorted_nodes)}': [
                 {
                     '排名': i,
                     '姓名': node['name'],

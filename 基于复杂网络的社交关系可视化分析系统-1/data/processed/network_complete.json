@@ -543,17 +543,17 @@
   "edges": [
     {
       "source": 0,
-      "target": 1,
+      "target": 7,
       "source_name": "邢启德",
-      "target_name": "胡洪铭",
+      "target_name": "黄朝勇",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 0,
-      "target": 34,
+      "target": 35,
       "source_name": "邢启德",
-      "target_name": "唐巳润",
+      "target_name": "徐高科",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -567,17 +567,57 @@
     },
     {
       "source": 0,
-      "target": 26,
+      "target": 1,
       "source_name": "邢启德",
-      "target_name": "张雄涛",
+      "target_name": "胡洪铭",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 0,
-      "target": 47,
+      "target": 24,
       "source_name": "邢启德",
-      "target_name": "邹宇航",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 0,
+      "target": 33,
+      "source_name": "邢启德",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "source_name": "邢启德",
+      "target_name": "李成才",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "source_name": "邢启德",
+      "target_name": "陈俊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 0,
+      "target": 27,
+      "source_name": "邢启德",
+      "target_name": "囊恩爽",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "source_name": "邢启德",
+      "target_name": "普建国",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -599,49 +639,9 @@
     },
     {
       "source": 0,
-      "target": 29,
+      "target": 18,
       "source_name": "邢启德",
-      "target_name": "张志龙",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 0,
-      "target": 48,
-      "source_name": "邢启德",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 0,
-      "target": 24,
-      "source_name": "邢启德",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 0,
-      "target": 6,
-      "source_name": "邢启德",
-      "target_name": "普建国",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 0,
-      "target": 11,
-      "source_name": "邢启德",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 0,
-      "target": 8,
-      "source_name": "邢启德",
-      "target_name": "蔡美云",
+      "target_name": "孙仁策",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -655,9 +655,17 @@
     },
     {
       "source": 0,
-      "target": 27,
+      "target": 14,
       "source_name": "邢启德",
-      "target_name": "囊恩爽",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 0,
+      "target": 8,
+      "source_name": "邢启德",
+      "target_name": "蔡美云",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -671,65 +679,9 @@
     },
     {
       "source": 0,
-      "target": 33,
+      "target": 34,
       "source_name": "邢启德",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 0,
-      "target": 43,
-      "source_name": "邢启德",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 0,
-      "target": 3,
-      "source_name": "邢启德",
-      "target_name": "李成才",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 0,
-      "target": 40,
-      "source_name": "邢启德",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 0,
-      "target": 35,
-      "source_name": "邢启德",
-      "target_name": "徐高科",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 0,
-      "target": 2,
-      "source_name": "邢启德",
-      "target_name": "陈俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 0,
-      "target": 14,
-      "source_name": "邢启德",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 0,
-      "target": 18,
-      "source_name": "邢启德",
-      "target_name": "孙仁策",
+      "target_name": "唐巳润",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -743,9 +695,9 @@
     },
     {
       "source": 0,
-      "target": 7,
+      "target": 26,
       "source_name": "邢启德",
-      "target_name": "黄朝勇",
+      "target_name": "张雄涛",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -754,6 +706,62 @@
       "target": 32,
       "source_name": "邢启德",
       "target_name": "吴吞",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 0,
+      "target": 11,
+      "source_name": "邢启德",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 0,
+      "target": 29,
+      "source_name": "邢启德",
+      "target_name": "张志龙",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 0,
+      "target": 43,
+      "source_name": "邢启德",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 0,
+      "target": 47,
+      "source_name": "邢启德",
+      "target_name": "邹宇航",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 0,
+      "target": 40,
+      "source_name": "邢启德",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 0,
+      "target": 48,
+      "source_name": "邢启德",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 1,
+      "target": 0,
+      "source_name": "胡洪铭",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -767,9 +775,9 @@
     },
     {
       "source": 1,
-      "target": 43,
+      "target": 2,
       "source_name": "胡洪铭",
-      "target_name": "高佛银",
+      "target_name": "陈俊",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -778,6 +786,14 @@
       "target": 3,
       "source_name": "胡洪铭",
       "target_name": "李成才",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 1,
+      "target": 20,
+      "source_name": "胡洪铭",
+      "target_name": "张昌旺",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -791,25 +807,17 @@
     },
     {
       "source": 1,
-      "target": 0,
-      "source_name": "胡洪铭",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 1,
-      "target": 40,
-      "source_name": "胡洪铭",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 1,
       "target": 12,
       "source_name": "胡洪铭",
       "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 1,
+      "target": 43,
+      "source_name": "胡洪铭",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -831,17 +839,9 @@
     },
     {
       "source": 1,
-      "target": 2,
+      "target": 40,
       "source_name": "胡洪铭",
-      "target_name": "陈俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 1,
-      "target": 20,
-      "source_name": "胡洪铭",
-      "target_name": "张昌旺",
+      "target_name": "宋沁奕",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -855,17 +855,9 @@
     },
     {
       "source": 2,
-      "target": 1,
+      "target": 0,
       "source_name": "陈俊",
-      "target_name": "胡洪铭",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 2,
-      "target": 45,
-      "source_name": "陈俊",
-      "target_name": "徐明勋",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -887,9 +879,25 @@
     },
     {
       "source": 2,
-      "target": 43,
+      "target": 20,
       "source_name": "陈俊",
-      "target_name": "高佛银",
+      "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 2,
+      "target": 9,
+      "source_name": "陈俊",
+      "target_name": "周朝麒",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 2,
+      "target": 45,
+      "source_name": "陈俊",
+      "target_name": "徐明勋",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -903,33 +911,17 @@
     },
     {
       "source": 2,
-      "target": 0,
-      "source_name": "陈俊",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 2,
-      "target": 9,
-      "source_name": "陈俊",
-      "target_name": "周朝麒",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 2,
-      "target": 40,
-      "source_name": "陈俊",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 2,
       "target": 12,
       "source_name": "陈俊",
       "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 2,
+      "target": 43,
+      "source_name": "陈俊",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -951,14 +943,6 @@
     },
     {
       "source": 2,
-      "target": 20,
-      "source_name": "陈俊",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 2,
       "target": 48,
       "source_name": "陈俊",
       "target_name": "段建香",
@@ -966,18 +950,26 @@
       "type": "friendship"
     },
     {
-      "source": 3,
+      "source": 2,
+      "target": 40,
+      "source_name": "陈俊",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 2,
       "target": 1,
-      "source_name": "李成才",
+      "source_name": "陈俊",
       "target_name": "胡洪铭",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 3,
-      "target": 45,
+      "target": 0,
       "source_name": "李成才",
-      "target_name": "徐明勋",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -991,9 +983,25 @@
     },
     {
       "source": 3,
-      "target": 43,
+      "target": 20,
       "source_name": "李成才",
-      "target_name": "高佛银",
+      "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 3,
+      "target": 9,
+      "source_name": "李成才",
+      "target_name": "周朝麒",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 3,
+      "target": 45,
+      "source_name": "李成才",
+      "target_name": "徐明勋",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1007,33 +1015,17 @@
     },
     {
       "source": 3,
-      "target": 0,
-      "source_name": "李成才",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 3,
-      "target": 9,
-      "source_name": "李成才",
-      "target_name": "周朝麒",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 3,
-      "target": 40,
-      "source_name": "李成才",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 3,
       "target": 12,
       "source_name": "李成才",
       "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 3,
+      "target": 43,
+      "source_name": "李成才",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1055,14 +1047,6 @@
     },
     {
       "source": 3,
-      "target": 20,
-      "source_name": "李成才",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 3,
       "target": 48,
       "source_name": "李成才",
       "target_name": "段建香",
@@ -1070,10 +1054,26 @@
       "type": "friendship"
     },
     {
-      "source": 4,
+      "source": 3,
+      "target": 40,
+      "source_name": "李成才",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 3,
       "target": 1,
-      "source_name": "杨皓燃",
+      "source_name": "李成才",
       "target_name": "胡洪铭",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 4,
+      "target": 0,
+      "source_name": "杨皓燃",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1087,14 +1087,6 @@
     },
     {
       "source": 4,
-      "target": 43,
-      "source_name": "杨皓燃",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 4,
       "target": 3,
       "source_name": "杨皓燃",
       "target_name": "李成才",
@@ -1103,17 +1095,9 @@
     },
     {
       "source": 4,
-      "target": 0,
+      "target": 20,
       "source_name": "杨皓燃",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 4,
-      "target": 40,
-      "source_name": "杨皓燃",
-      "target_name": "宋沁奕",
+      "target_name": "张昌旺",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1122,6 +1106,14 @@
       "target": 12,
       "source_name": "杨皓燃",
       "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 4,
+      "target": 43,
+      "source_name": "杨皓燃",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1143,14 +1135,6 @@
     },
     {
       "source": 4,
-      "target": 20,
-      "source_name": "杨皓燃",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 4,
       "target": 48,
       "source_name": "杨皓燃",
       "target_name": "段建香",
@@ -1158,26 +1142,18 @@
       "type": "friendship"
     },
     {
-      "source": 5,
+      "source": 4,
+      "target": 40,
+      "source_name": "杨皓燃",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 4,
       "target": 1,
-      "source_name": "赵涛涛",
+      "source_name": "杨皓燃",
       "target_name": "胡洪铭",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 5,
-      "target": 45,
-      "source_name": "赵涛涛",
-      "target_name": "徐明勋",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 5,
-      "target": 44,
-      "source_name": "赵涛涛",
-      "target_name": "杞静梅",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1191,33 +1167,33 @@
     },
     {
       "source": 5,
-      "target": 12,
+      "target": 44,
       "source_name": "赵涛涛",
-      "target_name": "胡艳兴",
+      "target_name": "杞静梅",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 5,
-      "target": 30,
+      "target": 1,
       "source_name": "赵涛涛",
-      "target_name": "王晶",
+      "target_name": "胡洪铭",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 5,
-      "target": 48,
+      "target": 33,
       "source_name": "赵涛涛",
-      "target_name": "段建香",
+      "target_name": "陈杨东",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 5,
-      "target": 11,
+      "target": 3,
       "source_name": "赵涛涛",
-      "target_name": "李福英",
+      "target_name": "李成才",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1231,41 +1207,17 @@
     },
     {
       "source": 5,
-      "target": 41,
+      "target": 12,
       "source_name": "赵涛涛",
-      "target_name": "何婷",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 5,
-      "target": 33,
+      "target": 30,
       "source_name": "赵涛涛",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 5,
-      "target": 43,
-      "source_name": "赵涛涛",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 5,
-      "target": 3,
-      "source_name": "赵涛涛",
-      "target_name": "李成才",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 5,
-      "target": 40,
-      "source_name": "赵涛涛",
-      "target_name": "宋沁奕",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1279,9 +1231,81 @@
     },
     {
       "source": 5,
+      "target": 11,
+      "source_name": "赵涛涛",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 5,
+      "target": 45,
+      "source_name": "赵涛涛",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 5,
+      "target": 43,
+      "source_name": "赵涛涛",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 5,
       "target": 0,
       "source_name": "赵涛涛",
       "target_name": "邢启德",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 5,
+      "target": 41,
+      "source_name": "赵涛涛",
+      "target_name": "何婷",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 5,
+      "target": 40,
+      "source_name": "赵涛涛",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 5,
+      "target": 48,
+      "source_name": "赵涛涛",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "source_name": "普建国",
+      "target_name": "黄朝勇",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 35,
+      "source_name": "普建国",
+      "target_name": "徐高科",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 44,
+      "source_name": "普建国",
+      "target_name": "杞静梅",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1290,6 +1314,102 @@
       "target": 1,
       "source_name": "普建国",
       "target_name": "胡洪铭",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 24,
+      "source_name": "普建国",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 33,
+      "source_name": "普建国",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 3,
+      "source_name": "普建国",
+      "target_name": "李成才",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "source_name": "普建国",
+      "target_name": "陈俊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 27,
+      "source_name": "普建国",
+      "target_name": "囊恩爽",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 12,
+      "source_name": "普建国",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 30,
+      "source_name": "普建国",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 18,
+      "source_name": "普建国",
+      "target_name": "孙仁策",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 5,
+      "source_name": "普建国",
+      "target_name": "赵涛涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 14,
+      "source_name": "普建国",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "source_name": "普建国",
+      "target_name": "蔡美云",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 37,
+      "source_name": "普建国",
+      "target_name": "普新潮",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1303,174 +1423,6 @@
     },
     {
       "source": 6,
-      "target": 44,
-      "source_name": "普建国",
-      "target_name": "杞静梅",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 26,
-      "source_name": "普建国",
-      "target_name": "张雄涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 47,
-      "source_name": "普建国",
-      "target_name": "邹宇航",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 12,
-      "source_name": "普建国",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 30,
-      "source_name": "普建国",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 29,
-      "source_name": "普建国",
-      "target_name": "张志龙",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 48,
-      "source_name": "普建国",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 24,
-      "source_name": "普建国",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 11,
-      "source_name": "普建国",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 8,
-      "source_name": "普建国",
-      "target_name": "蔡美云",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 5,
-      "source_name": "普建国",
-      "target_name": "赵涛涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 27,
-      "source_name": "普建国",
-      "target_name": "囊恩爽",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 37,
-      "source_name": "普建国",
-      "target_name": "普新潮",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 33,
-      "source_name": "普建国",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 43,
-      "source_name": "普建国",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 3,
-      "source_name": "普建国",
-      "target_name": "李成才",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 40,
-      "source_name": "普建国",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 35,
-      "source_name": "普建国",
-      "target_name": "徐高科",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 2,
-      "source_name": "普建国",
-      "target_name": "陈俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 14,
-      "source_name": "普建国",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
-      "target": 18,
-      "source_name": "普建国",
-      "target_name": "孙仁策",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 6,
       "target": 20,
       "source_name": "普建国",
       "target_name": "张昌旺",
@@ -1479,9 +1431,9 @@
     },
     {
       "source": 6,
-      "target": 7,
+      "target": 26,
       "source_name": "普建国",
-      "target_name": "黄朝勇",
+      "target_name": "张雄涛",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1495,6 +1447,30 @@
     },
     {
       "source": 6,
+      "target": 11,
+      "source_name": "普建国",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 29,
+      "source_name": "普建国",
+      "target_name": "张志龙",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 43,
+      "source_name": "普建国",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
       "target": 0,
       "source_name": "普建国",
       "target_name": "邢启德",
@@ -1502,154 +1478,26 @@
       "type": "friendship"
     },
     {
-      "source": 7,
-      "target": 1,
-      "source_name": "黄朝勇",
-      "target_name": "胡洪铭",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 44,
-      "source_name": "黄朝勇",
-      "target_name": "杞静梅",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 26,
-      "source_name": "黄朝勇",
-      "target_name": "张雄涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
+      "source": 6,
       "target": 47,
-      "source_name": "黄朝勇",
+      "source_name": "普建国",
       "target_name": "邹宇航",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 7,
-      "target": 12,
-      "source_name": "黄朝勇",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 30,
-      "source_name": "黄朝勇",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 29,
-      "source_name": "黄朝勇",
-      "target_name": "张志龙",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 48,
-      "source_name": "黄朝勇",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 24,
-      "source_name": "黄朝勇",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 6,
-      "source_name": "黄朝勇",
-      "target_name": "普建国",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 11,
-      "source_name": "黄朝勇",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 8,
-      "source_name": "黄朝勇",
-      "target_name": "蔡美云",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 5,
-      "source_name": "黄朝勇",
-      "target_name": "赵涛涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 27,
-      "source_name": "黄朝勇",
-      "target_name": "囊恩爽",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 37,
-      "source_name": "黄朝勇",
-      "target_name": "普新潮",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 33,
-      "source_name": "黄朝勇",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 43,
-      "source_name": "黄朝勇",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
-      "target": 3,
-      "source_name": "黄朝勇",
-      "target_name": "李成才",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 7,
+      "source": 6,
       "target": 40,
-      "source_name": "黄朝勇",
+      "source_name": "普建国",
       "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 6,
+      "target": 48,
+      "source_name": "普建国",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1663,9 +1511,89 @@
     },
     {
       "source": 7,
+      "target": 44,
+      "source_name": "黄朝勇",
+      "target_name": "杞静梅",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 1,
+      "source_name": "黄朝勇",
+      "target_name": "胡洪铭",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 24,
+      "source_name": "黄朝勇",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 33,
+      "source_name": "黄朝勇",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 3,
+      "source_name": "黄朝勇",
+      "target_name": "李成才",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
       "target": 2,
       "source_name": "黄朝勇",
       "target_name": "陈俊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 27,
+      "source_name": "黄朝勇",
+      "target_name": "囊恩爽",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 6,
+      "source_name": "黄朝勇",
+      "target_name": "普建国",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 12,
+      "source_name": "黄朝勇",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 30,
+      "source_name": "黄朝勇",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 5,
+      "source_name": "黄朝勇",
+      "target_name": "赵涛涛",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1679,9 +1607,57 @@
     },
     {
       "source": 7,
+      "target": 8,
+      "source_name": "黄朝勇",
+      "target_name": "蔡美云",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 37,
+      "source_name": "黄朝勇",
+      "target_name": "普新潮",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
       "target": 20,
       "source_name": "黄朝勇",
       "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 26,
+      "source_name": "黄朝勇",
+      "target_name": "张雄涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 11,
+      "source_name": "黄朝勇",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 29,
+      "source_name": "黄朝勇",
+      "target_name": "张志龙",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 43,
+      "source_name": "黄朝勇",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1694,50 +1670,26 @@
       "type": "friendship"
     },
     {
-      "source": 8,
-      "target": 6,
-      "source_name": "蔡美云",
-      "target_name": "普建国",
+      "source": 7,
+      "target": 47,
+      "source_name": "黄朝勇",
+      "target_name": "邹宇航",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 8,
-      "target": 1,
-      "source_name": "蔡美云",
-      "target_name": "胡洪铭",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 8,
-      "target": 33,
-      "source_name": "蔡美云",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 8,
-      "target": 11,
-      "source_name": "蔡美云",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 8,
-      "target": 43,
-      "source_name": "蔡美云",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 8,
+      "source": 7,
       "target": 40,
-      "source_name": "蔡美云",
+      "source_name": "黄朝勇",
       "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 7,
+      "target": 48,
+      "source_name": "黄朝勇",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1751,33 +1703,9 @@
     },
     {
       "source": 8,
-      "target": 12,
+      "target": 33,
       "source_name": "蔡美云",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 8,
-      "target": 30,
-      "source_name": "蔡美云",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 8,
-      "target": 20,
-      "source_name": "蔡美云",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 8,
-      "target": 48,
-      "source_name": "蔡美云",
-      "target_name": "段建香",
+      "target_name": "陈杨东",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1790,42 +1718,82 @@
       "type": "friendship"
     },
     {
-      "source": 9,
-      "target": 45,
-      "source_name": "周朝麒",
-      "target_name": "徐明勋",
+      "source": 8,
+      "target": 6,
+      "source_name": "蔡美云",
+      "target_name": "普建国",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 9,
-      "target": 44,
-      "source_name": "周朝麒",
-      "target_name": "杞静梅",
+      "source": 8,
+      "target": 20,
+      "source_name": "蔡美云",
+      "target_name": "张昌旺",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 9,
-      "target": 31,
-      "source_name": "周朝麒",
-      "target_name": "李禹辰",
+      "source": 8,
+      "target": 11,
+      "source_name": "蔡美云",
+      "target_name": "李福英",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 9,
+      "source": 8,
+      "target": 12,
+      "source_name": "蔡美云",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 8,
+      "target": 43,
+      "source_name": "蔡美云",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 8,
       "target": 30,
-      "source_name": "周朝麒",
+      "source_name": "蔡美云",
       "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
     {
+      "source": 8,
+      "target": 48,
+      "source_name": "蔡美云",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 8,
+      "target": 40,
+      "source_name": "蔡美云",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 8,
+      "target": 1,
+      "source_name": "蔡美云",
+      "target_name": "胡洪铭",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
       "source": 9,
-      "target": 12,
+      "target": 22,
       "source_name": "周朝麒",
-      "target_name": "胡艳兴",
+      "target_name": "陈冠豪",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1839,17 +1807,9 @@
     },
     {
       "source": 9,
-      "target": 48,
+      "target": 44,
       "source_name": "周朝麒",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 9,
-      "target": 15,
-      "source_name": "周朝麒",
-      "target_name": "计成林",
+      "target_name": "杞静梅",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1863,9 +1823,25 @@
     },
     {
       "source": 9,
-      "target": 11,
+      "target": 33,
       "source_name": "周朝麒",
-      "target_name": "李福英",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 9,
+      "target": 3,
+      "source_name": "周朝麒",
+      "target_name": "李成才",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 9,
+      "target": 2,
+      "source_name": "周朝麒",
+      "target_name": "陈俊",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1879,41 +1855,25 @@
     },
     {
       "source": 9,
-      "target": 41,
+      "target": 12,
       "source_name": "周朝麒",
-      "target_name": "何婷",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 9,
-      "target": 33,
+      "target": 31,
       "source_name": "周朝麒",
-      "target_name": "陈杨东",
+      "target_name": "李禹辰",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 9,
-      "target": 43,
+      "target": 30,
       "source_name": "周朝麒",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 9,
-      "target": 3,
-      "source_name": "周朝麒",
-      "target_name": "李成才",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 9,
-      "target": 40,
-      "source_name": "周朝麒",
-      "target_name": "宋沁奕",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1927,25 +1887,33 @@
     },
     {
       "source": 9,
-      "target": 2,
-      "source_name": "周朝麒",
-      "target_name": "陈俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 9,
-      "target": 22,
-      "source_name": "周朝麒",
-      "target_name": "陈冠豪",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 9,
       "target": 20,
       "source_name": "周朝麒",
       "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "source_name": "周朝麒",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 9,
+      "target": 45,
+      "source_name": "周朝麒",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 9,
+      "target": 43,
+      "source_name": "周朝麒",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -1959,6 +1927,22 @@
     },
     {
       "source": 9,
+      "target": 15,
+      "source_name": "周朝麒",
+      "target_name": "计成林",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 9,
+      "target": 41,
+      "source_name": "周朝麒",
+      "target_name": "何婷",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 9,
       "target": 19,
       "source_name": "周朝麒",
       "target_name": "牛戌伍",
@@ -1966,42 +1950,26 @@
       "type": "friendship"
     },
     {
-      "source": 10,
-      "target": 45,
-      "source_name": "和向英",
-      "target_name": "徐明勋",
+      "source": 9,
+      "target": 40,
+      "source_name": "周朝麒",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 9,
+      "target": 48,
+      "source_name": "周朝麒",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 10,
-      "target": 44,
+      "target": 22,
       "source_name": "和向英",
-      "target_name": "杞静梅",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 10,
-      "target": 31,
-      "source_name": "和向英",
-      "target_name": "李禹辰",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 10,
-      "target": 30,
-      "source_name": "和向英",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 10,
-      "target": 12,
-      "source_name": "和向英",
-      "target_name": "胡艳兴",
+      "target_name": "陈冠豪",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2015,33 +1983,9 @@
     },
     {
       "source": 10,
-      "target": 48,
+      "target": 44,
       "source_name": "和向英",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 10,
-      "target": 15,
-      "source_name": "和向英",
-      "target_name": "计成林",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 10,
-      "target": 11,
-      "source_name": "和向英",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 10,
-      "target": 41,
-      "source_name": "和向英",
-      "target_name": "何婷",
+      "target_name": "杞静梅",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2055,25 +1999,9 @@
     },
     {
       "source": 10,
-      "target": 43,
-      "source_name": "和向英",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 10,
       "target": 3,
       "source_name": "和向英",
       "target_name": "李成才",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 10,
-      "target": 40,
-      "source_name": "和向英",
-      "target_name": "宋沁奕",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2087,9 +2015,25 @@
     },
     {
       "source": 10,
-      "target": 22,
+      "target": 12,
       "source_name": "和向英",
-      "target_name": "陈冠豪",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 10,
+      "target": 31,
+      "source_name": "和向英",
+      "target_name": "李禹辰",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 10,
+      "target": 30,
+      "source_name": "和向英",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2103,6 +2047,30 @@
     },
     {
       "source": 10,
+      "target": 11,
+      "source_name": "和向英",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 10,
+      "target": 45,
+      "source_name": "和向英",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 10,
+      "target": 43,
+      "source_name": "和向英",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 10,
       "target": 0,
       "source_name": "和向英",
       "target_name": "邢启德",
@@ -2110,42 +2078,42 @@
       "type": "friendship"
     },
     {
-      "source": 11,
-      "target": 45,
-      "source_name": "李福英",
-      "target_name": "徐明勋",
+      "source": 10,
+      "target": 15,
+      "source_name": "和向英",
+      "target_name": "计成林",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 10,
+      "target": 41,
+      "source_name": "和向英",
+      "target_name": "何婷",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 10,
+      "target": 40,
+      "source_name": "和向英",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 10,
+      "target": 48,
+      "source_name": "和向英",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 11,
-      "target": 44,
+      "target": 22,
       "source_name": "李福英",
-      "target_name": "杞静梅",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 11,
-      "target": 31,
-      "source_name": "李福英",
-      "target_name": "李禹辰",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 11,
-      "target": 30,
-      "source_name": "李福英",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 11,
-      "target": 12,
-      "source_name": "李福英",
-      "target_name": "胡艳兴",
+      "target_name": "陈冠豪",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2159,17 +2127,25 @@
     },
     {
       "source": 11,
-      "target": 48,
+      "target": 44,
       "source_name": "李福英",
-      "target_name": "段建香",
+      "target_name": "杞静梅",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 11,
-      "target": 15,
+      "target": 33,
       "source_name": "李福英",
-      "target_name": "计成林",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 11,
+      "target": 10,
+      "source_name": "李福英",
+      "target_name": "和向英",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2183,49 +2159,25 @@
     },
     {
       "source": 11,
-      "target": 8,
+      "target": 12,
       "source_name": "李福英",
-      "target_name": "蔡美云",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 11,
-      "target": 10,
+      "target": 31,
       "source_name": "李福英",
-      "target_name": "和向英",
+      "target_name": "李禹辰",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 11,
-      "target": 41,
+      "target": 30,
       "source_name": "李福英",
-      "target_name": "何婷",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 11,
-      "target": 33,
-      "source_name": "李福英",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 11,
-      "target": 43,
-      "source_name": "李福英",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 11,
-      "target": 40,
-      "source_name": "李福英",
-      "target_name": "宋沁奕",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2239,9 +2191,9 @@
     },
     {
       "source": 11,
-      "target": 22,
+      "target": 8,
       "source_name": "李福英",
-      "target_name": "陈冠豪",
+      "target_name": "蔡美云",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2255,9 +2207,41 @@
     },
     {
       "source": 11,
+      "target": 45,
+      "source_name": "李福英",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 11,
+      "target": 43,
+      "source_name": "李福英",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 11,
       "target": 0,
       "source_name": "李福英",
       "target_name": "邢启德",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 11,
+      "target": 15,
+      "source_name": "李福英",
+      "target_name": "计成林",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 11,
+      "target": 41,
+      "source_name": "李福英",
+      "target_name": "何婷",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2270,10 +2254,34 @@
       "type": "friendship"
     },
     {
+      "source": 11,
+      "target": 40,
+      "source_name": "李福英",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 11,
+      "target": 48,
+      "source_name": "李福英",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
       "source": 12,
-      "target": 45,
+      "target": 22,
       "source_name": "胡艳兴",
-      "target_name": "徐明勋",
+      "target_name": "陈冠豪",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 12,
+      "target": 21,
+      "source_name": "胡艳兴",
+      "target_name": "吴桦正",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2282,6 +2290,30 @@
       "target": 44,
       "source_name": "胡艳兴",
       "target_name": "杞静梅",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 12,
+      "target": 24,
+      "source_name": "胡艳兴",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 12,
+      "target": 33,
+      "source_name": "胡艳兴",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 12,
+      "target": 10,
+      "source_name": "胡艳兴",
+      "target_name": "和向英",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2303,41 +2335,9 @@
     },
     {
       "source": 12,
-      "target": 21,
+      "target": 14,
       "source_name": "胡艳兴",
-      "target_name": "吴桦正",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 12,
-      "target": 48,
-      "source_name": "胡艳兴",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 12,
-      "target": 15,
-      "source_name": "胡艳兴",
-      "target_name": "计成林",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 12,
-      "target": 24,
-      "source_name": "胡艳兴",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 12,
-      "target": 11,
-      "source_name": "胡艳兴",
-      "target_name": "李福英",
+      "target_name": "龙翼鸿",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2351,25 +2351,25 @@
     },
     {
       "source": 12,
-      "target": 10,
+      "target": 20,
       "source_name": "胡艳兴",
-      "target_name": "和向英",
+      "target_name": "张昌旺",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 12,
-      "target": 41,
+      "target": 11,
       "source_name": "胡艳兴",
-      "target_name": "何婷",
+      "target_name": "李福英",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 12,
-      "target": 33,
+      "target": 45,
       "source_name": "胡艳兴",
-      "target_name": "陈杨东",
+      "target_name": "徐明勋",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2383,41 +2383,25 @@
     },
     {
       "source": 12,
-      "target": 40,
-      "source_name": "胡艳兴",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 12,
-      "target": 14,
-      "source_name": "胡艳兴",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 12,
-      "target": 22,
-      "source_name": "胡艳兴",
-      "target_name": "陈冠豪",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 12,
-      "target": 20,
-      "source_name": "胡艳兴",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 12,
       "target": 0,
       "source_name": "胡艳兴",
       "target_name": "邢启德",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "source_name": "胡艳兴",
+      "target_name": "计成林",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 12,
+      "target": 41,
+      "source_name": "胡艳兴",
+      "target_name": "何婷",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2430,10 +2414,34 @@
       "type": "friendship"
     },
     {
+      "source": 12,
+      "target": 40,
+      "source_name": "胡艳兴",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 12,
+      "target": 48,
+      "source_name": "胡艳兴",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
       "source": 13,
-      "target": 45,
+      "target": 22,
       "source_name": "戴国君",
-      "target_name": "徐明勋",
+      "target_name": "陈冠豪",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 13,
+      "target": 21,
+      "source_name": "戴国君",
+      "target_name": "吴桦正",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2442,6 +2450,38 @@
       "target": 44,
       "source_name": "戴国君",
       "target_name": "杞静梅",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 13,
+      "target": 24,
+      "source_name": "戴国君",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 13,
+      "target": 33,
+      "source_name": "戴国君",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 13,
+      "target": 10,
+      "source_name": "戴国君",
+      "target_name": "和向英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 13,
+      "target": 12,
+      "source_name": "戴国君",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2463,49 +2503,9 @@
     },
     {
       "source": 13,
-      "target": 12,
+      "target": 14,
       "source_name": "戴国君",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 13,
-      "target": 21,
-      "source_name": "戴国君",
-      "target_name": "吴桦正",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 13,
-      "target": 48,
-      "source_name": "戴国君",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 13,
-      "target": 15,
-      "source_name": "戴国君",
-      "target_name": "计成林",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 13,
-      "target": 24,
-      "source_name": "戴国君",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 13,
-      "target": 11,
-      "source_name": "戴国君",
-      "target_name": "李福英",
+      "target_name": "龙翼鸿",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2519,9 +2519,49 @@
     },
     {
       "source": 13,
-      "target": 10,
+      "target": 20,
       "source_name": "戴国君",
-      "target_name": "和向英",
+      "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 13,
+      "target": 11,
+      "source_name": "戴国君",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 13,
+      "target": 45,
+      "source_name": "戴国君",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 13,
+      "target": 43,
+      "source_name": "戴国君",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 13,
+      "target": 0,
+      "source_name": "戴国君",
+      "target_name": "邢启德",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "source_name": "戴国君",
+      "target_name": "计成林",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2535,62 +2575,6 @@
     },
     {
       "source": 13,
-      "target": 33,
-      "source_name": "戴国君",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 13,
-      "target": 43,
-      "source_name": "戴国君",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 13,
-      "target": 40,
-      "source_name": "戴国君",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 13,
-      "target": 14,
-      "source_name": "戴国君",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 13,
-      "target": 22,
-      "source_name": "戴国君",
-      "target_name": "陈冠豪",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 13,
-      "target": 20,
-      "source_name": "戴国君",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 13,
-      "target": 0,
-      "source_name": "戴国君",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 13,
       "target": 19,
       "source_name": "戴国君",
       "target_name": "牛戌伍",
@@ -2598,26 +2582,18 @@
       "type": "friendship"
     },
     {
-      "source": 14,
-      "target": 33,
-      "source_name": "龙翼鸿",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 14,
-      "target": 43,
-      "source_name": "龙翼鸿",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 14,
+      "source": 13,
       "target": 40,
-      "source_name": "龙翼鸿",
+      "source_name": "戴国君",
       "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 13,
+      "target": 48,
+      "source_name": "戴国君",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2631,9 +2607,25 @@
     },
     {
       "source": 14,
-      "target": 17,
+      "target": 33,
       "source_name": "龙翼鸿",
-      "target_name": "李家辉",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 14,
+      "target": 20,
+      "source_name": "龙翼鸿",
+      "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "source_name": "龙翼鸿",
+      "target_name": "计成林",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2647,9 +2639,9 @@
     },
     {
       "source": 14,
-      "target": 30,
+      "target": 43,
       "source_name": "龙翼鸿",
-      "target_name": "王晶",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2663,25 +2655,33 @@
     },
     {
       "source": 14,
-      "target": 20,
+      "target": 17,
       "source_name": "龙翼鸿",
-      "target_name": "张昌旺",
+      "target_name": "李家辉",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 14,
-      "target": 48,
+      "target": 30,
       "source_name": "龙翼鸿",
-      "target_name": "段建香",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 14,
-      "target": 15,
+      "target": 19,
       "source_name": "龙翼鸿",
-      "target_name": "计成林",
+      "target_name": "牛戌伍",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 14,
+      "target": 40,
+      "source_name": "龙翼鸿",
+      "target_name": "宋沁奕",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2695,9 +2695,25 @@
     },
     {
       "source": 14,
-      "target": 19,
+      "target": 48,
       "source_name": "龙翼鸿",
-      "target_name": "牛戌伍",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 15,
+      "target": 14,
+      "source_name": "计成林",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 15,
+      "target": 0,
+      "source_name": "计成林",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2711,9 +2727,9 @@
     },
     {
       "source": 15,
-      "target": 43,
+      "target": 20,
       "source_name": "计成林",
-      "target_name": "高佛银",
+      "target_name": "张昌旺",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2735,38 +2751,6 @@
     },
     {
       "source": 15,
-      "target": 0,
-      "source_name": "计成林",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 15,
-      "target": 40,
-      "source_name": "计成林",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 15,
-      "target": 17,
-      "source_name": "计成林",
-      "target_name": "李家辉",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 15,
-      "target": 30,
-      "source_name": "计成林",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 15,
       "target": 12,
       "source_name": "计成林",
       "target_name": "胡艳兴",
@@ -2775,9 +2759,17 @@
     },
     {
       "source": 15,
-      "target": 14,
+      "target": 43,
       "source_name": "计成林",
-      "target_name": "龙翼鸿",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 15,
+      "target": 30,
+      "source_name": "计成林",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2791,17 +2783,25 @@
     },
     {
       "source": 15,
-      "target": 20,
+      "target": 17,
       "source_name": "计成林",
-      "target_name": "张昌旺",
+      "target_name": "李家辉",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 15,
-      "target": 48,
+      "target": 19,
       "source_name": "计成林",
-      "target_name": "段建香",
+      "target_name": "牛戌伍",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 15,
+      "target": 40,
+      "source_name": "计成林",
+      "target_name": "宋沁奕",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2815,33 +2815,17 @@
     },
     {
       "source": 15,
-      "target": 19,
+      "target": 48,
       "source_name": "计成林",
-      "target_name": "牛戌伍",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 16,
-      "target": 26,
+      "target": 22,
       "source_name": "陆贤斌",
-      "target_name": "张雄涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 16,
-      "target": 12,
-      "source_name": "陆贤斌",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 16,
-      "target": 30,
-      "source_name": "陆贤斌",
-      "target_name": "王晶",
+      "target_name": "陈冠豪",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2855,17 +2839,9 @@
     },
     {
       "source": 16,
-      "target": 48,
+      "target": 25,
       "source_name": "陆贤斌",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 16,
-      "target": 15,
-      "source_name": "陆贤斌",
-      "target_name": "计成林",
+      "target_name": "李文卿",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2879,17 +2855,9 @@
     },
     {
       "source": 16,
-      "target": 17,
+      "target": 46,
       "source_name": "陆贤斌",
-      "target_name": "李家辉",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 16,
-      "target": 25,
-      "source_name": "陆贤斌",
-      "target_name": "李文卿",
+      "target_name": "陈思含",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2911,14 +2879,6 @@
     },
     {
       "source": 16,
-      "target": 43,
-      "source_name": "陆贤斌",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 16,
       "target": 23,
       "source_name": "陆贤斌",
       "target_name": "白新杰",
@@ -2927,17 +2887,17 @@
     },
     {
       "source": 16,
-      "target": 40,
+      "target": 12,
       "source_name": "陆贤斌",
-      "target_name": "宋沁奕",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 16,
-      "target": 14,
+      "target": 30,
       "source_name": "陆贤斌",
-      "target_name": "龙翼鸿",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2951,9 +2911,9 @@
     },
     {
       "source": 16,
-      "target": 22,
+      "target": 14,
       "source_name": "陆贤斌",
-      "target_name": "陈冠豪",
+      "target_name": "龙翼鸿",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2967,6 +2927,22 @@
     },
     {
       "source": 16,
+      "target": 26,
+      "source_name": "陆贤斌",
+      "target_name": "张雄涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 16,
+      "target": 43,
+      "source_name": "陆贤斌",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 16,
       "target": 0,
       "source_name": "陆贤斌",
       "target_name": "邢启德",
@@ -2975,9 +2951,17 @@
     },
     {
       "source": 16,
-      "target": 46,
+      "target": 15,
       "source_name": "陆贤斌",
-      "target_name": "陈思含",
+      "target_name": "计成林",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "source_name": "陆贤斌",
+      "target_name": "李家辉",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2986,6 +2970,38 @@
       "target": 19,
       "source_name": "陆贤斌",
       "target_name": "牛戌伍",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 16,
+      "target": 40,
+      "source_name": "陆贤斌",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 16,
+      "target": 48,
+      "source_name": "陆贤斌",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 17,
+      "target": 14,
+      "source_name": "李家辉",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 17,
+      "target": 0,
+      "source_name": "李家辉",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -2999,73 +3015,9 @@
     },
     {
       "source": 17,
-      "target": 43,
-      "source_name": "李家辉",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 17,
-      "target": 40,
-      "source_name": "李家辉",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 17,
-      "target": 0,
-      "source_name": "李家辉",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 17,
-      "target": 42,
-      "source_name": "李家辉",
-      "target_name": "代文博",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 17,
-      "target": 30,
-      "source_name": "李家辉",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 17,
-      "target": 12,
-      "source_name": "李家辉",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 17,
-      "target": 14,
-      "source_name": "李家辉",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 17,
       "target": 28,
       "source_name": "李家辉",
       "target_name": "陆俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 17,
-      "target": 18,
-      "source_name": "李家辉",
-      "target_name": "孙仁策",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3079,14 +3031,6 @@
     },
     {
       "source": 17,
-      "target": 29,
-      "source_name": "李家辉",
-      "target_name": "张志龙",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 17,
       "target": 15,
       "source_name": "李家辉",
       "target_name": "计成林",
@@ -3095,9 +3039,65 @@
     },
     {
       "source": 17,
-      "target": 48,
+      "target": 42,
       "source_name": "李家辉",
-      "target_name": "段建香",
+      "target_name": "代文博",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 17,
+      "target": 12,
+      "source_name": "李家辉",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 17,
+      "target": 29,
+      "source_name": "李家辉",
+      "target_name": "张志龙",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 17,
+      "target": 43,
+      "source_name": "李家辉",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 17,
+      "target": 30,
+      "source_name": "李家辉",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "source_name": "李家辉",
+      "target_name": "孙仁策",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "source_name": "李家辉",
+      "target_name": "牛戌伍",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 17,
+      "target": 40,
+      "source_name": "李家辉",
+      "target_name": "宋沁奕",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3111,17 +3111,9 @@
     },
     {
       "source": 17,
-      "target": 19,
+      "target": 48,
       "source_name": "李家辉",
-      "target_name": "牛戌伍",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 18,
-      "target": 45,
-      "source_name": "孙仁策",
-      "target_name": "徐明勋",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3130,6 +3122,22 @@
       "target": 44,
       "source_name": "孙仁策",
       "target_name": "杞静梅",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 18,
+      "target": 33,
+      "source_name": "孙仁策",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 18,
+      "target": 10,
+      "source_name": "孙仁策",
+      "target_name": "和向英",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3151,17 +3159,17 @@
     },
     {
       "source": 18,
-      "target": 48,
+      "target": 14,
       "source_name": "孙仁策",
-      "target_name": "段建香",
+      "target_name": "龙翼鸿",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 18,
-      "target": 15,
+      "target": 20,
       "source_name": "孙仁策",
-      "target_name": "计成林",
+      "target_name": "张昌旺",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3175,41 +3183,9 @@
     },
     {
       "source": 18,
-      "target": 10,
+      "target": 45,
       "source_name": "孙仁策",
-      "target_name": "和向英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 18,
-      "target": 17,
-      "source_name": "孙仁策",
-      "target_name": "李家辉",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 18,
-      "target": 16,
-      "source_name": "孙仁策",
-      "target_name": "陆贤斌",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 18,
-      "target": 41,
-      "source_name": "孙仁策",
-      "target_name": "何婷",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 18,
-      "target": 33,
-      "source_name": "孙仁策",
-      "target_name": "陈杨东",
+      "target_name": "徐明勋",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3223,33 +3199,33 @@
     },
     {
       "source": 18,
-      "target": 40,
-      "source_name": "孙仁策",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 18,
-      "target": 14,
-      "source_name": "孙仁策",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 18,
-      "target": 20,
-      "source_name": "孙仁策",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 18,
       "target": 0,
       "source_name": "孙仁策",
       "target_name": "邢启德",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 18,
+      "target": 15,
+      "source_name": "孙仁策",
+      "target_name": "计成林",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 18,
+      "target": 41,
+      "source_name": "孙仁策",
+      "target_name": "何婷",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 18,
+      "target": 17,
+      "source_name": "孙仁策",
+      "target_name": "李家辉",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3262,10 +3238,26 @@
       "type": "friendship"
     },
     {
-      "source": 19,
-      "target": 45,
-      "source_name": "牛戌伍",
-      "target_name": "徐明勋",
+      "source": 18,
+      "target": 40,
+      "source_name": "孙仁策",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 18,
+      "target": 16,
+      "source_name": "孙仁策",
+      "target_name": "陆贤斌",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 18,
+      "target": 48,
+      "source_name": "孙仁策",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3279,9 +3271,17 @@
     },
     {
       "source": 19,
-      "target": 30,
+      "target": 33,
       "source_name": "牛戌伍",
-      "target_name": "王晶",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 19,
+      "target": 10,
+      "source_name": "牛戌伍",
+      "target_name": "和向英",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3295,9 +3295,65 @@
     },
     {
       "source": 19,
-      "target": 48,
+      "target": 30,
       "source_name": "牛戌伍",
-      "target_name": "段建香",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 19,
+      "target": 18,
+      "source_name": "牛戌伍",
+      "target_name": "孙仁策",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 19,
+      "target": 14,
+      "source_name": "牛戌伍",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "source_name": "牛戌伍",
+      "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 19,
+      "target": 11,
+      "source_name": "牛戌伍",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 19,
+      "target": 45,
+      "source_name": "牛戌伍",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 19,
+      "target": 43,
+      "source_name": "牛戌伍",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 19,
+      "target": 0,
+      "source_name": "牛戌伍",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3311,17 +3367,9 @@
     },
     {
       "source": 19,
-      "target": 11,
+      "target": 41,
       "source_name": "牛戌伍",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 19,
-      "target": 10,
-      "source_name": "牛戌伍",
-      "target_name": "和向英",
+      "target_name": "何婷",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3335,38 +3383,6 @@
     },
     {
       "source": 19,
-      "target": 16,
-      "source_name": "牛戌伍",
-      "target_name": "陆贤斌",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 19,
-      "target": 41,
-      "source_name": "牛戌伍",
-      "target_name": "何婷",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 19,
-      "target": 33,
-      "source_name": "牛戌伍",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 19,
-      "target": 43,
-      "source_name": "牛戌伍",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 19,
       "target": 40,
       "source_name": "牛戌伍",
       "target_name": "宋沁奕",
@@ -3375,41 +3391,17 @@
     },
     {
       "source": 19,
-      "target": 14,
+      "target": 16,
       "source_name": "牛戌伍",
-      "target_name": "龙翼鸿",
+      "target_name": "陆贤斌",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 19,
-      "target": 18,
+      "target": 48,
       "source_name": "牛戌伍",
-      "target_name": "孙仁策",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 19,
-      "target": 20,
-      "source_name": "牛戌伍",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 19,
-      "target": 0,
-      "source_name": "牛戌伍",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 20,
-      "target": 45,
-      "source_name": "张昌旺",
-      "target_name": "徐明勋",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3418,6 +3410,22 @@
       "target": 44,
       "source_name": "张昌旺",
       "target_name": "杞静梅",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 20,
+      "target": 33,
+      "source_name": "张昌旺",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 20,
+      "target": 10,
+      "source_name": "张昌旺",
+      "target_name": "和向英",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3439,9 +3447,33 @@
     },
     {
       "source": 20,
+      "target": 18,
+      "source_name": "张昌旺",
+      "target_name": "孙仁策",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 20,
+      "target": 14,
+      "source_name": "张昌旺",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 20,
       "target": 28,
       "source_name": "张昌旺",
       "target_name": "陆俊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 20,
+      "target": 45,
+      "source_name": "张昌旺",
+      "target_name": "徐明勋",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3455,9 +3487,17 @@
     },
     {
       "source": 20,
-      "target": 48,
+      "target": 43,
       "source_name": "张昌旺",
-      "target_name": "段建香",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 20,
+      "target": 0,
+      "source_name": "张昌旺",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3471,25 +3511,9 @@
     },
     {
       "source": 20,
-      "target": 10,
+      "target": 42,
       "source_name": "张昌旺",
-      "target_name": "和向英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 20,
-      "target": 17,
-      "source_name": "张昌旺",
-      "target_name": "李家辉",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 20,
-      "target": 16,
-      "source_name": "张昌旺",
-      "target_name": "陆贤斌",
+      "target_name": "代文博",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3503,17 +3527,17 @@
     },
     {
       "source": 20,
-      "target": 33,
+      "target": 17,
       "source_name": "张昌旺",
-      "target_name": "陈杨东",
+      "target_name": "李家辉",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 20,
-      "target": 43,
+      "target": 19,
       "source_name": "张昌旺",
-      "target_name": "高佛银",
+      "target_name": "牛戌伍",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3527,49 +3551,25 @@
     },
     {
       "source": 20,
-      "target": 42,
+      "target": 16,
       "source_name": "张昌旺",
-      "target_name": "代文博",
+      "target_name": "陆贤斌",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 20,
-      "target": 14,
+      "target": 48,
       "source_name": "张昌旺",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 20,
-      "target": 18,
-      "source_name": "张昌旺",
-      "target_name": "孙仁策",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 20,
-      "target": 0,
-      "source_name": "张昌旺",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 20,
-      "target": 19,
-      "source_name": "张昌旺",
-      "target_name": "牛戌伍",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 21,
-      "target": 45,
+      "target": 22,
       "source_name": "吴桦正",
-      "target_name": "徐明勋",
+      "target_name": "陈冠豪",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3583,17 +3583,57 @@
     },
     {
       "source": 21,
-      "target": 26,
+      "target": 25,
       "source_name": "吴桦正",
-      "target_name": "张雄涛",
+      "target_name": "李文卿",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 21,
-      "target": 30,
+      "target": 24,
       "source_name": "吴桦正",
-      "target_name": "王晶",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 21,
+      "target": 46,
+      "source_name": "吴桦正",
+      "target_name": "陈思含",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 21,
+      "target": 27,
+      "source_name": "吴桦正",
+      "target_name": "囊恩爽",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 21,
+      "target": 33,
+      "source_name": "吴桦正",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 21,
+      "target": 10,
+      "source_name": "吴桦正",
+      "target_name": "和向英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "source_name": "吴桦正",
+      "target_name": "白新杰",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3607,17 +3647,25 @@
     },
     {
       "source": 21,
-      "target": 48,
+      "target": 30,
       "source_name": "吴桦正",
-      "target_name": "段建香",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 21,
-      "target": 24,
+      "target": 20,
       "source_name": "吴桦正",
-      "target_name": "杨磊",
+      "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 21,
+      "target": 26,
+      "source_name": "吴桦正",
+      "target_name": "张雄涛",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3631,25 +3679,25 @@
     },
     {
       "source": 21,
-      "target": 10,
+      "target": 45,
       "source_name": "吴桦正",
-      "target_name": "和向英",
+      "target_name": "徐明勋",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 21,
-      "target": 25,
+      "target": 43,
       "source_name": "吴桦正",
-      "target_name": "李文卿",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 21,
-      "target": 27,
+      "target": 0,
       "source_name": "吴桦正",
-      "target_name": "囊恩爽",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3663,30 +3711,6 @@
     },
     {
       "source": 21,
-      "target": 33,
-      "source_name": "吴桦正",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 21,
-      "target": 43,
-      "source_name": "吴桦正",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 21,
-      "target": 23,
-      "source_name": "吴桦正",
-      "target_name": "白新杰",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 21,
       "target": 40,
       "source_name": "吴桦正",
       "target_name": "宋沁奕",
@@ -3695,41 +3719,9 @@
     },
     {
       "source": 21,
-      "target": 22,
+      "target": 48,
       "source_name": "吴桦正",
-      "target_name": "陈冠豪",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 21,
-      "target": 20,
-      "source_name": "吴桦正",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 21,
-      "target": 0,
-      "source_name": "吴桦正",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 21,
-      "target": 46,
-      "source_name": "吴桦正",
-      "target_name": "陈思含",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 22,
-      "target": 45,
-      "source_name": "陈冠豪",
-      "target_name": "徐明勋",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3743,33 +3735,9 @@
     },
     {
       "source": 22,
-      "target": 26,
+      "target": 25,
       "source_name": "陈冠豪",
-      "target_name": "张雄涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 22,
-      "target": 12,
-      "source_name": "陈冠豪",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 22,
-      "target": 30,
-      "source_name": "陈冠豪",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 22,
-      "target": 48,
-      "source_name": "陈冠豪",
-      "target_name": "段建香",
+      "target_name": "李文卿",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3783,17 +3751,9 @@
     },
     {
       "source": 22,
-      "target": 10,
+      "target": 46,
       "source_name": "陈冠豪",
-      "target_name": "和向英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 22,
-      "target": 25,
-      "source_name": "陈冠豪",
-      "target_name": "李文卿",
+      "target_name": "陈思含",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3815,9 +3775,9 @@
     },
     {
       "source": 22,
-      "target": 43,
+      "target": 10,
       "source_name": "陈冠豪",
-      "target_name": "高佛银",
+      "target_name": "和向英",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3831,9 +3791,17 @@
     },
     {
       "source": 22,
-      "target": 40,
+      "target": 12,
       "source_name": "陈冠豪",
-      "target_name": "宋沁奕",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 22,
+      "target": 30,
+      "source_name": "陈冠豪",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3847,6 +3815,30 @@
     },
     {
       "source": 22,
+      "target": 26,
+      "source_name": "陈冠豪",
+      "target_name": "张雄涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 22,
+      "target": 45,
+      "source_name": "陈冠豪",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 22,
+      "target": 43,
+      "source_name": "陈冠豪",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 22,
       "target": 0,
       "source_name": "陈冠豪",
       "target_name": "邢启德",
@@ -3855,9 +3847,25 @@
     },
     {
       "source": 22,
-      "target": 46,
+      "target": 40,
       "source_name": "陈冠豪",
-      "target_name": "陈思含",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 22,
+      "target": 48,
+      "source_name": "陈冠豪",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 23,
+      "target": 22,
+      "source_name": "白新杰",
+      "target_name": "陈冠豪",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3871,17 +3879,41 @@
     },
     {
       "source": 23,
-      "target": 26,
+      "target": 25,
       "source_name": "白新杰",
-      "target_name": "张雄涛",
+      "target_name": "李文卿",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 23,
-      "target": 30,
+      "target": 24,
       "source_name": "白新杰",
-      "target_name": "王晶",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 23,
+      "target": 46,
+      "source_name": "白新杰",
+      "target_name": "陈思含",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 23,
+      "target": 27,
+      "source_name": "白新杰",
+      "target_name": "囊恩爽",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 23,
+      "target": 33,
+      "source_name": "白新杰",
+      "target_name": "陈杨东",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3895,17 +3927,25 @@
     },
     {
       "source": 23,
-      "target": 48,
+      "target": 30,
       "source_name": "白新杰",
-      "target_name": "段建香",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 23,
-      "target": 24,
+      "target": 20,
       "source_name": "白新杰",
-      "target_name": "杨磊",
+      "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 23,
+      "target": 26,
+      "source_name": "白新杰",
+      "target_name": "张雄涛",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3919,17 +3959,17 @@
     },
     {
       "source": 23,
-      "target": 25,
+      "target": 43,
       "source_name": "白新杰",
-      "target_name": "李文卿",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 23,
-      "target": 27,
+      "target": 0,
       "source_name": "白新杰",
-      "target_name": "囊恩爽",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -3943,22 +3983,6 @@
     },
     {
       "source": 23,
-      "target": 33,
-      "source_name": "白新杰",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 23,
-      "target": 43,
-      "source_name": "白新杰",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 23,
       "target": 40,
       "source_name": "白新杰",
       "target_name": "宋沁奕",
@@ -3967,81 +3991,17 @@
     },
     {
       "source": 23,
-      "target": 22,
-      "source_name": "白新杰",
-      "target_name": "陈冠豪",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 23,
-      "target": 20,
-      "source_name": "白新杰",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 23,
-      "target": 0,
-      "source_name": "白新杰",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 23,
-      "target": 46,
-      "source_name": "白新杰",
-      "target_name": "陈思含",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 24,
-      "target": 26,
-      "source_name": "杨磊",
-      "target_name": "张雄涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 24,
-      "target": 12,
-      "source_name": "杨磊",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 24,
-      "target": 30,
-      "source_name": "杨磊",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 24,
-      "target": 28,
-      "source_name": "杨磊",
-      "target_name": "陆俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 24,
-      "target": 29,
-      "source_name": "杨磊",
-      "target_name": "张志龙",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 24,
       "target": 48,
-      "source_name": "杨磊",
+      "source_name": "白新杰",
       "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 24,
+      "target": 22,
+      "source_name": "杨磊",
+      "target_name": "陈冠豪",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4050,6 +4010,14 @@
       "target": 25,
       "source_name": "杨磊",
       "target_name": "李文卿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 24,
+      "target": 46,
+      "source_name": "杨磊",
+      "target_name": "陈思含",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4071,14 +4039,6 @@
     },
     {
       "source": 24,
-      "target": 43,
-      "source_name": "杨磊",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 24,
       "target": 23,
       "source_name": "杨磊",
       "target_name": "白新杰",
@@ -4087,25 +4047,25 @@
     },
     {
       "source": 24,
-      "target": 40,
+      "target": 12,
       "source_name": "杨磊",
-      "target_name": "宋沁奕",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 24,
-      "target": 42,
+      "target": 30,
       "source_name": "杨磊",
-      "target_name": "代文博",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 24,
-      "target": 22,
+      "target": 28,
       "source_name": "杨磊",
-      "target_name": "陈冠豪",
+      "target_name": "陆俊",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4119,6 +4079,30 @@
     },
     {
       "source": 24,
+      "target": 26,
+      "source_name": "杨磊",
+      "target_name": "张雄涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 24,
+      "target": 29,
+      "source_name": "杨磊",
+      "target_name": "张志龙",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 24,
+      "target": 43,
+      "source_name": "杨磊",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 24,
       "target": 0,
       "source_name": "杨磊",
       "target_name": "邢启德",
@@ -4127,17 +4111,33 @@
     },
     {
       "source": 24,
-      "target": 46,
+      "target": 42,
       "source_name": "杨磊",
-      "target_name": "陈思含",
+      "target_name": "代文博",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 24,
+      "target": 40,
+      "source_name": "杨磊",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 24,
+      "target": 48,
+      "source_name": "杨磊",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 25,
-      "target": 45,
+      "target": 22,
       "source_name": "李文卿",
-      "target_name": "徐明勋",
+      "target_name": "陈冠豪",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4151,54 +4151,6 @@
     },
     {
       "source": 25,
-      "target": 26,
-      "source_name": "李文卿",
-      "target_name": "张雄涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 25,
-      "target": 12,
-      "source_name": "李文卿",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 25,
-      "target": 30,
-      "source_name": "李文卿",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 25,
-      "target": 28,
-      "source_name": "李文卿",
-      "target_name": "陆俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 25,
-      "target": 29,
-      "source_name": "李文卿",
-      "target_name": "张志龙",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 25,
-      "target": 48,
-      "source_name": "李文卿",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 25,
       "target": 24,
       "source_name": "李文卿",
       "target_name": "杨磊",
@@ -4207,9 +4159,9 @@
     },
     {
       "source": 25,
-      "target": 10,
+      "target": 46,
       "source_name": "李文卿",
-      "target_name": "和向英",
+      "target_name": "陈思含",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4231,9 +4183,9 @@
     },
     {
       "source": 25,
-      "target": 43,
+      "target": 10,
       "source_name": "李文卿",
-      "target_name": "高佛银",
+      "target_name": "和向英",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4247,25 +4199,25 @@
     },
     {
       "source": 25,
-      "target": 40,
+      "target": 12,
       "source_name": "李文卿",
-      "target_name": "宋沁奕",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 25,
-      "target": 42,
+      "target": 30,
       "source_name": "李文卿",
-      "target_name": "代文博",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 25,
-      "target": 22,
+      "target": 28,
       "source_name": "李文卿",
-      "target_name": "陈冠豪",
+      "target_name": "陆俊",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4279,6 +4231,38 @@
     },
     {
       "source": 25,
+      "target": 26,
+      "source_name": "李文卿",
+      "target_name": "张雄涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 25,
+      "target": 45,
+      "source_name": "李文卿",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 25,
+      "target": 29,
+      "source_name": "李文卿",
+      "target_name": "张志龙",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 25,
+      "target": 43,
+      "source_name": "李文卿",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 25,
       "target": 0,
       "source_name": "李文卿",
       "target_name": "邢启德",
@@ -4287,17 +4271,33 @@
     },
     {
       "source": 25,
-      "target": 46,
+      "target": 42,
       "source_name": "李文卿",
-      "target_name": "陈思含",
+      "target_name": "代文博",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 25,
+      "target": 40,
+      "source_name": "李文卿",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 25,
+      "target": 48,
+      "source_name": "李文卿",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 26,
-      "target": 45,
+      "target": 22,
       "source_name": "张雄涛",
-      "target_name": "徐明勋",
+      "target_name": "陈冠豪",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4311,41 +4311,9 @@
     },
     {
       "source": 26,
-      "target": 12,
+      "target": 25,
       "source_name": "张雄涛",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 26,
-      "target": 30,
-      "source_name": "张雄涛",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 26,
-      "target": 28,
-      "source_name": "张雄涛",
-      "target_name": "陆俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 26,
-      "target": 29,
-      "source_name": "张雄涛",
-      "target_name": "张志龙",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 26,
-      "target": 48,
-      "source_name": "张雄涛",
-      "target_name": "段建香",
+      "target_name": "李文卿",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4359,17 +4327,9 @@
     },
     {
       "source": 26,
-      "target": 10,
+      "target": 46,
       "source_name": "张雄涛",
-      "target_name": "和向英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 26,
-      "target": 25,
-      "source_name": "张雄涛",
-      "target_name": "李文卿",
+      "target_name": "陈思含",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4391,9 +4351,9 @@
     },
     {
       "source": 26,
-      "target": 43,
+      "target": 10,
       "source_name": "张雄涛",
-      "target_name": "高佛银",
+      "target_name": "和向英",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4407,25 +4367,25 @@
     },
     {
       "source": 26,
-      "target": 40,
+      "target": 12,
       "source_name": "张雄涛",
-      "target_name": "宋沁奕",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 26,
-      "target": 42,
+      "target": 30,
       "source_name": "张雄涛",
-      "target_name": "代文博",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 26,
-      "target": 22,
+      "target": 28,
       "source_name": "张雄涛",
-      "target_name": "陈冠豪",
+      "target_name": "陆俊",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4439,6 +4399,30 @@
     },
     {
       "source": 26,
+      "target": 45,
+      "source_name": "张雄涛",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 26,
+      "target": 29,
+      "source_name": "张雄涛",
+      "target_name": "张志龙",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 26,
+      "target": 43,
+      "source_name": "张雄涛",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 26,
       "target": 0,
       "source_name": "张雄涛",
       "target_name": "邢启德",
@@ -4447,17 +4431,33 @@
     },
     {
       "source": 26,
-      "target": 46,
+      "target": 42,
       "source_name": "张雄涛",
-      "target_name": "陈思含",
+      "target_name": "代文博",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 26,
+      "target": 40,
+      "source_name": "张雄涛",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 26,
+      "target": 48,
+      "source_name": "张雄涛",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 27,
-      "target": 45,
+      "target": 22,
       "source_name": "囊恩爽",
-      "target_name": "徐明勋",
+      "target_name": "陈冠豪",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4471,9 +4471,49 @@
     },
     {
       "source": 27,
-      "target": 26,
+      "target": 25,
       "source_name": "囊恩爽",
-      "target_name": "张雄涛",
+      "target_name": "李文卿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 27,
+      "target": 24,
+      "source_name": "囊恩爽",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 27,
+      "target": 46,
+      "source_name": "囊恩爽",
+      "target_name": "陈思含",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 27,
+      "target": 33,
+      "source_name": "囊恩爽",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 27,
+      "target": 10,
+      "source_name": "囊恩爽",
+      "target_name": "和向英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 27,
+      "target": 23,
+      "source_name": "囊恩爽",
+      "target_name": "白新杰",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4495,94 +4535,6 @@
     },
     {
       "source": 27,
-      "target": 28,
-      "source_name": "囊恩爽",
-      "target_name": "陆俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 27,
-      "target": 48,
-      "source_name": "囊恩爽",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 27,
-      "target": 24,
-      "source_name": "囊恩爽",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 27,
-      "target": 10,
-      "source_name": "囊恩爽",
-      "target_name": "和向英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 27,
-      "target": 17,
-      "source_name": "囊恩爽",
-      "target_name": "李家辉",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 27,
-      "target": 25,
-      "source_name": "囊恩爽",
-      "target_name": "李文卿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 27,
-      "target": 16,
-      "source_name": "囊恩爽",
-      "target_name": "陆贤斌",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 27,
-      "target": 33,
-      "source_name": "囊恩爽",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 27,
-      "target": 43,
-      "source_name": "囊恩爽",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 27,
-      "target": 23,
-      "source_name": "囊恩爽",
-      "target_name": "白新杰",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 27,
-      "target": 40,
-      "source_name": "囊恩爽",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 27,
       "target": 18,
       "source_name": "囊恩爽",
       "target_name": "孙仁策",
@@ -4591,9 +4543,9 @@
     },
     {
       "source": 27,
-      "target": 22,
+      "target": 28,
       "source_name": "囊恩爽",
-      "target_name": "陈冠豪",
+      "target_name": "陆俊",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4607,6 +4559,30 @@
     },
     {
       "source": 27,
+      "target": 26,
+      "source_name": "囊恩爽",
+      "target_name": "张雄涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 27,
+      "target": 45,
+      "source_name": "囊恩爽",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 27,
+      "target": 43,
+      "source_name": "囊恩爽",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 27,
       "target": 0,
       "source_name": "囊恩爽",
       "target_name": "邢启德",
@@ -4615,9 +4591,9 @@
     },
     {
       "source": 27,
-      "target": 46,
+      "target": 17,
       "source_name": "囊恩爽",
-      "target_name": "陈思含",
+      "target_name": "李家辉",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4630,42 +4606,34 @@
       "type": "friendship"
     },
     {
-      "source": 28,
-      "target": 45,
-      "source_name": "陆俊",
-      "target_name": "徐明勋",
+      "source": 27,
+      "target": 40,
+      "source_name": "囊恩爽",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 27,
+      "target": 16,
+      "source_name": "囊恩爽",
+      "target_name": "陆贤斌",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 27,
+      "target": 48,
+      "source_name": "囊恩爽",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 28,
-      "target": 44,
+      "target": 46,
       "source_name": "陆俊",
-      "target_name": "杞静梅",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 28,
-      "target": 23,
-      "source_name": "陆俊",
-      "target_name": "白新杰",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 28,
-      "target": 26,
-      "source_name": "陆俊",
-      "target_name": "张雄涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 28,
-      "target": 42,
-      "source_name": "陆俊",
-      "target_name": "代文博",
+      "target_name": "陈思含",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4679,25 +4647,33 @@
     },
     {
       "source": 28,
-      "target": 17,
+      "target": 48,
       "source_name": "陆俊",
-      "target_name": "李家辉",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 28,
-      "target": 25,
+      "target": 26,
       "source_name": "陆俊",
-      "target_name": "李文卿",
+      "target_name": "张雄涛",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 28,
-      "target": 18,
+      "target": 23,
       "source_name": "陆俊",
-      "target_name": "孙仁策",
+      "target_name": "白新杰",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 28,
+      "target": 42,
+      "source_name": "陆俊",
+      "target_name": "代文博",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4706,6 +4682,14 @@
       "target": 22,
       "source_name": "陆俊",
       "target_name": "陈冠豪",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 28,
+      "target": 45,
+      "source_name": "陆俊",
+      "target_name": "徐明勋",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4719,17 +4703,41 @@
     },
     {
       "source": 28,
-      "target": 46,
+      "target": 18,
       "source_name": "陆俊",
-      "target_name": "陈思含",
+      "target_name": "孙仁策",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 28,
-      "target": 48,
+      "target": 17,
       "source_name": "陆俊",
-      "target_name": "段建香",
+      "target_name": "李家辉",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 28,
+      "target": 44,
+      "source_name": "陆俊",
+      "target_name": "杞静梅",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 28,
+      "target": 19,
+      "source_name": "陆俊",
+      "target_name": "牛戌伍",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 28,
+      "target": 25,
+      "source_name": "陆俊",
+      "target_name": "李文卿",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4750,22 +4758,6 @@
       "type": "friendship"
     },
     {
-      "source": 28,
-      "target": 19,
-      "source_name": "陆俊",
-      "target_name": "牛戌伍",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
-      "target": 45,
-      "source_name": "张志龙",
-      "target_name": "徐明勋",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
       "source": 29,
       "target": 44,
       "source_name": "张志龙",
@@ -4775,9 +4767,49 @@
     },
     {
       "source": 29,
-      "target": 26,
+      "target": 25,
       "source_name": "张志龙",
-      "target_name": "张雄涛",
+      "target_name": "李文卿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 29,
+      "target": 24,
+      "source_name": "张志龙",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 29,
+      "target": 46,
+      "source_name": "张志龙",
+      "target_name": "陈思含",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 29,
+      "target": 33,
+      "source_name": "张志龙",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 29,
+      "target": 10,
+      "source_name": "张志龙",
+      "target_name": "和向英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 29,
+      "target": 23,
+      "source_name": "张志龙",
+      "target_name": "白新杰",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4799,105 +4831,17 @@
     },
     {
       "source": 29,
-      "target": 28,
-      "source_name": "张志龙",
-      "target_name": "陆俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
-      "target": 48,
-      "source_name": "张志龙",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
-      "target": 24,
-      "source_name": "张志龙",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
-      "target": 10,
-      "source_name": "张志龙",
-      "target_name": "和向英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
-      "target": 17,
-      "source_name": "张志龙",
-      "target_name": "李家辉",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
-      "target": 25,
-      "source_name": "张志龙",
-      "target_name": "李文卿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
-      "target": 16,
-      "source_name": "张志龙",
-      "target_name": "陆贤斌",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
-      "target": 33,
-      "source_name": "张志龙",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
-      "target": 43,
-      "source_name": "张志龙",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
-      "target": 23,
-      "source_name": "张志龙",
-      "target_name": "白新杰",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
-      "target": 40,
-      "source_name": "张志龙",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
-      "target": 42,
-      "source_name": "张志龙",
-      "target_name": "代文博",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 29,
       "target": 18,
       "source_name": "张志龙",
       "target_name": "孙仁策",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 29,
+      "target": 28,
+      "source_name": "张志龙",
+      "target_name": "陆俊",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4911,6 +4855,30 @@
     },
     {
       "source": 29,
+      "target": 26,
+      "source_name": "张志龙",
+      "target_name": "张雄涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 29,
+      "target": 45,
+      "source_name": "张志龙",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 29,
+      "target": 43,
+      "source_name": "张志龙",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 29,
       "target": 0,
       "source_name": "张志龙",
       "target_name": "邢启德",
@@ -4919,9 +4887,17 @@
     },
     {
       "source": 29,
-      "target": 46,
+      "target": 42,
       "source_name": "张志龙",
-      "target_name": "陈思含",
+      "target_name": "代文博",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 29,
+      "target": 17,
+      "source_name": "张志龙",
+      "target_name": "李家辉",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4934,34 +4910,34 @@
       "type": "friendship"
     },
     {
-      "source": 30,
-      "target": 45,
-      "source_name": "王晶",
-      "target_name": "徐明勋",
+      "source": 29,
+      "target": 40,
+      "source_name": "张志龙",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 29,
+      "target": 16,
+      "source_name": "张志龙",
+      "target_name": "陆贤斌",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 29,
+      "target": 48,
+      "source_name": "张志龙",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 30,
-      "target": 44,
+      "target": 22,
       "source_name": "王晶",
-      "target_name": "杞静梅",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 30,
-      "target": 26,
-      "source_name": "王晶",
-      "target_name": "张雄涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 30,
-      "target": 12,
-      "source_name": "王晶",
-      "target_name": "胡艳兴",
+      "target_name": "陈冠豪",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -4975,49 +4951,9 @@
     },
     {
       "source": 30,
-      "target": 48,
+      "target": 44,
       "source_name": "王晶",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 30,
-      "target": 15,
-      "source_name": "王晶",
-      "target_name": "计成林",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 30,
-      "target": 24,
-      "source_name": "王晶",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 30,
-      "target": 11,
-      "source_name": "王晶",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 30,
-      "target": 10,
-      "source_name": "王晶",
-      "target_name": "和向英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 30,
-      "target": 17,
-      "source_name": "王晶",
-      "target_name": "李家辉",
+      "target_name": "杞静梅",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5031,25 +4967,25 @@
     },
     {
       "source": 30,
+      "target": 24,
+      "source_name": "王晶",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 30,
+      "target": 46,
+      "source_name": "王晶",
+      "target_name": "陈思含",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 30,
       "target": 27,
       "source_name": "王晶",
       "target_name": "囊恩爽",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 30,
-      "target": 16,
-      "source_name": "王晶",
-      "target_name": "陆贤斌",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 30,
-      "target": 41,
-      "source_name": "王晶",
-      "target_name": "何婷",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5063,9 +4999,9 @@
     },
     {
       "source": 30,
-      "target": 43,
+      "target": 10,
       "source_name": "王晶",
-      "target_name": "高佛银",
+      "target_name": "和向英",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5079,17 +5015,9 @@
     },
     {
       "source": 30,
-      "target": 40,
+      "target": 12,
       "source_name": "王晶",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 30,
-      "target": 14,
-      "source_name": "王晶",
-      "target_name": "龙翼鸿",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5103,9 +5031,9 @@
     },
     {
       "source": 30,
-      "target": 22,
+      "target": 14,
       "source_name": "王晶",
-      "target_name": "陈冠豪",
+      "target_name": "龙翼鸿",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5114,6 +5042,38 @@
       "target": 20,
       "source_name": "王晶",
       "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 30,
+      "target": 26,
+      "source_name": "王晶",
+      "target_name": "张雄涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 30,
+      "target": 11,
+      "source_name": "王晶",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 30,
+      "target": 45,
+      "source_name": "王晶",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 30,
+      "target": 43,
+      "source_name": "王晶",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5127,209 +5087,49 @@
     },
     {
       "source": 30,
-      "target": 46,
+      "target": 15,
       "source_name": "王晶",
-      "target_name": "陈思含",
+      "target_name": "计成林",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 31,
-      "target": 1,
-      "source_name": "李禹辰",
-      "target_name": "胡洪铭",
+      "source": 30,
+      "target": 41,
+      "source_name": "王晶",
+      "target_name": "何婷",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 31,
-      "target": 34,
-      "source_name": "李禹辰",
-      "target_name": "唐巳润",
+      "source": 30,
+      "target": 17,
+      "source_name": "王晶",
+      "target_name": "李家辉",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 31,
-      "target": 44,
-      "source_name": "李禹辰",
-      "target_name": "杞静梅",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 26,
-      "source_name": "李禹辰",
-      "target_name": "张雄涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 47,
-      "source_name": "李禹辰",
-      "target_name": "邹宇航",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 12,
-      "source_name": "李禹辰",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 30,
-      "source_name": "李禹辰",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 29,
-      "source_name": "李禹辰",
-      "target_name": "张志龙",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 48,
-      "source_name": "李禹辰",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 24,
-      "source_name": "李禹辰",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 6,
-      "source_name": "李禹辰",
-      "target_name": "普建国",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 11,
-      "source_name": "李禹辰",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 8,
-      "source_name": "李禹辰",
-      "target_name": "蔡美云",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 5,
-      "source_name": "李禹辰",
-      "target_name": "赵涛涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 27,
-      "source_name": "李禹辰",
-      "target_name": "囊恩爽",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 37,
-      "source_name": "李禹辰",
-      "target_name": "普新潮",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 33,
-      "source_name": "李禹辰",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 43,
-      "source_name": "李禹辰",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 3,
-      "source_name": "李禹辰",
-      "target_name": "李成才",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
+      "source": 30,
       "target": 40,
-      "source_name": "李禹辰",
+      "source_name": "王晶",
       "target_name": "宋沁奕",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 31,
-      "target": 35,
-      "source_name": "李禹辰",
-      "target_name": "徐高科",
+      "source": 30,
+      "target": 16,
+      "source_name": "王晶",
+      "target_name": "陆贤斌",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 31,
-      "target": 2,
-      "source_name": "李禹辰",
-      "target_name": "陈俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 14,
-      "source_name": "李禹辰",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 18,
-      "source_name": "李禹辰",
-      "target_name": "孙仁策",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 31,
-      "target": 20,
-      "source_name": "李禹辰",
-      "target_name": "张昌旺",
+      "source": 30,
+      "target": 48,
+      "source_name": "王晶",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5343,6 +5143,158 @@
     },
     {
       "source": 31,
+      "target": 35,
+      "source_name": "李禹辰",
+      "target_name": "徐高科",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 44,
+      "source_name": "李禹辰",
+      "target_name": "杞静梅",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 1,
+      "source_name": "李禹辰",
+      "target_name": "胡洪铭",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 24,
+      "source_name": "李禹辰",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 33,
+      "source_name": "李禹辰",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 3,
+      "source_name": "李禹辰",
+      "target_name": "李成才",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 2,
+      "source_name": "李禹辰",
+      "target_name": "陈俊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 27,
+      "source_name": "李禹辰",
+      "target_name": "囊恩爽",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 6,
+      "source_name": "李禹辰",
+      "target_name": "普建国",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 12,
+      "source_name": "李禹辰",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 30,
+      "source_name": "李禹辰",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 18,
+      "source_name": "李禹辰",
+      "target_name": "孙仁策",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 5,
+      "source_name": "李禹辰",
+      "target_name": "赵涛涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 14,
+      "source_name": "李禹辰",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 8,
+      "source_name": "李禹辰",
+      "target_name": "蔡美云",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 37,
+      "source_name": "李禹辰",
+      "target_name": "普新潮",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 34,
+      "source_name": "李禹辰",
+      "target_name": "唐巳润",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 20,
+      "source_name": "李禹辰",
+      "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 26,
+      "source_name": "李禹辰",
+      "target_name": "张雄涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
       "target": 32,
       "source_name": "李禹辰",
       "target_name": "吴吞",
@@ -5351,8 +5303,72 @@
     },
     {
       "source": 31,
+      "target": 11,
+      "source_name": "李禹辰",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 29,
+      "source_name": "李禹辰",
+      "target_name": "张志龙",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 43,
+      "source_name": "李禹辰",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
       "target": 0,
       "source_name": "李禹辰",
+      "target_name": "邢启德",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 47,
+      "source_name": "李禹辰",
+      "target_name": "邹宇航",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 40,
+      "source_name": "李禹辰",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 31,
+      "target": 48,
+      "source_name": "李禹辰",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 32,
+      "target": 14,
+      "source_name": "吴吞",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 32,
+      "target": 0,
+      "source_name": "吴吞",
       "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
@@ -5375,25 +5391,17 @@
     },
     {
       "source": 32,
+      "target": 20,
+      "source_name": "吴吞",
+      "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 32,
       "target": 11,
       "source_name": "吴吞",
       "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 32,
-      "target": 43,
-      "source_name": "吴吞",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 32,
-      "target": 0,
-      "source_name": "吴吞",
-      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5415,249 +5423,49 @@
     },
     {
       "source": 32,
-      "target": 40,
-      "source_name": "吴吞",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 32,
-      "target": 35,
-      "source_name": "吴吞",
-      "target_name": "徐高科",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 32,
-      "target": 30,
-      "source_name": "吴吞",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 32,
-      "target": 14,
-      "source_name": "吴吞",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 32,
-      "target": 20,
-      "source_name": "吴吞",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 32,
-      "target": 48,
-      "source_name": "吴吞",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 32,
-      "target": 24,
-      "source_name": "吴吞",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 1,
-      "source_name": "陈杨东",
-      "target_name": "胡洪铭",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 34,
-      "source_name": "陈杨东",
-      "target_name": "唐巳润",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 44,
-      "source_name": "陈杨东",
-      "target_name": "杞静梅",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 26,
-      "source_name": "陈杨东",
-      "target_name": "张雄涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 47,
-      "source_name": "陈杨东",
-      "target_name": "邹宇航",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 12,
-      "source_name": "陈杨东",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 30,
-      "source_name": "陈杨东",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 29,
-      "source_name": "陈杨东",
-      "target_name": "张志龙",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 48,
-      "source_name": "陈杨东",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 24,
-      "source_name": "陈杨东",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 6,
-      "source_name": "陈杨东",
-      "target_name": "普建国",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 11,
-      "source_name": "陈杨东",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 8,
-      "source_name": "陈杨东",
-      "target_name": "蔡美云",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 5,
-      "source_name": "陈杨东",
-      "target_name": "赵涛涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 27,
-      "source_name": "陈杨东",
-      "target_name": "囊恩爽",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 37,
-      "source_name": "陈杨东",
-      "target_name": "普新潮",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
       "target": 43,
-      "source_name": "陈杨东",
+      "source_name": "吴吞",
       "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 33,
-      "target": 3,
-      "source_name": "陈杨东",
-      "target_name": "李成才",
+      "source": 32,
+      "target": 30,
+      "source_name": "吴吞",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 33,
-      "target": 40,
-      "source_name": "陈杨东",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
+      "source": 32,
       "target": 35,
-      "source_name": "陈杨东",
+      "source_name": "吴吞",
       "target_name": "徐高科",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 33,
-      "target": 2,
-      "source_name": "陈杨东",
-      "target_name": "陈俊",
+      "source": 32,
+      "target": 48,
+      "source_name": "吴吞",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 33,
-      "target": 14,
-      "source_name": "陈杨东",
-      "target_name": "龙翼鸿",
+      "source": 32,
+      "target": 40,
+      "source_name": "吴吞",
+      "target_name": "宋沁奕",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 33,
-      "target": 18,
-      "source_name": "陈杨东",
-      "target_name": "孙仁策",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 33,
-      "target": 20,
-      "source_name": "陈杨东",
-      "target_name": "张昌旺",
+      "source": 32,
+      "target": 24,
+      "source_name": "吴吞",
+      "target_name": "杨磊",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5671,6 +5479,150 @@
     },
     {
       "source": 33,
+      "target": 35,
+      "source_name": "陈杨东",
+      "target_name": "徐高科",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 44,
+      "source_name": "陈杨东",
+      "target_name": "杞静梅",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 1,
+      "source_name": "陈杨东",
+      "target_name": "胡洪铭",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 24,
+      "source_name": "陈杨东",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 3,
+      "source_name": "陈杨东",
+      "target_name": "李成才",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 2,
+      "source_name": "陈杨东",
+      "target_name": "陈俊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 27,
+      "source_name": "陈杨东",
+      "target_name": "囊恩爽",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 6,
+      "source_name": "陈杨东",
+      "target_name": "普建国",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 12,
+      "source_name": "陈杨东",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 30,
+      "source_name": "陈杨东",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 18,
+      "source_name": "陈杨东",
+      "target_name": "孙仁策",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 5,
+      "source_name": "陈杨东",
+      "target_name": "赵涛涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 14,
+      "source_name": "陈杨东",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 8,
+      "source_name": "陈杨东",
+      "target_name": "蔡美云",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 37,
+      "source_name": "陈杨东",
+      "target_name": "普新潮",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "source_name": "陈杨东",
+      "target_name": "唐巳润",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 20,
+      "source_name": "陈杨东",
+      "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 26,
+      "source_name": "陈杨东",
+      "target_name": "张雄涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
       "target": 32,
       "source_name": "陈杨东",
       "target_name": "吴吞",
@@ -5679,8 +5631,72 @@
     },
     {
       "source": 33,
+      "target": 11,
+      "source_name": "陈杨东",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 29,
+      "source_name": "陈杨东",
+      "target_name": "张志龙",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 43,
+      "source_name": "陈杨东",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
       "target": 0,
       "source_name": "陈杨东",
+      "target_name": "邢启德",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 47,
+      "source_name": "陈杨东",
+      "target_name": "邹宇航",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 40,
+      "source_name": "陈杨东",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 33,
+      "target": 48,
+      "source_name": "陈杨东",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 34,
+      "target": 14,
+      "source_name": "唐巳润",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 34,
+      "target": 0,
+      "source_name": "唐巳润",
       "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
@@ -5695,105 +5711,9 @@
     },
     {
       "source": 34,
-      "target": 43,
-      "source_name": "唐巳润",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 34,
-      "target": 32,
-      "source_name": "唐巳润",
-      "target_name": "吴吞",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 34,
-      "target": 40,
-      "source_name": "唐巳润",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 34,
-      "target": 0,
-      "source_name": "唐巳润",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 34,
-      "target": 31,
-      "source_name": "唐巳润",
-      "target_name": "李禹辰",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 34,
-      "target": 17,
-      "source_name": "唐巳润",
-      "target_name": "李家辉",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 34,
-      "target": 12,
-      "source_name": "唐巳润",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 34,
-      "target": 35,
-      "source_name": "唐巳润",
-      "target_name": "徐高科",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 34,
-      "target": 30,
-      "source_name": "唐巳润",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 34,
-      "target": 14,
-      "source_name": "唐巳润",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 34,
-      "target": 18,
-      "source_name": "唐巳润",
-      "target_name": "孙仁策",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 34,
       "target": 20,
       "source_name": "唐巳润",
       "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 34,
-      "target": 48,
-      "source_name": "唐巳润",
-      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5807,9 +5727,65 @@
     },
     {
       "source": 34,
-      "target": 16,
+      "target": 32,
       "source_name": "唐巳润",
-      "target_name": "陆贤斌",
+      "target_name": "吴吞",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 34,
+      "target": 31,
+      "source_name": "唐巳润",
+      "target_name": "李禹辰",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 34,
+      "target": 12,
+      "source_name": "唐巳润",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 34,
+      "target": 43,
+      "source_name": "唐巳润",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 34,
+      "target": 30,
+      "source_name": "唐巳润",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 34,
+      "target": 18,
+      "source_name": "唐巳润",
+      "target_name": "孙仁策",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 34,
+      "target": 17,
+      "source_name": "唐巳润",
+      "target_name": "李家辉",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "source_name": "唐巳润",
+      "target_name": "徐高科",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5818,6 +5794,46 @@
       "target": 19,
       "source_name": "唐巳润",
       "target_name": "牛戌伍",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 34,
+      "target": 40,
+      "source_name": "唐巳润",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 34,
+      "target": 16,
+      "source_name": "唐巳润",
+      "target_name": "陆贤斌",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 34,
+      "target": 48,
+      "source_name": "唐巳润",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 35,
+      "target": 14,
+      "source_name": "徐高科",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 35,
+      "target": 0,
+      "source_name": "徐高科",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5839,97 +5855,9 @@
     },
     {
       "source": 35,
-      "target": 32,
-      "source_name": "徐高科",
-      "target_name": "吴吞",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 35,
-      "target": 43,
-      "source_name": "徐高科",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 35,
-      "target": 40,
-      "source_name": "徐高科",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 35,
-      "target": 0,
-      "source_name": "徐高科",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 35,
-      "target": 31,
-      "source_name": "徐高科",
-      "target_name": "李禹辰",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 35,
-      "target": 17,
-      "source_name": "徐高科",
-      "target_name": "李家辉",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 35,
-      "target": 12,
-      "source_name": "徐高科",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 35,
-      "target": 30,
-      "source_name": "徐高科",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 35,
-      "target": 14,
-      "source_name": "徐高科",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 35,
-      "target": 18,
-      "source_name": "徐高科",
-      "target_name": "孙仁策",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 35,
       "target": 20,
       "source_name": "徐高科",
       "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 35,
-      "target": 48,
-      "source_name": "徐高科",
-      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5943,9 +5871,57 @@
     },
     {
       "source": 35,
-      "target": 16,
+      "target": 32,
       "source_name": "徐高科",
-      "target_name": "陆贤斌",
+      "target_name": "吴吞",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 35,
+      "target": 31,
+      "source_name": "徐高科",
+      "target_name": "李禹辰",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 35,
+      "target": 12,
+      "source_name": "徐高科",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 35,
+      "target": 43,
+      "source_name": "徐高科",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 35,
+      "target": 30,
+      "source_name": "徐高科",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 35,
+      "target": 18,
+      "source_name": "徐高科",
+      "target_name": "孙仁策",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 35,
+      "target": 17,
+      "source_name": "徐高科",
+      "target_name": "李家辉",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5958,26 +5934,34 @@
       "type": "friendship"
     },
     {
-      "source": 36,
-      "target": 33,
-      "source_name": "翟俊翔",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 36,
-      "target": 43,
-      "source_name": "翟俊翔",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 36,
+      "source": 35,
       "target": 40,
-      "source_name": "翟俊翔",
+      "source_name": "徐高科",
       "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 35,
+      "target": 16,
+      "source_name": "徐高科",
+      "target_name": "陆贤斌",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 35,
+      "target": 48,
+      "source_name": "徐高科",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 36,
+      "target": 14,
+      "source_name": "翟俊翔",
+      "target_name": "龙翼鸿",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -5991,33 +5975,17 @@
     },
     {
       "source": 36,
-      "target": 12,
+      "target": 33,
       "source_name": "翟俊翔",
-      "target_name": "胡艳兴",
+      "target_name": "陈杨东",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 36,
-      "target": 30,
+      "target": 37,
       "source_name": "翟俊翔",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 36,
-      "target": 17,
-      "source_name": "翟俊翔",
-      "target_name": "李家辉",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 36,
-      "target": 14,
-      "source_name": "翟俊翔",
-      "target_name": "龙翼鸿",
+      "target_name": "普新潮",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6031,17 +5999,9 @@
     },
     {
       "source": 36,
-      "target": 18,
+      "target": 39,
       "source_name": "翟俊翔",
-      "target_name": "孙仁策",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 36,
-      "target": 37,
-      "source_name": "翟俊翔",
-      "target_name": "普新潮",
+      "target_name": "陈重舟",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6055,25 +6015,49 @@
     },
     {
       "source": 36,
-      "target": 39,
+      "target": 12,
       "source_name": "翟俊翔",
-      "target_name": "陈重舟",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 36,
-      "target": 48,
+      "target": 18,
       "source_name": "翟俊翔",
-      "target_name": "段建香",
+      "target_name": "孙仁策",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 36,
-      "target": 16,
+      "target": 13,
       "source_name": "翟俊翔",
-      "target_name": "陆贤斌",
+      "target_name": "戴国君",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 36,
+      "target": 30,
+      "source_name": "翟俊翔",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 36,
+      "target": 17,
+      "source_name": "翟俊翔",
+      "target_name": "李家辉",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 36,
+      "target": 43,
+      "source_name": "翟俊翔",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6087,9 +6071,121 @@
     },
     {
       "source": 36,
-      "target": 13,
+      "target": 40,
       "source_name": "翟俊翔",
-      "target_name": "戴国君",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 36,
+      "target": 16,
+      "source_name": "翟俊翔",
+      "target_name": "陆贤斌",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 36,
+      "target": 48,
+      "source_name": "翟俊翔",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 37,
+      "target": 22,
+      "source_name": "普新潮",
+      "target_name": "陈冠豪",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 37,
+      "target": 25,
+      "source_name": "普新潮",
+      "target_name": "李文卿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 37,
+      "target": 24,
+      "source_name": "普新潮",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 37,
+      "target": 46,
+      "source_name": "普新潮",
+      "target_name": "陈思含",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 37,
+      "target": 27,
+      "source_name": "普新潮",
+      "target_name": "囊恩爽",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 37,
+      "target": 33,
+      "source_name": "普新潮",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 37,
+      "target": 39,
+      "source_name": "普新潮",
+      "target_name": "陈重舟",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 37,
+      "target": 23,
+      "source_name": "普新潮",
+      "target_name": "白新杰",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 37,
+      "target": 12,
+      "source_name": "普新潮",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 37,
+      "target": 30,
+      "source_name": "普新潮",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "source_name": "普新潮",
+      "target_name": "江涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 37,
+      "target": 20,
+      "source_name": "普新潮",
+      "target_name": "张昌旺",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6111,97 +6207,9 @@
     },
     {
       "source": 37,
-      "target": 12,
-      "source_name": "普新潮",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 37,
-      "target": 30,
-      "source_name": "普新潮",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 37,
-      "target": 48,
-      "source_name": "普新潮",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 37,
-      "target": 24,
-      "source_name": "普新潮",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 37,
-      "target": 25,
-      "source_name": "普新潮",
-      "target_name": "李文卿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 37,
-      "target": 27,
-      "source_name": "普新潮",
-      "target_name": "囊恩爽",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 37,
-      "target": 33,
-      "source_name": "普新潮",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 37,
       "target": 43,
       "source_name": "普新潮",
       "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 37,
-      "target": 23,
-      "source_name": "普新潮",
-      "target_name": "白新杰",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 37,
-      "target": 40,
-      "source_name": "普新潮",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 37,
-      "target": 22,
-      "source_name": "普新潮",
-      "target_name": "陈冠豪",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 37,
-      "target": 20,
-      "source_name": "普新潮",
-      "target_name": "张昌旺",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6223,41 +6231,33 @@
     },
     {
       "source": 37,
-      "target": 38,
+      "target": 40,
       "source_name": "普新潮",
-      "target_name": "江涛",
+      "target_name": "宋沁奕",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 37,
-      "target": 46,
+      "target": 48,
       "source_name": "普新潮",
-      "target_name": "陈思含",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 37,
-      "target": 39,
-      "source_name": "普新潮",
-      "target_name": "陈重舟",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 38,
-      "target": 1,
+      "target": 7,
       "source_name": "江涛",
-      "target_name": "胡洪铭",
+      "target_name": "黄朝勇",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 38,
-      "target": 34,
+      "target": 35,
       "source_name": "江涛",
-      "target_name": "唐巳润",
+      "target_name": "徐高科",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6271,17 +6271,57 @@
     },
     {
       "source": 38,
-      "target": 26,
+      "target": 1,
       "source_name": "江涛",
-      "target_name": "张雄涛",
+      "target_name": "胡洪铭",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 38,
-      "target": 47,
+      "target": 24,
       "source_name": "江涛",
-      "target_name": "邹宇航",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 38,
+      "target": 33,
+      "source_name": "江涛",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 38,
+      "target": 3,
+      "source_name": "江涛",
+      "target_name": "李成才",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 38,
+      "target": 2,
+      "source_name": "江涛",
+      "target_name": "陈俊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 38,
+      "target": 27,
+      "source_name": "江涛",
+      "target_name": "囊恩爽",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 38,
+      "target": 6,
+      "source_name": "江涛",
+      "target_name": "普建国",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6303,49 +6343,9 @@
     },
     {
       "source": 38,
-      "target": 29,
+      "target": 18,
       "source_name": "江涛",
-      "target_name": "张志龙",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 38,
-      "target": 48,
-      "source_name": "江涛",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 38,
-      "target": 24,
-      "source_name": "江涛",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 38,
-      "target": 6,
-      "source_name": "江涛",
-      "target_name": "普建国",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 38,
-      "target": 11,
-      "source_name": "江涛",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 38,
-      "target": 8,
-      "source_name": "江涛",
-      "target_name": "蔡美云",
+      "target_name": "孙仁策",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6359,9 +6359,17 @@
     },
     {
       "source": 38,
-      "target": 27,
+      "target": 14,
       "source_name": "江涛",
-      "target_name": "囊恩爽",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 38,
+      "target": 8,
+      "source_name": "江涛",
+      "target_name": "蔡美云",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6375,65 +6383,9 @@
     },
     {
       "source": 38,
-      "target": 33,
+      "target": 34,
       "source_name": "江涛",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 38,
-      "target": 43,
-      "source_name": "江涛",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 38,
-      "target": 3,
-      "source_name": "江涛",
-      "target_name": "李成才",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 38,
-      "target": 40,
-      "source_name": "江涛",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 38,
-      "target": 35,
-      "source_name": "江涛",
-      "target_name": "徐高科",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 38,
-      "target": 2,
-      "source_name": "江涛",
-      "target_name": "陈俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 38,
-      "target": 14,
-      "source_name": "江涛",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 38,
-      "target": 18,
-      "source_name": "江涛",
-      "target_name": "孙仁策",
+      "target_name": "唐巳润",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6447,9 +6399,9 @@
     },
     {
       "source": 38,
-      "target": 7,
+      "target": 26,
       "source_name": "江涛",
-      "target_name": "黄朝勇",
+      "target_name": "张雄涛",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6463,9 +6415,73 @@
     },
     {
       "source": 38,
+      "target": 11,
+      "source_name": "江涛",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 38,
+      "target": 29,
+      "source_name": "江涛",
+      "target_name": "张志龙",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 38,
+      "target": 43,
+      "source_name": "江涛",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 38,
       "target": 0,
       "source_name": "江涛",
       "target_name": "邢启德",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 38,
+      "target": 47,
+      "source_name": "江涛",
+      "target_name": "邹宇航",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 38,
+      "target": 40,
+      "source_name": "江涛",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 38,
+      "target": 48,
+      "source_name": "江涛",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 39,
+      "target": 37,
+      "source_name": "陈重舟",
+      "target_name": "普新潮",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 39,
+      "target": 38,
+      "source_name": "陈重舟",
+      "target_name": "江涛",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6487,22 +6503,6 @@
     },
     {
       "source": 39,
-      "target": 38,
-      "source_name": "陈重舟",
-      "target_name": "江涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 39,
-      "target": 37,
-      "source_name": "陈重舟",
-      "target_name": "普新潮",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 39,
       "target": 13,
       "source_name": "陈重舟",
       "target_name": "戴国君",
@@ -6511,9 +6511,17 @@
     },
     {
       "source": 40,
-      "target": 45,
+      "target": 22,
       "source_name": "宋沁奕",
-      "target_name": "徐明勋",
+      "target_name": "陈冠豪",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 40,
+      "target": 21,
+      "source_name": "宋沁奕",
+      "target_name": "吴桦正",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6522,6 +6530,54 @@
       "target": 44,
       "source_name": "宋沁奕",
       "target_name": "杞静梅",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 40,
+      "target": 24,
+      "source_name": "宋沁奕",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 40,
+      "target": 33,
+      "source_name": "宋沁奕",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 40,
+      "target": 3,
+      "source_name": "宋沁奕",
+      "target_name": "李成才",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 40,
+      "target": 2,
+      "source_name": "宋沁奕",
+      "target_name": "陈俊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 40,
+      "target": 10,
+      "source_name": "宋沁奕",
+      "target_name": "和向英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 40,
+      "target": 12,
+      "source_name": "宋沁奕",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6543,41 +6599,17 @@
     },
     {
       "source": 40,
-      "target": 12,
+      "target": 14,
       "source_name": "宋沁奕",
-      "target_name": "胡艳兴",
+      "target_name": "龙翼鸿",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 40,
-      "target": 21,
+      "target": 20,
       "source_name": "宋沁奕",
-      "target_name": "吴桦正",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 40,
-      "target": 48,
-      "source_name": "宋沁奕",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 40,
-      "target": 15,
-      "source_name": "宋沁奕",
-      "target_name": "计成林",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 40,
-      "target": 24,
-      "source_name": "宋沁奕",
-      "target_name": "杨磊",
+      "target_name": "张昌旺",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6591,9 +6623,33 @@
     },
     {
       "source": 40,
-      "target": 10,
+      "target": 45,
       "source_name": "宋沁奕",
-      "target_name": "和向英",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 40,
+      "target": 43,
+      "source_name": "宋沁奕",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 40,
+      "target": 0,
+      "source_name": "宋沁奕",
+      "target_name": "邢启德",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 40,
+      "target": 15,
+      "source_name": "宋沁奕",
+      "target_name": "计成林",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6607,70 +6663,6 @@
     },
     {
       "source": 40,
-      "target": 33,
-      "source_name": "宋沁奕",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 40,
-      "target": 43,
-      "source_name": "宋沁奕",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 40,
-      "target": 3,
-      "source_name": "宋沁奕",
-      "target_name": "李成才",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 40,
-      "target": 14,
-      "source_name": "宋沁奕",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 40,
-      "target": 2,
-      "source_name": "宋沁奕",
-      "target_name": "陈俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 40,
-      "target": 22,
-      "source_name": "宋沁奕",
-      "target_name": "陈冠豪",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 40,
-      "target": 20,
-      "source_name": "宋沁奕",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 40,
-      "target": 0,
-      "source_name": "宋沁奕",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 40,
       "target": 19,
       "source_name": "宋沁奕",
       "target_name": "牛戌伍",
@@ -6678,10 +6670,26 @@
       "type": "friendship"
     },
     {
+      "source": 40,
+      "target": 48,
+      "source_name": "宋沁奕",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
       "source": 41,
-      "target": 45,
+      "target": 22,
       "source_name": "何婷",
-      "target_name": "徐明勋",
+      "target_name": "陈冠豪",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 41,
+      "target": 21,
+      "source_name": "何婷",
+      "target_name": "吴桦正",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6690,6 +6698,54 @@
       "target": 44,
       "source_name": "何婷",
       "target_name": "杞静梅",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 41,
+      "target": 24,
+      "source_name": "何婷",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 41,
+      "target": 33,
+      "source_name": "何婷",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 41,
+      "target": 3,
+      "source_name": "何婷",
+      "target_name": "李成才",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 41,
+      "target": 2,
+      "source_name": "何婷",
+      "target_name": "陈俊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 41,
+      "target": 10,
+      "source_name": "何婷",
+      "target_name": "和向英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 41,
+      "target": 12,
+      "source_name": "何婷",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6711,113 +6767,9 @@
     },
     {
       "source": 41,
-      "target": 12,
-      "source_name": "何婷",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
-      "target": 21,
-      "source_name": "何婷",
-      "target_name": "吴桦正",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
-      "target": 48,
-      "source_name": "何婷",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
-      "target": 15,
-      "source_name": "何婷",
-      "target_name": "计成林",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
-      "target": 24,
-      "source_name": "何婷",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
-      "target": 11,
-      "source_name": "何婷",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
-      "target": 10,
-      "source_name": "何婷",
-      "target_name": "和向英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
-      "target": 33,
-      "source_name": "何婷",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
-      "target": 43,
-      "source_name": "何婷",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
-      "target": 3,
-      "source_name": "何婷",
-      "target_name": "李成才",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
-      "target": 40,
-      "source_name": "何婷",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
       "target": 14,
       "source_name": "何婷",
       "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
-      "target": 2,
-      "source_name": "何婷",
-      "target_name": "陈俊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 41,
-      "target": 22,
-      "source_name": "何婷",
-      "target_name": "陈冠豪",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6831,9 +6783,41 @@
     },
     {
       "source": 41,
+      "target": 11,
+      "source_name": "何婷",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 41,
+      "target": 45,
+      "source_name": "何婷",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 41,
+      "target": 43,
+      "source_name": "何婷",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 41,
       "target": 0,
       "source_name": "何婷",
       "target_name": "邢启德",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 41,
+      "target": 15,
+      "source_name": "何婷",
+      "target_name": "计成林",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6846,50 +6830,26 @@
       "type": "friendship"
     },
     {
-      "source": 42,
-      "target": 33,
-      "source_name": "代文博",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 42,
-      "target": 45,
-      "source_name": "代文博",
-      "target_name": "徐明勋",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 42,
-      "target": 43,
-      "source_name": "代文博",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 42,
-      "target": 11,
-      "source_name": "代文博",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 42,
-      "target": 44,
-      "source_name": "代文博",
-      "target_name": "杞静梅",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 42,
+      "source": 41,
       "target": 40,
-      "source_name": "代文博",
+      "source_name": "何婷",
       "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 41,
+      "target": 48,
+      "source_name": "何婷",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 42,
+      "target": 14,
+      "source_name": "代文博",
+      "target_name": "龙翼鸿",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6903,25 +6863,9 @@
     },
     {
       "source": 42,
-      "target": 10,
+      "target": 33,
       "source_name": "代文博",
-      "target_name": "和向英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 42,
-      "target": 30,
-      "source_name": "代文博",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 42,
-      "target": 12,
-      "source_name": "代文博",
-      "target_name": "胡艳兴",
+      "target_name": "陈杨东",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6935,25 +6879,17 @@
     },
     {
       "source": 42,
-      "target": 14,
+      "target": 10,
       "source_name": "代文博",
-      "target_name": "龙翼鸿",
+      "target_name": "和向英",
       "weight": 1.0,
       "type": "friendship"
     },
     {
       "source": 42,
-      "target": 29,
+      "target": 20,
       "source_name": "代文博",
-      "target_name": "张志龙",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 42,
-      "target": 48,
-      "source_name": "代文博",
-      "target_name": "段建香",
+      "target_name": "张昌旺",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6967,9 +6903,33 @@
     },
     {
       "source": 42,
-      "target": 20,
+      "target": 11,
       "source_name": "代文博",
-      "target_name": "张昌旺",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 42,
+      "target": 45,
+      "source_name": "代文博",
+      "target_name": "徐明勋",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 42,
+      "target": 12,
+      "source_name": "代文博",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 42,
+      "target": 29,
+      "source_name": "代文博",
+      "target_name": "张志龙",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -6982,18 +6942,42 @@
       "type": "friendship"
     },
     {
-      "source": 43,
-      "target": 33,
-      "source_name": "高佛银",
-      "target_name": "陈杨东",
+      "source": 42,
+      "target": 43,
+      "source_name": "代文博",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 43,
+      "source": 42,
+      "target": 30,
+      "source_name": "代文博",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 42,
+      "target": 44,
+      "source_name": "代文博",
+      "target_name": "杞静梅",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 42,
       "target": 40,
-      "source_name": "高佛银",
+      "source_name": "代文博",
       "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 42,
+      "target": 48,
+      "source_name": "代文博",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7007,17 +6991,9 @@
     },
     {
       "source": 43,
-      "target": 12,
+      "target": 33,
       "source_name": "高佛银",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 43,
-      "target": 30,
-      "source_name": "高佛银",
-      "target_name": "王晶",
+      "target_name": "陈杨东",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7031,9 +7007,9 @@
     },
     {
       "source": 43,
-      "target": 48,
+      "target": 12,
       "source_name": "高佛银",
-      "target_name": "段建香",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7046,34 +7022,26 @@
       "type": "friendship"
     },
     {
-      "source": 44,
-      "target": 33,
-      "source_name": "杞静梅",
-      "target_name": "陈杨东",
+      "source": 43,
+      "target": 30,
+      "source_name": "高佛银",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 44,
-      "target": 43,
-      "source_name": "杞静梅",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 44,
-      "target": 11,
-      "source_name": "杞静梅",
-      "target_name": "李福英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 44,
+      "source": 43,
       "target": 40,
-      "source_name": "杞静梅",
+      "source_name": "高佛银",
       "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 43,
+      "target": 48,
+      "source_name": "高佛银",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7087,17 +7055,9 @@
     },
     {
       "source": 44,
-      "target": 12,
+      "target": 33,
       "source_name": "杞静梅",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 44,
-      "target": 30,
-      "source_name": "杞静梅",
-      "target_name": "王晶",
+      "target_name": "陈杨东",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7111,9 +7071,17 @@
     },
     {
       "source": 44,
-      "target": 48,
+      "target": 11,
       "source_name": "杞静梅",
-      "target_name": "段建香",
+      "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 44,
+      "target": 12,
+      "source_name": "杞静梅",
+      "target_name": "胡艳兴",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7122,6 +7090,54 @@
       "target": 41,
       "source_name": "杞静梅",
       "target_name": "何婷",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 44,
+      "target": 43,
+      "source_name": "杞静梅",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 44,
+      "target": 30,
+      "source_name": "杞静梅",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 44,
+      "target": 40,
+      "source_name": "杞静梅",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 44,
+      "target": 48,
+      "source_name": "杞静梅",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 45,
+      "target": 14,
+      "source_name": "徐明勋",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 45,
+      "target": 0,
+      "source_name": "徐明勋",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7135,9 +7151,25 @@
     },
     {
       "source": 45,
-      "target": 43,
+      "target": 10,
       "source_name": "徐明勋",
-      "target_name": "高佛银",
+      "target_name": "和向英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 45,
+      "target": 20,
+      "source_name": "徐明勋",
+      "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 45,
+      "target": 15,
+      "source_name": "徐明勋",
+      "target_name": "计成林",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7146,6 +7178,38 @@
       "target": 11,
       "source_name": "徐明勋",
       "target_name": "李福英",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 45,
+      "target": 12,
+      "source_name": "徐明勋",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 45,
+      "target": 41,
+      "source_name": "徐明勋",
+      "target_name": "何婷",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 45,
+      "target": 43,
+      "source_name": "徐明勋",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 45,
+      "target": 30,
+      "source_name": "徐明勋",
+      "target_name": "王晶",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7167,201 +7231,9 @@
     },
     {
       "source": 45,
-      "target": 0,
-      "source_name": "徐明勋",
-      "target_name": "邢启德",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 45,
-      "target": 10,
-      "source_name": "徐明勋",
-      "target_name": "和向英",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 45,
-      "target": 30,
-      "source_name": "徐明勋",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 45,
-      "target": 12,
-      "source_name": "徐明勋",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 45,
-      "target": 14,
-      "source_name": "徐明勋",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 45,
-      "target": 20,
-      "source_name": "徐明勋",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 45,
       "target": 48,
       "source_name": "徐明勋",
       "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 45,
-      "target": 15,
-      "source_name": "徐明勋",
-      "target_name": "计成林",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 45,
-      "target": 41,
-      "source_name": "徐明勋",
-      "target_name": "何婷",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 26,
-      "source_name": "陈思含",
-      "target_name": "张雄涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 12,
-      "source_name": "陈思含",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 30,
-      "source_name": "陈思含",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 48,
-      "source_name": "陈思含",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 15,
-      "source_name": "陈思含",
-      "target_name": "计成林",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 24,
-      "source_name": "陈思含",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 17,
-      "source_name": "陈思含",
-      "target_name": "李家辉",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 25,
-      "source_name": "陈思含",
-      "target_name": "李文卿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 27,
-      "source_name": "陈思含",
-      "target_name": "囊恩爽",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 16,
-      "source_name": "陈思含",
-      "target_name": "陆贤斌",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 33,
-      "source_name": "陈思含",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 43,
-      "source_name": "陈思含",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 23,
-      "source_name": "陈思含",
-      "target_name": "白新杰",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 40,
-      "source_name": "陈思含",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 14,
-      "source_name": "陈思含",
-      "target_name": "龙翼鸿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 46,
-      "target": 18,
-      "source_name": "陈思含",
-      "target_name": "孙仁策",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7375,9 +7247,97 @@
     },
     {
       "source": 46,
+      "target": 25,
+      "source_name": "陈思含",
+      "target_name": "李文卿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
+      "target": 24,
+      "source_name": "陈思含",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
+      "target": 33,
+      "source_name": "陈思含",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
+      "target": 27,
+      "source_name": "陈思含",
+      "target_name": "囊恩爽",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
+      "target": 23,
+      "source_name": "陈思含",
+      "target_name": "白新杰",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
+      "target": 12,
+      "source_name": "陈思含",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
+      "target": 30,
+      "source_name": "陈思含",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
+      "target": 18,
+      "source_name": "陈思含",
+      "target_name": "孙仁策",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
+      "target": 14,
+      "source_name": "陈思含",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
       "target": 20,
       "source_name": "陈思含",
       "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
+      "target": 26,
+      "source_name": "陈思含",
+      "target_name": "张雄涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
+      "target": 43,
+      "source_name": "陈思含",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7391,6 +7351,22 @@
     },
     {
       "source": 46,
+      "target": 15,
+      "source_name": "陈思含",
+      "target_name": "计成林",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
+      "target": 17,
+      "source_name": "陈思含",
+      "target_name": "李家辉",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 46,
       "target": 19,
       "source_name": "陈思含",
       "target_name": "牛戌伍",
@@ -7398,130 +7374,26 @@
       "type": "friendship"
     },
     {
-      "source": 47,
-      "target": 26,
-      "source_name": "邹宇航",
-      "target_name": "张雄涛",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
-      "target": 12,
-      "source_name": "邹宇航",
-      "target_name": "胡艳兴",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
-      "target": 30,
-      "source_name": "邹宇航",
-      "target_name": "王晶",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
-      "target": 48,
-      "source_name": "邹宇航",
-      "target_name": "段建香",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
-      "target": 15,
-      "source_name": "邹宇航",
-      "target_name": "计成林",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
-      "target": 24,
-      "source_name": "邹宇航",
-      "target_name": "杨磊",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
-      "target": 17,
-      "source_name": "邹宇航",
-      "target_name": "李家辉",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
-      "target": 25,
-      "source_name": "邹宇航",
-      "target_name": "李文卿",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
-      "target": 27,
-      "source_name": "邹宇航",
-      "target_name": "囊恩爽",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
-      "target": 16,
-      "source_name": "邹宇航",
-      "target_name": "陆贤斌",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
-      "target": 33,
-      "source_name": "邹宇航",
-      "target_name": "陈杨东",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
-      "target": 43,
-      "source_name": "邹宇航",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
-      "target": 23,
-      "source_name": "邹宇航",
-      "target_name": "白新杰",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 47,
+      "source": 46,
       "target": 40,
-      "source_name": "邹宇航",
+      "source_name": "陈思含",
       "target_name": "宋沁奕",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 47,
-      "target": 14,
-      "source_name": "邹宇航",
-      "target_name": "龙翼鸿",
+      "source": 46,
+      "target": 16,
+      "source_name": "陈思含",
+      "target_name": "陆贤斌",
       "weight": 1.0,
       "type": "friendship"
     },
     {
-      "source": 47,
-      "target": 18,
-      "source_name": "邹宇航",
-      "target_name": "孙仁策",
+      "source": 46,
+      "target": 48,
+      "source_name": "陈思含",
+      "target_name": "段建香",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7535,9 +7407,97 @@
     },
     {
       "source": 47,
+      "target": 25,
+      "source_name": "邹宇航",
+      "target_name": "李文卿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 24,
+      "source_name": "邹宇航",
+      "target_name": "杨磊",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 33,
+      "source_name": "邹宇航",
+      "target_name": "陈杨东",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 27,
+      "source_name": "邹宇航",
+      "target_name": "囊恩爽",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 23,
+      "source_name": "邹宇航",
+      "target_name": "白新杰",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 12,
+      "source_name": "邹宇航",
+      "target_name": "胡艳兴",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 30,
+      "source_name": "邹宇航",
+      "target_name": "王晶",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 18,
+      "source_name": "邹宇航",
+      "target_name": "孙仁策",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 14,
+      "source_name": "邹宇航",
+      "target_name": "龙翼鸿",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
       "target": 20,
       "source_name": "邹宇航",
       "target_name": "张昌旺",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 26,
+      "source_name": "邹宇航",
+      "target_name": "张雄涛",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 43,
+      "source_name": "邹宇航",
+      "target_name": "高佛银",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7551,9 +7511,57 @@
     },
     {
       "source": 47,
+      "target": 15,
+      "source_name": "邹宇航",
+      "target_name": "计成林",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 17,
+      "source_name": "邹宇航",
+      "target_name": "李家辉",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
       "target": 19,
       "source_name": "邹宇航",
       "target_name": "牛戌伍",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 40,
+      "source_name": "邹宇航",
+      "target_name": "宋沁奕",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 16,
+      "source_name": "邹宇航",
+      "target_name": "陆贤斌",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "source_name": "邹宇航",
+      "target_name": "段建香",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 48,
+      "target": 0,
+      "source_name": "段建香",
+      "target_name": "邢启德",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7567,25 +7575,9 @@
     },
     {
       "source": 48,
-      "target": 43,
+      "target": 20,
       "source_name": "段建香",
-      "target_name": "高佛银",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 48,
-      "target": 40,
-      "source_name": "段建香",
-      "target_name": "宋沁奕",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 48,
-      "target": 0,
-      "source_name": "段建香",
-      "target_name": "邢启德",
+      "target_name": "张昌旺",
       "weight": 1.0,
       "type": "friendship"
     },
@@ -7599,6 +7591,22 @@
     },
     {
       "source": 48,
+      "target": 41,
+      "source_name": "段建香",
+      "target_name": "何婷",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 48,
+      "target": 43,
+      "source_name": "段建香",
+      "target_name": "高佛银",
+      "weight": 1.0,
+      "type": "friendship"
+    },
+    {
+      "source": 48,
       "target": 30,
       "source_name": "段建香",
       "target_name": "王晶",
@@ -7607,17 +7615,9 @@
     },
     {
       "source": 48,
-      "target": 20,
+      "target": 40,
       "source_name": "段建香",
-      "target_name": "张昌旺",
-      "weight": 1.0,
-      "type": "friendship"
-    },
-    {
-      "source": 48,
-      "target": 41,
-      "source_name": "段建香",
-      "target_name": "何婷",
+      "target_name": "宋沁奕",
       "weight": 1.0,
       "type": "friendship"
     }

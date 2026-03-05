@@ -688,7 +688,7 @@
                     pairs.add(`${a}|${b}`);
                     pairs.add(`${b}|${a}`);
                 }
-                svg.selectAll('line').filter(d => pairs.has(d.source.name + '|' + d.target.name))
+                svg.selectAll('line').filter(d => pairs.has(d.source.id + '|' + d.target.id))
                     .attr('stroke', '#e74c3c').attr('stroke-width', 3);
             }
         }
@@ -696,7 +696,7 @@
         // 加载分析数据
         async function loadAnalysisData() {
             try {
-                const response = await fetch('/api/analysis/top-influencers');
+                const response = await fetch('/api/analysis/top-influencers'); // backend now returns full sorted list
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -848,16 +848,22 @@
                 });
         }
 
-        // 模拟数据管理功能
-        function loadDataList() {
+        // 加载数据集名称列表（从上传目录读取）
+        async function loadDataList() {
             const list = document.getElementById('data-list');
             if (!list) return;
-            // 示例静态内容，可替换为fetch调用
-            const sample = ['students.csv', 'relationships.json', 'scores.xlsx'];
-            list.innerHTML = sample.map(name => `<li>${name}</li>`).join('');
+            try {
+                const resp = await fetch('/api/data/list');
+                if (!resp.ok) throw new Error(resp.statusText);
+                const names = await resp.json();
+                list.innerHTML = names.map(name => `<li>${name}</li>`).join('');
+            } catch (err) {
+                // fallback to empty
+                list.innerHTML = '';
+            }
         }
 
-        function uploadData() {
+        async function uploadData() {
             const fileEl = document.getElementById('data-file');
             const msgEl = document.getElementById('data-message');
             if (!fileEl || !fileEl.files.length) {
@@ -867,11 +873,28 @@
             const file = fileEl.files[0];
             msgEl.textContent = `正在上传 ${file.name} ...`;
             addLog(`上传数据文件：${file.name}`);
-            // 这里可以使用fetch将文件发送到后端
-            setTimeout(() => {
-                msgEl.textContent = `文件 ${file.name} 上传成功（模拟）`;
+            const formData = new FormData();
+            formData.append('file', file);
+            try {
+                const resp = await fetch('/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await resp.json();
+                if (!resp.ok) {
+                    throw new Error(result.error || resp.statusText);
+                }
+                msgEl.textContent = `文件 ${file.name} 上传处理完成`;
+                addLog(`上传成功，触发数据处理`);
+                // 数据处理写入数据库，刷新前端展示
+                loadNetworkData();
+                loadAnalysisData();
+                loadReportData();
                 loadDataList();
-            }, 1000);
+            } catch (err) {
+                msgEl.textContent = `上传失败: ${err.message}`;
+                addLog(`上传失败: ${err.message}`);
+            }
         }
 
         // 个人信息管理
@@ -882,6 +905,10 @@
             document.getElementById('profile-name').value = name;
             document.getElementById('profile-email').value = email;
             document.getElementById('profile-position').value = position;
+            // 如果已经保存了姓名，立即渲染个人关系图
+            if (name) {
+                renderPersonalGraph(name);
+            }
         }
 
         function saveProfile() {
@@ -900,6 +927,13 @@
         function renderPersonalGraph(personName) {
             const container = document.getElementById('personal-graph');
             if (!container) return;
+
+            // helper to normalize a link endpoint (may be id or node object)
+            function endpointId(x) {
+                if (x && typeof x === 'object') return x.id;
+                return x;
+            }
+
             function draw() {
                 const nodes = [];
                 const links = [];
@@ -910,16 +944,18 @@
                     return;
                 }
                 nodes.push(center);
-                // 收集所有与本人直接相连的边及对端节点
+                // 收集所有与本人直接相连的边及对端节点，使用 id 匹配
                 networkData.links.forEach(l => {
-                    if (l.source.name === personName) {
+                    const src = endpointId(l.source);
+                    const tgt = endpointId(l.target);
+                    if (src === center.id) {
                         links.push(l);
-                        const other = networkData.nodes.find(n => n.id === l.target.id);
-                        if (other) nodes.push(other);
-                    } else if (l.target.name === personName) {
+                        const other = networkData.nodes.find(n => n.id === tgt);
+                        if (other && other.id !== center.id) nodes.push(other);
+                    } else if (tgt === center.id) {
                         links.push(l);
-                        const other = networkData.nodes.find(n => n.id === l.source.id);
-                        if (other) nodes.push(other);
+                        const other = networkData.nodes.find(n => n.id === src);
+                        if (other && other.id !== center.id) nodes.push(other);
                     }
                 });
                 container.innerHTML = '';
