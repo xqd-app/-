@@ -9,7 +9,7 @@ import pandas as pd
 import json
 import os
 from typing import Dict, List, Any, Union
-from .db_connector import DatabaseConnector
+from src.backend.data_processing.db_connector import DatabaseConnector
 
 class DataDAO:
     """数据访问对象"""
@@ -34,16 +34,37 @@ class DataDAO:
     
     def save_nodes(self, nodes: List[Dict]) -> bool:
         """
-        保存节点数据
-        
+        保存节点数据。
+
         Args:
             nodes: 节点数据列表
-            
+
         Returns:
             bool: 保存是否成功
         """
         if self.use_database:
-            return self.db_connector.insert_nodes(nodes)
+            # normalize field names and drop unknown properties
+            allowed = {
+                'id', 'name', 'gender', 'class_name', 'position', 'total_score',
+                'social_norm', 'score_norm',
+                'leader_norm', 'position_encoded', 'dorm_encoded', 'social_frequency',
+                'learning_impact', 'acceptance', 'activity_participation',
+                'communication_ability_norm', 'team_contribution_norm',
+                'learning_impact_norm', 'friend_count', 'influence_score',
+                'pagerank', 'clustering_coefficient', 'degree_centrality',
+                'eigenvector_centrality', 'betweenness_centrality'
+            }
+            cleaned = []
+            for n in nodes:
+                m = {}
+                for k, v in n.items():
+                    if v is None:
+                        continue
+                    key = 'class_name' if k == 'class' else k
+                    if key in allowed:
+                        m[key] = v
+                cleaned.append(m)
+            return self.db_connector.insert_nodes(cleaned)
         else:
             # 使用文件方式保存
             nodes_df = pd.DataFrame(nodes)
@@ -63,7 +84,30 @@ class DataDAO:
             bool: 保存是否成功
         """
         if self.use_database:
-            return self.db_connector.insert_edges(edges)
+            # normalize keys for database schema and filter invalid edges
+            cleaned = []
+            for e in edges:
+                ne = {}
+                # explicitly check for key existence so zero is preserved
+                if 'source' in e and e['source'] is not None:
+                    ne['source_id'] = e['source']
+                elif 'source_id' in e and e['source_id'] is not None:
+                    ne['source_id'] = e['source_id']
+                if 'target' in e and e['target'] is not None:
+                    ne['target_id'] = e['target']
+                elif 'target_id' in e and e['target_id'] is not None:
+                    ne['target_id'] = e['target_id']
+                if ne.get('source_id') is None or ne.get('target_id') is None:
+                    # skip malformed relationships
+                    continue
+                if 'weight' in e and e['weight'] is not None:
+                    ne['weight'] = e['weight']
+                if 'relation_type' in e and e['relation_type'] is not None:
+                    ne['relation_type'] = e['relation_type']
+                elif 'type' in e and e['type'] is not None:
+                    ne['relation_type'] = e['type']
+                cleaned.append(ne)
+            return self.db_connector.insert_edges(cleaned)
         else:
             # 使用文件方式保存
             edges_df = pd.DataFrame(edges)
@@ -121,6 +165,36 @@ class DataDAO:
                 json.dump(records, f, ensure_ascii=False, indent=2)
             print(f"✅ 传播记录已保存到: {records_path}")
             return True
+
+    # --- 用户认证辅助方法 ---
+    def get_user_by_username(self, username: str) -> Union[Dict, None]:
+        """
+        从数据库中查找指定用户名的用户记录。
+        返回包含全部列的字典或None。
+        """
+        if not self.use_database:
+            return None
+        try:
+            with self.db_connector.connection.cursor() as cursor:
+                cursor.execute("SELECT * FROM users WHERE username=%s", (username,))
+                return cursor.fetchone()
+        except Exception as e:
+            print(f"❌ 查询用户失败: {e}")
+            return None
+
+    def update_last_login(self, user_id: int) -> None:
+        """
+        更新用户的最后登录时间。
+        """
+        if not self.use_database:
+            return
+        try:
+            with self.db_connector.connection.cursor() as cursor:
+                cursor.execute("UPDATE users SET last_login=NOW() WHERE id=%s", (user_id,))
+            self.db_connector.connection.commit()
+        except Exception as e:
+            print(f"❌ 更新 last_login 失败: {e}")
+
     
     def load_nodes(self) -> List[Dict]:
         """
@@ -130,9 +204,15 @@ class DataDAO:
             List[Dict]: 节点数据列表
         """
         if self.use_database:
-            # TODO: 实现从数据库加载节点数据
-            print("⚠️  数据库加载节点数据功能待实现")
-            return []
+            # 从数据库加载
+            try:
+                with self.db_connector.connection.cursor() as cursor:
+                    cursor.execute("SELECT * FROM student_nodes")
+                    result = cursor.fetchall()
+                return result
+            except Exception as e:
+                print(f"❌ 从数据库加载节点数据失败: {e}")
+                return []
         else:
             # 从文件加载
             nodes_path = os.path.join(self.data_dir, 'nodes_complete.csv')
@@ -151,9 +231,15 @@ class DataDAO:
             List[Dict]: 边数据列表
         """
         if self.use_database:
-            # TODO: 实现从数据库加载边数据
-            print("⚠️  数据库加载边数据功能待实现")
-            return []
+            # 从数据库加载
+            try:
+                with self.db_connector.connection.cursor() as cursor:
+                    cursor.execute("SELECT source_id AS source, target_id AS target FROM social_edges")
+                    result = cursor.fetchall()
+                return result
+            except Exception as e:
+                print(f"❌ 从数据库加载边数据失败: {e}")
+                return []
         else:
             # 从文件加载
             edges_path = os.path.join(self.data_dir, 'edges.csv')

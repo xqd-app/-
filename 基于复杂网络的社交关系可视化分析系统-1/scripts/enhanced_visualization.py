@@ -10,15 +10,25 @@ import os
 import torch
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+# 尝试导入 matplotlib/seaborn，如果失败（如 numpy 版本过低）则记录状态
+try:
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    from mpl_toolkits.mplot3d import Axes3D  # enable 3D projection
+    MATPLOTLIB_AVAILABLE = True
+except Exception as _:
+    print("⚠️ 无法导入 matplotlib/seaborn，图形输出将使用 plotly 或被跳过。")
+    MATPLOTLIB_AVAILABLE = False
+
 from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
 import networkx as nx
+import plotly.graph_objects as go
 
 # 解决中文显示问题
-plt.rcParams['font.sans-serif'] = ['SimHei', 'FangSong', 'Microsoft YaHei', 'DejaVu Sans']
-plt.rcParams['axes.unicode_minus'] = False
+if MATPLOTLIB_AVAILABLE:
+    plt.rcParams['font.sans-serif'] = ['SimHei', 'FangSong', 'Microsoft YaHei', 'DejaVu Sans']
+    plt.rcParams['axes.unicode_minus'] = False
 
 # 添加项目根目录到Python路径
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -44,6 +54,9 @@ def load_data_and_model():
 
 def plot_feature_correlation():
     """绘制特征相关性热力图"""
+    if not MATPLOTLIB_AVAILABLE:
+        print("⚠️ matplotlib 不可用，跳过特征相关性热力图。")
+        return
     # 加载节点特征数据
     features_df = pd.read_csv(os.path.join(project_root, "data", "processed", "node_features.csv"))
     
@@ -60,8 +73,16 @@ def plot_feature_correlation():
                 dpi=300, bbox_inches='tight')
     plt.close()
 
-def plot_network_structure(data):
-    """绘制网络结构分析图"""
+def plot_network_structure(data, edge_sample_rate: float = 0.3):
+    """绘制网络结构分析图（3D版）。
+
+    为了降低线条的视觉密度，默认只画部分边
+    并使用三维布局增加节点的立体感，本函数不会修改原始数据。
+
+    参数:
+        data: 数据字典，包含 'features' 和 'edge_index'
+        edge_sample_rate: 绘制的边占全部边的比例，0-1 之间，默认 0.3
+    """
     # 创建网络图
     G = nx.DiGraph()  # 使用有向图
     
@@ -73,40 +94,82 @@ def plot_network_structure(data):
     edge_index = data['edge_index']
     edges = [(int(edge_index[0, i]), int(edge_index[1, i])) for i in range(edge_index.shape[1])]
     G.add_edges_from(edges)
-    
-    # 绘制网络结构
-    fig, ax = plt.subplots(figsize=(15, 15))
-    
-    # 计算节点布局
-    pos = nx.spring_layout(G, k=1, iterations=50)
-    
-    # 计算节点度数
-    degrees = [G.degree(n) for n in G.nodes()]
-    
-    # 绘制网络
-    nodes = nx.draw_networkx_nodes(G, pos, node_color=degrees, node_size=300, cmap=plt.cm.plasma, ax=ax)
-    nx.draw_networkx_edges(G, pos, arrows=True, arrowstyle='->', arrowsize=10, edge_color='gray', width=0.5, ax=ax)
-    
-    # 添加节点标签（中文姓名）
-    # 加载节点名称
-    nodes_df = pd.read_csv(os.path.join(project_root, "data", "processed", "nodes_complete.csv"))
-    labels = {i: name for i, name in enumerate(nodes_df['name'])}
-    nx.draw_networkx_labels(G, pos, labels, font_size=6, ax=ax)
-    
-    # 添加颜色条
-    sm = plt.cm.ScalarMappable(cmap=plt.cm.plasma, norm=plt.Normalize(vmin=min(degrees), vmax=max(degrees)))
-    sm.set_array([])
-    cbar = fig.colorbar(sm, ax=ax, shrink=0.8)
-    cbar.set_label('节点度数', rotation=270, labelpad=20)
-    
-    ax.set_title('班级社交网络结构图')
-    plt.tight_layout()
-    plt.savefig(os.path.join(project_root, 'results', 'network_structure.png'), 
-                dpi=300, bbox_inches='tight')
-    plt.close()
 
+    # 随机采样部分边以减少密度
+    if 0 < edge_sample_rate < 1.0:
+        import random
+        sample_count = int(len(edges) * edge_sample_rate)
+        sampled_edges = random.sample(edges, sample_count)
+    else:
+        sampled_edges = edges
+    
+    # 计算布局和节点度
+    pos = nx.spring_layout(G, k=1, iterations=50, dim=3)
+    degrees = [G.degree(n) for n in G.nodes()]
+
+    if MATPLOTLIB_AVAILABLE:
+        fig = plt.figure(figsize=(15, 15))
+        ax = fig.add_subplot(111, projection='3d')
+        xs = [pos[n][0] for n in G.nodes()]
+        ys = [pos[n][1] for n in G.nodes()]
+        zs = [pos[n][2] for n in G.nodes()]
+        sc = ax.scatter(xs, ys, zs, c=degrees, s=300, cmap=plt.cm.plasma, depthshade=True)
+        for u, v in sampled_edges:
+            x = [pos[u][0], pos[v][0]]
+            y = [pos[u][1], pos[v][1]]
+            z = [pos[u][2], pos[v][2]]
+            ax.plot(x, y, z, c='gray', alpha=0.5, linewidth=0.5)
+        nodes_df = pd.read_csv(os.path.join(project_root, "data", "processed", "nodes_complete.csv"))
+        for i, name in enumerate(nodes_df['name']):
+            ax.text(pos[i][0], pos[i][1], pos[i][2], name, fontsize=6)
+        sm = plt.cm.ScalarMappable(cmap=plt.cm.plasma, norm=plt.Normalize(vmin=min(degrees), vmax=max(degrees)))
+        sm.set_array([])
+        cbar = fig.colorbar(sm, ax=ax, shrink=0.8)
+        cbar.set_label('节点度数', rotation=270, labelpad=20)
+        ax.set_title('班级社交网络结构图 (3D)')
+        # 三维坐标轴标签中文
+        ax.set_xlabel('x')
+        ax.set_ylabel('y')
+        ax.set_zlabel('z')
+        ax.set_xticks([]); ax.set_yticks([]); ax.set_zticks([])
+        plt.tight_layout()
+        plt.savefig(os.path.join(project_root, 'results', 'network_structure_3d.png'), 
+                    dpi=300, bbox_inches='tight')
+        plt.close()
+    else:
+        # plotly 备选
+        xs = [pos[n][0] for n in G.nodes()]
+        ys = [pos[n][1] for n in G.nodes()]
+        zs = [pos[n][2] for n in G.nodes()]
+        edge_x = []
+        edge_y = []
+        edge_z = []
+        for u, v in sampled_edges:
+            edge_x += [pos[u][0], pos[v][0], None]
+            edge_y += [pos[u][1], pos[v][1], None]
+            edge_z += [pos[u][2], pos[v][2], None]
+        node_names = pd.read_csv(os.path.join(project_root, "data", "processed", "nodes_complete.csv"))['name']
+        node_trace = go.Scatter3d(x=xs, y=ys, z=zs, mode='markers+text',
+                                  marker=dict(size=5, color=degrees, colorscale='Plasma', showscale=True,
+                                              colorbar=dict(title='节点度数')),
+                                  text=[node_names[i] for i in range(len(xs))], textposition='top center')
+        edge_trace = go.Scatter3d(x=edge_x, y=edge_y, z=edge_z, mode='lines', line=dict(color='gray', width=1), opacity=0.5)
+        fig = go.Figure(data=[edge_trace, node_trace])
+        fig.update_layout(title='班级社交网络结构图 (3D, plotly)',
+                          scene=dict(
+                              xaxis_title='x',
+                              yaxis_title='y',
+                              zaxis_title='z'
+                          ),
+                          showlegend=False)
+        # 颜色条标题中文在marker定义中已设置
+        fig.write_html(os.path.join(project_root, 'results', 'network_structure_3d.html'))
+        print('📁 已生成 plotly 交互式图表: results/network_structure_3d.html')
 def compare_influence_methods():
     """比较不同影响力计算方法"""
+    if not MATPLOTLIB_AVAILABLE:
+        print("⚠️ matplotlib 不可用，影响力对比图跳过。")
+        return
     # 加载节点完整信息
     nodes_df = pd.read_csv(os.path.join(project_root, "data", "processed", "nodes_complete.csv"))
     
@@ -143,6 +206,9 @@ def compare_influence_methods():
 
 def plot_top_influencers_detail():
     """绘制关键人物详细分析图"""
+    if not MATPLOTLIB_AVAILABLE:
+        print("⚠️ matplotlib 不可用，关键人物详细分析图跳过。")
+        return
     # 加载节点完整信息
     nodes_df = pd.read_csv(os.path.join(project_root, "data", "processed", "nodes_complete.csv"))
     

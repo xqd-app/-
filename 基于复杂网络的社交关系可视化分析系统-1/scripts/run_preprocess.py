@@ -6,9 +6,12 @@ import sys
 import os
 import argparse
 
-# 添加src到路径
+# 添加项目根目录到路径，确保可以导入src.backend
 current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-src_dir = os.path.join(current_dir, 'src')
+project_root = current_dir
+src_dir = os.path.join(project_root, 'src')
+# 经常要将src目录加入，也可加入项目根使`import src...`可用
+sys.path.insert(0, project_root)
 sys.path.insert(0, src_dir)
 
 def main():
@@ -17,8 +20,8 @@ def main():
     parser.add_argument('--use-database', action='store_true', help='使用数据库存储数据')
     args = parser.parse_args()
     
-    from backend.data_processing.main_processor import CompleteQuestionnaireProcessor
-    from backend.data_processing.utils import DataUtils
+    from src.backend.data_processing.main_processor import CompleteQuestionnaireProcessor
+    from src.backend.data_processing.utils import DataUtils
     
     print("🚀 社交网络数据预处理流水线")
     print("="*60)

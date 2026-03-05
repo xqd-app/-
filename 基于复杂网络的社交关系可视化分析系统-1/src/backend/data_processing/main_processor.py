@@ -6,13 +6,13 @@ from typing import Dict, List, Tuple
 import os
 
 # 导入各个模块
-from .loaders import DataLoader
-from .preprocess import DataPreprocessor
-from .network_builder import NetworkBuilder
-from .feature_engineer import FeatureEngineer
-from .saver import DataSaver
-from .analyzer import DataAnalyzer
-from .dao import DataDAO
+from src.backend.data_processing.loaders import DataLoader
+from src.backend.data_processing.preprocess import DataPreprocessor
+from src.backend.data_processing.network_builder import NetworkBuilder
+from src.backend.data_processing.feature_engineer import FeatureEngineer
+from src.backend.data_processing.saver import DataSaver
+from src.backend.data_processing.analyzer import DataAnalyzer
+from src.backend.data_processing.dao import DataDAO
 
 class CompleteQuestionnaireProcessor:
     """完整的问卷处理器"""

@@ -56,10 +56,10 @@ class DatabaseConnector:
                 charset=charset,
                 cursorclass=pymysql.cursors.DictCursor
             )
-            print("✅ 数据库连接成功")
+            print("数据库连接成功")
             return True
         except Exception as e:
-            print(f"❌ 数据库连接失败: {e}")
+            print(f"数据库连接失败: {e}")
             return False
     
     def disconnect(self):
@@ -140,6 +140,8 @@ class DatabaseConnector:
                         name VARCHAR(50) NOT NULL,
                         gender ENUM('男', '女'),
                         class_name VARCHAR(50),
+                        position VARCHAR(50),                    -- 原始职务文本
+                        total_score DOUBLE,                       -- 问卷总分
                         social_norm DOUBLE CHECK (social_norm >= 0 AND social_norm <= 1),  -- 社交活跃度归一化值
                         score_norm DOUBLE CHECK (score_norm >= 0 AND score_norm <= 1),    -- 学业成绩归一化值
                         leader_norm DOUBLE CHECK (leader_norm >= 0 AND leader_norm <= 1),  -- 领导力归一化值
@@ -165,6 +167,18 @@ class DatabaseConnector:
                         INDEX idx_social_norm (social_norm)
                     )
                 """)
+                # 如果表已经存在，则尝试添加新字段以兼容旧版本
+                # 有些 MySQL 版本不支持 IF NOT EXISTS，因此通过捕获异常忽略重复列错误
+                try:
+                    cursor.execute("ALTER TABLE student_nodes ADD COLUMN position VARCHAR(50)")
+                except Exception as e:
+                    if 'Duplicate column name' not in str(e):
+                        raise
+                try:
+                    cursor.execute("ALTER TABLE student_nodes ADD COLUMN total_score DOUBLE")
+                except Exception as e:
+                    if 'Duplicate column name' not in str(e):
+                        raise
                 
                 # 创建优化的social_edges表
                 cursor.execute("""
@@ -240,7 +254,7 @@ class DatabaseConnector:
                 """)
             
             self.connection.commit()
-            print("✅ 数据表创建成功")
+            print("数据表创建成功")
             return True
             
         except Exception as e:
@@ -250,52 +264,37 @@ class DatabaseConnector:
     
     def insert_nodes(self, nodes: List[Dict]) -> bool:
         """
-        插入节点数据
-        
+        插入节点数据；根据传入字段动态生成 SQL，可适应缺失列。
+
         Args:
             nodes: 节点数据列表
-            
+
         Returns:
             bool: 插入是否成功
         """
         if not self.connection:
             print("❌ 请先建立数据库连接")
             return False
-        
+
         try:
             with self.connection.cursor() as cursor:
                 for node in nodes:
-                    cursor.execute("""
-                        INSERT INTO student_nodes (
-                            id, name, gender, class_name, social_norm, score_norm,
-                            leader_norm, position_encoded, dorm_encoded, social_frequency, learning_impact,
-                            acceptance, activity_participation, communication_ability_norm, team_contribution_norm,
-                            learning_impact_norm, friend_count, influence_score,
-                            pagerank, clustering_coefficient, degree_centrality, 
-                            eigenvector_centrality, betweenness_centrality
-                        ) VALUES (
-                            %(id)s, %(name)s, %(gender)s, %(class_name)s, %(social_norm)s, %(score_norm)s,
-                            %(leader_norm)s, %(position_encoded)s, %(dorm_encoded)s, %(social_frequency)s, %(learning_impact)s,
-                            %(acceptance)s, %(activity_participation)s, %(communication_ability_norm)s, %(team_contribution_norm)s,
-                            %(learning_impact_norm)s, %(friend_count)s, %(influence_score)s,
-                            %(pagerank)s, %(clustering_coefficient)s, %(degree_centrality)s,
-                            %(eigenvector_centrality)s, %(betweenness_centrality)s
-                        ) ON DUPLICATE KEY UPDATE
-                            name=VALUES(name), gender=VALUES(gender), class_name=VALUES(class_name),
-                            social_norm=VALUES(social_norm), score_norm=VALUES(score_norm),
-                            leader_norm=VALUES(leader_norm), position_encoded=VALUES(position_encoded), dorm_encoded=VALUES(dorm_encoded),
-                            social_frequency=VALUES(social_frequency), learning_impact=VALUES(learning_impact),
-                            acceptance=VALUES(acceptance), activity_participation=VALUES(activity_participation),
-                            communication_ability_norm=VALUES(communication_ability_norm), team_contribution_norm=VALUES(team_contribution_norm),
-                            learning_impact_norm=VALUES(learning_impact_norm),
-                            friend_count=VALUES(friend_count), influence_score=VALUES(influence_score),
-                            pagerank=VALUES(pagerank), clustering_coefficient=VALUES(clustering_coefficient),
-                            degree_centrality=VALUES(degree_centrality), 
-                            eigenvector_centrality=VALUES(eigenvector_centrality), betweenness_centrality=VALUES(betweenness_centrality)
-                    """, node)
-            
+                    # filter out None keys to avoid SQL errors
+                    clean = {k: v for k, v in node.items() if v is not None}
+                    if 'id' not in clean:
+                        # skip if no primary key
+                        continue
+                    cols = list(clean.keys())
+                    col_list = ", ".join(f"`{c}`" for c in cols)
+                    placeholders = ", ".join(f"%({c})s" for c in cols)
+                    updates = ", ".join(f"`{c}`=VALUES(`{c}`)" for c in cols if c != 'id')
+                    sql = f"INSERT INTO student_nodes ({col_list}) VALUES ({placeholders})"
+                    if updates:
+                        sql += " ON DUPLICATE KEY UPDATE " + updates
+                    cursor.execute(sql, clean)
+
             self.connection.commit()
-            print(f"✅ 成功插入 {len(nodes)} 条节点数据")
+            print(f"成功插入 {len(nodes)} 条节点数据")
             return True
             
         except Exception as e:
@@ -305,35 +304,26 @@ class DatabaseConnector:
     
     def insert_edges(self, edges: List[Dict]) -> bool:
         """
-        插入边数据
-        
-        Args:
-            edges: 边数据列表
-            
-        Returns:
-            bool: 插入是否成功
+        插入边数据，动态生成SQL。
         """
         if not self.connection:
-            print("❌ 请先建立数据库连接")
+            print("请先建立数据库连接")
             return False
-        
         try:
             with self.connection.cursor() as cursor:
                 for edge in edges:
-                    cursor.execute("""
-                        INSERT INTO social_edges (
-                            source_id, target_id, weight, relation_type
-                        ) VALUES (
-                            %(source_id)s, %(target_id)s, %(weight)s, %(relation_type)s
-                        ) ON DUPLICATE KEY UPDATE
-                            weight=VALUES(weight), relation_type=VALUES(relation_type)
-                    """, edge)
-            
+                    cols = list(edge.keys())
+                    placeholders = ", ".join(f"%({c})s" for c in cols)
+                    col_list = ", ".join(f"`{c}`" for c in cols)
+                    updates = ", ".join(f"`{c}`=VALUES(`{c}`)" for c in cols if c not in ('source','target'))
+                    sql = f"INSERT INTO social_edges ({col_list}) VALUES ({placeholders})"
+                    if updates:
+                        sql += " ON DUPLICATE KEY UPDATE " + updates
+                    cursor.execute(sql, edge)
             self.connection.commit()
-            print(f"✅ 成功插入 {len(edges)} 条边数据")
+            print(f"成功插入 {len(edges)} 条边数据")
             return True
-            
         except Exception as e:
-            print(f"❌ 边数据插入失败: {e}")
+            print(f"边数据插入失败: {e}")
             self.connection.rollback()
             return False

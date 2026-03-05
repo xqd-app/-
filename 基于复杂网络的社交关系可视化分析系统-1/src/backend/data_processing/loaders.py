@@ -29,13 +29,24 @@ class DataLoader:
     
     @staticmethod
     def detect_file_type(file_path: str) -> str:
-        """检测文件类型"""
-        if file_path.endswith('.xlsx') or file_path.endswith('.xls'):
+        """检测文件类型，扩展名缺失时尝试解析内容。"""
+        _, ext = os.path.splitext(file_path.lower())
+        if ext in ('.xlsx', '.xls'):
             return 'excel'
-        elif file_path.endswith('.csv'):
+        elif ext == '.csv':
             return 'csv'
-        else:
-            raise ValueError(f"不支持的文件格式: {file_path}")
+        # no recognizable extension, try to read heuristically
+        try:
+            pd.read_excel(file_path)
+            return 'excel'
+        except Exception:
+            pass
+        try:
+            pd.read_csv(file_path, encoding='utf-8-sig')
+            return 'csv'
+        except Exception:
+            pass
+        raise ValueError(f"不支持的文件格式: {file_path}")
     
     def load_data(self, file_path: str) -> pd.DataFrame:
         """通用数据加载方法"""

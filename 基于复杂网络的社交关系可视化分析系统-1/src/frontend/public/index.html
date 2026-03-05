@@ -218,6 +218,56 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             width: 120px;
+        
+        /* data upload card styling */
+        .upload-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .upload-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            color: #333;
+        }
+        .upload-card .file-input {
+            display: block;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        .btn-primary {
+            background: #667eea;
+            color: #fff;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-primary:hover {
+            background: #5a67d8;
+        }
+        .message {
+            margin-top: 0.5rem;
+            color: #e74c3c;
+        }
+        .dataset-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .dataset-list li {
+            padding: 0.5rem;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        .dataset-list li::before {
+            content: "📁";
+            margin-right: 0.5rem;
+        }
         }
 
         .controls button {
@@ -342,12 +392,19 @@
     </style>
 </head>
 <body>
+    <script>
+        // client side guard: require saved user info, otherwise go to login page
+        if (!localStorage.getItem('user')) {
+            window.location.href = '/login';
+        }
+    </script>
     <header>
         <div class="header-color"></div>
         <h1>基于复杂网络的社交关系可视化分析系统</h1>
-        <!-- 右上角头像登录链接 -->
-        <div id="user-avatar" style="position:absolute;top:50%;right:1rem;transform:translateY(-50%);cursor:pointer;">
+        <!-- 右上角用户信息 -->
+        <div id="user-avatar" style="position:absolute;top:50%;right:1rem;transform:translateY(-50%);cursor:pointer;text-align:center;">
             <a href="user_management.html"><img src="https://via.placeholder.com/40" alt="头像" id="avatar-img" style="border-radius:50%;width:40px;height:40px;" /></a>
+            <div id="user-name" style="font-size:0.8rem;color:#333;margin-top:0.2rem;"></div>
         </div>
     </header>
 
@@ -399,13 +456,18 @@
         <div id="data" class="tab-content" style="display: none;">
             <h2>数据管理</h2>
             <div id="data-content">
-                <p>上传新数据：</p>
-                <input type="file" id="data-file" />
-                <button onclick="uploadData()">上传</button>
-                <div id="data-message"></div>
+                <!-- upload card -->
+                <div class="upload-card">
+                    <h3>上传新数据</h3>
+                    <input type="file" id="data-file" class="file-input" />
+                    <button class="btn-primary" onclick="uploadData()">上传</button>
+                    <div id="data-message" class="message"></div>
+                </div>
+
                 <hr />
-                <p>现有数据集列表（示例）：</p>
-                <ul id="data-list">
+
+                <p>现有数据集列表：</p>
+                <ul id="data-list" class="dataset-list">
                     <!-- 由脚本填充 -->
                 </ul>
             </div>
@@ -688,7 +750,7 @@
                     pairs.add(`${a}|${b}`);
                     pairs.add(`${b}|${a}`);
                 }
-                svg.selectAll('line').filter(d => pairs.has(d.source.name + '|' + d.target.name))
+                svg.selectAll('line').filter(d => pairs.has(d.source.id + '|' + d.target.id))
                     .attr('stroke', '#e74c3c').attr('stroke-width', 3);
             }
         }
@@ -696,7 +758,7 @@
         // 加载分析数据
         async function loadAnalysisData() {
             try {
-                const response = await fetch('/api/analysis/top-influencers');
+                const response = await fetch('/api/analysis/top-influencers'); // backend now returns full sorted list
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -848,16 +910,22 @@
                 });
         }
 
-        // 模拟数据管理功能
-        function loadDataList() {
+        // 加载数据集名称列表（从上传目录读取）
+        async function loadDataList() {
             const list = document.getElementById('data-list');
             if (!list) return;
-            // 示例静态内容，可替换为fetch调用
-            const sample = ['students.csv', 'relationships.json', 'scores.xlsx'];
-            list.innerHTML = sample.map(name => `<li>${name}</li>`).join('');
+            try {
+                const resp = await fetch('/api/data/list');
+                if (!resp.ok) throw new Error(resp.statusText);
+                const names = await resp.json();
+                list.innerHTML = names.map(name => `<li>${name}</li>`).join('');
+            } catch (err) {
+                // fallback to empty
+                list.innerHTML = '';
+            }
         }
 
-        function uploadData() {
+        async function uploadData() {
             const fileEl = document.getElementById('data-file');
             const msgEl = document.getElementById('data-message');
             if (!fileEl || !fileEl.files.length) {
@@ -867,21 +935,48 @@
             const file = fileEl.files[0];
             msgEl.textContent = `正在上传 ${file.name} ...`;
             addLog(`上传数据文件：${file.name}`);
-            // 这里可以使用fetch将文件发送到后端
-            setTimeout(() => {
-                msgEl.textContent = `文件 ${file.name} 上传成功（模拟）`;
+            const formData = new FormData();
+            formData.append('file', file);
+            try {
+                const resp = await fetch('/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await resp.json();
+                if (!resp.ok) {
+                    throw new Error(result.error || resp.statusText);
+                }
+                msgEl.textContent = `文件 ${file.name} 上传处理完成`;
+                addLog(`上传成功，触发数据处理`);
+                // 数据处理写入数据库，刷新前端展示
+                loadNetworkData();
+                loadAnalysisData();
+                loadReportData();
                 loadDataList();
-            }, 1000);
+            } catch (err) {
+                msgEl.textContent = `上传失败: ${err.message}`;
+                addLog(`上传失败: ${err.message}`);
+            }
         }
 
         // 个人信息管理
+        // load profile settings and update header username
         function loadProfile() {
+            const user = JSON.parse(localStorage.getItem('user') || 'null');
+            if (user) {
+                const avatarNameEl = document.getElementById('user-name');
+                if (avatarNameEl) avatarNameEl.textContent = user.username;
+            }
             const name = localStorage.getItem('profile_name') || '';
             const email = localStorage.getItem('profile_email') || '';
             const position = localStorage.getItem('profile_position') || '';
             document.getElementById('profile-name').value = name;
             document.getElementById('profile-email').value = email;
             document.getElementById('profile-position').value = position;
+            // 如果已经保存了姓名，立即渲染个人关系图
+            if (name) {
+                renderPersonalGraph(name);
+            }
         }
 
         function saveProfile() {
@@ -896,10 +991,24 @@
             renderPersonalGraph(name);
         }
 
+        // 点击头像登出
+        function logout() {
+            localStorage.removeItem('user');
+            window.location.href = '/login';
+        }
+        document.getElementById('user-avatar').addEventListener('click', logout);
+
         // 绘制以某人及其直接联系为中心的小网络图（仅一度邻居）
         function renderPersonalGraph(personName) {
             const container = document.getElementById('personal-graph');
             if (!container) return;
+
+            // helper to normalize a link endpoint (may be id or node object)
+            function endpointId(x) {
+                if (x && typeof x === 'object') return x.id;
+                return x;
+            }
+
             function draw() {
                 const nodes = [];
                 const links = [];
@@ -910,16 +1019,18 @@
                     return;
                 }
                 nodes.push(center);
-                // 收集所有与本人直接相连的边及对端节点
+                // 收集所有与本人直接相连的边及对端节点，使用 id 匹配
                 networkData.links.forEach(l => {
-                    if (l.source.name === personName) {
+                    const src = endpointId(l.source);
+                    const tgt = endpointId(l.target);
+                    if (src === center.id) {
                         links.push(l);
-                        const other = networkData.nodes.find(n => n.id === l.target.id);
-                        if (other) nodes.push(other);
-                    } else if (l.target.name === personName) {
+                        const other = networkData.nodes.find(n => n.id === tgt);
+                        if (other && other.id !== center.id) nodes.push(other);
+                    } else if (tgt === center.id) {
                         links.push(l);
-                        const other = networkData.nodes.find(n => n.id === l.source.id);
-                        if (other) nodes.push(other);
+                        const other = networkData.nodes.find(n => n.id === src);
+                        if (other && other.id !== center.id) nodes.push(other);
                     }
                 });
                 container.innerHTML = '';
