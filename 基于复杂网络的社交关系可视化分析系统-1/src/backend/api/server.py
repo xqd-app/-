@@ -12,8 +12,9 @@ import json
 project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 sys.path.insert(0, project_root)
 
-from flask import Flask, jsonify, send_from_directory, request
+from flask import Flask, jsonify, send_from_directory, request, session
 from flask_cors import CORS
+from werkzeug.security import generate_password_hash, check_password_hash
 import numpy as np
 import pandas as pd
 import networkx as nx
@@ -219,9 +220,70 @@ def get_analysis_report():
 # 上传接口
 from werkzeug.utils import secure_filename
 
+# --- 简单登录/会话配置 ---
+app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'change_this_secret')
+
 UPLOAD_DIR = os.path.join(project_root, 'data', 'uploads')
 if not os.path.exists(UPLOAD_DIR):
     os.makedirs(UPLOAD_DIR, exist_ok=True)
+
+@app.route('/api/login', methods=['POST'])
+def login():
+    """根据用户名/密码进行数据库验证并返回用户信息"""
+    data = request.get_json(silent=True) or {}
+    username = data.get('username', '').strip()
+    password = data.get('password', '')
+    if not username or not password:
+        return jsonify({'error': '用户名或密码不能为空'}), 400
+    try:
+        dao = DataDAO(use_database=True)
+        user = dao.get_user_by_username(username)
+        if not user:
+            return jsonify({'error': '用户不存在'}), 401
+        if not check_password_hash(user['password_hash'], password):
+            return jsonify({'error': '密码错误'}), 401
+        # update last login
+        dao.update_last_login(user['id'])
+        # 简单会话存储
+        session['user_id'] = user['id']
+        session['username'] = username
+        return jsonify({'status': 'ok', 'user': {'id': user['id'], 'username': username}})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/register', methods=['POST'])
+def register():
+    """创建新用户（主要用于初始化或测试）。注册后可立即登录。"""
+    data = request.get_json(silent=True) or {}
+    username = data.get('username', '').strip()
+    password = data.get('password', '')
+    if not username or not password:
+        return jsonify({'error': '用户名和密码不能为空'}), 400
+    try:
+        dao = DataDAO(use_database=True)
+        # ensure a default role exists
+        with dao.db_connector.connection.cursor() as cursor:
+            cursor.execute("SELECT id FROM user_roles WHERE role_name=%s", ('user',))
+            r = cursor.fetchone()
+            if r is None:
+                cursor.execute("INSERT INTO user_roles (role_name, description) VALUES (%s,%s)",
+                               ('user', '普通用户'))
+                role_id = cursor.lastrowid
+            else:
+                role_id = r['id']
+            # check if username already exists
+            cursor.execute("SELECT id FROM users WHERE username=%s", (username,))
+            if cursor.fetchone():
+                return jsonify({'error': '用户名已被占用'}), 409
+            pw_hash = generate_password_hash(password)
+            cursor.execute(
+                "INSERT INTO users (username, password_hash, role_id) VALUES (%s,%s,%s)",
+                (username, pw_hash, role_id)
+            )
+            dao.db_connector.connection.commit()
+        return jsonify({'status': 'created'})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/api/upload', methods=['POST'])
 def upload_data():
@@ -269,9 +331,16 @@ def list_uploaded_files():
         return jsonify({'error': str(e)}), 500
 
 # 提供静态文件服务
+@app.route('/login')
+def login_page():
+    """登录界面"""
+    return send_from_directory(app.static_folder, 'login.html')
+
 @app.route('/')
 def index():
-    """主页"""
+    """主页，要求已经登录。未登陆则重定向到 /login"""
+    if not session.get('user_id'):
+        return send_from_directory(app.static_folder, 'login.html')
     return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/<path:path>')

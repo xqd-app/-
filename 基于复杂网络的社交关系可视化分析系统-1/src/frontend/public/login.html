@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录 - 可视化分析系统</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 900px;
+            max-width: 98vw;
+            height: 600px;
+            background: rgba(255,255,255,0.18);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+            border-radius: 24px;
+            display: flex;
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease;
+        }
+        .left-panel {
+            flex: 1.1;
+            background: linear-gradient(120deg, #667eea 60%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 0 2.5rem;
+        }
+        .left-panel h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            letter-spacing: 1px;
+        }
+        .left-panel p {
+            font-size: 1.15rem;
+            margin-bottom: 2.2rem;
+            opacity: 0.92;
+        }
+        .avatar-box {
+            margin-bottom: 2.2rem;
+        }
+        .right-panel {
+            flex: 1;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2.5rem;
+        }
+        .form-card {
+            width: 100%;
+            max-width: 340px;
+            background: rgba(245,245,255,0.92);
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(102,126,234,0.08);
+            padding: 2.2rem 2rem 1.5rem 2rem;
+            text-align: left;
+        }
+        .form-card h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 1.2rem;
+        }
+        .input-group {
+            margin-bottom: 1.1rem;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 0.7rem 1rem;
+            border: 1.5px solid #e0e0e0;
+            border-radius: 7px;
+            font-size: 1rem;
+            background: #f7f7fa;
+            transition: border 0.2s;
+        }
+        .input-group input:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #ff6a00 0%, #ff8c42 100%);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.2rem;
+            border-radius: 7px;
+            width: 100%;
+            font-size: 1.08rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(255,106,0,0.08);
+            margin-top: 0.5rem;
+            transition: background 0.3s;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #ff8c42 0%, #ff6a00 100%);
+        }
+        .message {
+            margin-top: 1rem;
+            color: #ff6a00;
+            font-size: 0.95rem;
+            min-height: 1.2em;
+        }
+        .switch-link {
+            display: block;
+            margin-top: 1.2rem;
+            text-align: center;
+            color: #667eea;
+            font-size: 0.98rem;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        @keyframes fadeInUp {
+            from {opacity:0; transform: translateY(30px);} 
+            to {opacity:1; transform: translateY(0);} 
+        }
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+            .left-panel, .right-panel {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('user')) {
+            window.location.href = '/';
+        }
+    </script>
+    <div class="container">
+        <div class="left-panel">
+            <div class="avatar-box">
+                <svg id="avatar-svg" width="120" height="120" viewBox="0 0 90 90" style="user-select:none;">
+                    <circle class="face" cx="45" cy="45" r="40" fill="#667eea"/>
+                    <!-- 微笑 -->
+                    <g class="smile">
+                        <ellipse cx="45" cy="60" rx="18" ry="8" fill="none" stroke="#fff" stroke-width="3"/>
+                        <ellipse cx="33" cy="40" rx="4" ry="6" fill="#fff"/>
+                        <ellipse cx="57" cy="40" rx="4" ry="6" fill="#fff"/>
+                    </g>
+                    <!-- 眨眼 -->
+                    <g class="wink" style="display:none;">
+                        <ellipse cx="33" cy="40" rx="4" ry="1.5" fill="#fff"/>
+                        <ellipse cx="57" cy="40" rx="4" ry="6" fill="#fff"/>
+                        <ellipse cx="45" cy="60" rx="18" ry="8" fill="none" stroke="#fff" stroke-width="3"/>
+                    </g>
+                    <!-- 惊讶 -->
+                    <g class="surprise" style="display:none;">
+                        <ellipse cx="33" cy="40" rx="4" ry="6" fill="#fff"/>
+                        <ellipse cx="57" cy="40" rx="4" ry="6" fill="#fff"/>
+                        <ellipse cx="45" cy="62" rx="5" ry="8" fill="#fff"/>
+                    </g>
+                    <!-- 酷 -->
+                    <g class="cool" style="display:none;">
+                        <rect x="28" y="38" width="12" height="6" rx="2" fill="#fff"/>
+                        <rect x="50" y="38" width="12" height="6" rx="2" fill="#fff"/>
+                        <rect x="40" y="60" width="10" height="4" rx="2" fill="#fff"/>
+                    </g>
+                </svg>
+            </div>
+            <h1>欢迎回来！</h1>
+            <p>社交关系可视化分析系统<br>请登录以继续体验更多功能</p>
+        </div>
+        <div class="right-panel">
+            <div class="form-card" id="login-card">
+                <h2>登录账号</h2>
+                <form id="login-form">
+                    <div class="input-group">
+                        <input type="text" id="username" placeholder="用户名" required />
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="密码" required />
+                    </div>
+                    <button type="submit" class="btn-primary">登录</button>
+                    <div id="login-message" class="message"></div>
+                </form>
+                <span class="switch-link" id="show-register">没有账号？立即注册</span>
+            </div>
+            <div class="form-card" id="register-card" style="display:none;">
+                <h2>注册新账号</h2>
+                <form id="register-form">
+                    <div class="input-group">
+                        <input type="text" id="reg-username" placeholder="用户名" required />
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="reg-password" placeholder="密码" required />
+                    </div>
+                    <button type="submit" class="btn-primary">注册</button>
+                    <div id="register-message" class="message"></div>
+                </form>
+                <span class="switch-link" id="show-login">已有账号？返回登录</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 登录表单提交
+        document.getElementById('login-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value;
+            const msgEl = document.getElementById('login-message');
+            msgEl.textContent = '';
+            try {
+                const resp = await fetch('/api/login', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({username, password})
+                });
+                const data = await resp.json();
+                if (resp.ok) {
+                    localStorage.setItem('user', JSON.stringify(data.user));
+                    window.location.href = '/';
+                } else {
+                    msgEl.textContent = data.error || '登录失败';
+                }
+            } catch (err) {
+                msgEl.textContent = '网络错误，请重试';
+            }
+        });
+        // 注册表单提交
+        document.getElementById('register-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const username = document.getElementById('reg-username').value.trim();
+            const password = document.getElementById('reg-password').value;
+            const msgEl = document.getElementById('register-message');
+            msgEl.textContent = '';
+            try {
+                const resp = await fetch('/api/register', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({username, password})
+                });
+                const data = await resp.json();
+                if (resp.ok) {
+                    msgEl.textContent = '注册成功，请登录';
+                } else {
+                    msgEl.textContent = data.error || '注册失败';
+                }
+            } catch (err) {
+                msgEl.textContent = '网络错误，请重试';
+            }
+        });
+        // 表单切换逻辑
+        document.getElementById('show-register').onclick = function() {
+            document.getElementById('login-card').style.display = 'none';
+            document.getElementById('register-card').style.display = 'block';
+        };
+        document.getElementById('show-login').onclick = function() {
+            document.getElementById('register-card').style.display = 'none';
+            document.getElementById('login-card').style.display = 'block';
+        };
+    </script>
+    <script src="login_avatar.js"></script>
+</body>
+</html>

@@ -218,6 +218,56 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             width: 120px;
+        
+        /* data upload card styling */
+        .upload-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .upload-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            color: #333;
+        }
+        .upload-card .file-input {
+            display: block;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        .btn-primary {
+            background: #667eea;
+            color: #fff;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-primary:hover {
+            background: #5a67d8;
+        }
+        .message {
+            margin-top: 0.5rem;
+            color: #e74c3c;
+        }
+        .dataset-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .dataset-list li {
+            padding: 0.5rem;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        .dataset-list li::before {
+            content: "📁";
+            margin-right: 0.5rem;
+        }
         }
 
         .controls button {
@@ -342,12 +392,19 @@
     </style>
 </head>
 <body>
+    <script>
+        // client side guard: require saved user info, otherwise go to login page
+        if (!localStorage.getItem('user')) {
+            window.location.href = '/login';
+        }
+    </script>
     <header>
         <div class="header-color"></div>
         <h1>基于复杂网络的社交关系可视化分析系统</h1>
-        <!-- 右上角头像登录链接 -->
-        <div id="user-avatar" style="position:absolute;top:50%;right:1rem;transform:translateY(-50%);cursor:pointer;">
+        <!-- 右上角用户信息 -->
+        <div id="user-avatar" style="position:absolute;top:50%;right:1rem;transform:translateY(-50%);cursor:pointer;text-align:center;">
             <a href="user_management.html"><img src="https://via.placeholder.com/40" alt="头像" id="avatar-img" style="border-radius:50%;width:40px;height:40px;" /></a>
+            <div id="user-name" style="font-size:0.8rem;color:#333;margin-top:0.2rem;"></div>
         </div>
     </header>
 
@@ -399,13 +456,18 @@
         <div id="data" class="tab-content" style="display: none;">
             <h2>数据管理</h2>
             <div id="data-content">
-                <p>上传新数据：</p>
-                <input type="file" id="data-file" />
-                <button onclick="uploadData()">上传</button>
-                <div id="data-message"></div>
+                <!-- upload card -->
+                <div class="upload-card">
+                    <h3>上传新数据</h3>
+                    <input type="file" id="data-file" class="file-input" />
+                    <button class="btn-primary" onclick="uploadData()">上传</button>
+                    <div id="data-message" class="message"></div>
+                </div>
+
                 <hr />
-                <p>现有数据集列表（示例）：</p>
-                <ul id="data-list">
+
+                <p>现有数据集列表：</p>
+                <ul id="data-list" class="dataset-list">
                     <!-- 由脚本填充 -->
                 </ul>
             </div>
@@ -898,7 +960,13 @@
         }
 
         // 个人信息管理
+        // load profile settings and update header username
         function loadProfile() {
+            const user = JSON.parse(localStorage.getItem('user') || 'null');
+            if (user) {
+                const avatarNameEl = document.getElementById('user-name');
+                if (avatarNameEl) avatarNameEl.textContent = user.username;
+            }
             const name = localStorage.getItem('profile_name') || '';
             const email = localStorage.getItem('profile_email') || '';
             const position = localStorage.getItem('profile_position') || '';
@@ -922,6 +990,13 @@
             addLog('个人信息已更新');
             renderPersonalGraph(name);
         }
+
+        // 点击头像登出
+        function logout() {
+            localStorage.removeItem('user');
+            window.location.href = '/login';
+        }
+        document.getElementById('user-avatar').addEventListener('click', logout);
 
         // 绘制以某人及其直接联系为中心的小网络图（仅一度邻居）
         function renderPersonalGraph(personName) {

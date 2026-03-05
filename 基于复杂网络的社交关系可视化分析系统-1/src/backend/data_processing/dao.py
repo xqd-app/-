@@ -165,6 +165,36 @@ class DataDAO:
                 json.dump(records, f, ensure_ascii=False, indent=2)
             print(f"✅ 传播记录已保存到: {records_path}")
             return True
+
+    # --- 用户认证辅助方法 ---
+    def get_user_by_username(self, username: str) -> Union[Dict, None]:
+        """
+        从数据库中查找指定用户名的用户记录。
+        返回包含全部列的字典或None。
+        """
+        if not self.use_database:
+            return None
+        try:
+            with self.db_connector.connection.cursor() as cursor:
+                cursor.execute("SELECT * FROM users WHERE username=%s", (username,))
+                return cursor.fetchone()
+        except Exception as e:
+            print(f"❌ 查询用户失败: {e}")
+            return None
+
+    def update_last_login(self, user_id: int) -> None:
+        """
+        更新用户的最后登录时间。
+        """
+        if not self.use_database:
+            return
+        try:
+            with self.db_connector.connection.cursor() as cursor:
+                cursor.execute("UPDATE users SET last_login=NOW() WHERE id=%s", (user_id,))
+            self.db_connector.connection.commit()
+        except Exception as e:
+            print(f"❌ 更新 last_login 失败: {e}")
+
     
     def load_nodes(self) -> List[Dict]:
         """
